@@ -55,7 +55,7 @@ const Contact = () => {
 
             <div className="space-y-6">
               <a 
-                href="https://chat.whatsapp.com/sample-group-link" 
+                href="https://chat.whatsapp.com/CKrN5kPTBqz1wcNruhBSAG?mode=ems_copy_t" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300 group"
@@ -70,7 +70,7 @@ const Contact = () => {
               </a>
 
               <a 
-                href="https://t.me/sample-channel" 
+                href="https://telegram.me/akturesources" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300 group"
@@ -85,7 +85,7 @@ const Contact = () => {
               </a>
 
               <a 
-                href="mailto:contact@gcetresources.com" 
+                href="mailto:gcetresources@gmail.com" 
                 className="flex items-center space-x-4 p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -93,7 +93,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Email Us</h3>
-                  <p className="text-gray-600">contact@gcetresources.com</p>
+                  <p className="text-gray-600">gcetresources@gmail.com</p>
                 </div>
               </a>
             </div>
