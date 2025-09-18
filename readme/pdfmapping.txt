@@ -1,0 +1,77 @@
+I'll summarize the problem, the options we considered, which approach is best for production, and exactly what we changed to fix your app.
+
+Plan: short problem statement → approaches (tradeoffs) → recommended approach → what we did (concrete steps + files changed) → verification and next steps.
+
+## Checklist (requirements you asked to solve)
+- Prevent the app from loading a public demo/sample PDF as a fallback. — Done  
+- Make your uploaded blob accessible to the app (you chose to make it public). — Done  
+- Ensure mapping keys match the route params so the UI finds the right PDF. — Done  
+- Provide a safe long-term recommendation for access if you later need privacy. — Done
+
+## Problem (what happened)
+- Symptom: The app always showed a demo/sample PDF even after you uploaded a blob and updated mappings.  
+- Root causes discovered:
+  1. ResourceDetails had a hardcoded fallback that generated demo chapters and set `fileUrl` to the sample PDF when no mapping existed — this forced the sample PDF to display.
+  2. The mapping entry used `subjectId: "2nd-electronics"` which did not match the subject IDs used by the app (subjects.json uses `2nd-digital`). Because of that mismatch the mapping lookup failed and the fallback executed.
+  3. The blob was originally private (Azure returned PublicAccessNotPermitted), which would have prevented direct public access until you changed the container access.
+
+## Approaches considered (tradeoffs)
+- Public container (anonymous blob read)
+  - Pros: simplest; browser can load blob URL directly (works with the current iframe viewer).
+  - Cons: blobs are readable by anyone with the URL; no access control or auditing.
+- SAS tokens (server-generated signed URLs) — recommended for most production uses
+  - Pros: private container, short-lived URLs, scoped permissions, easy to implement with a small backend or Azure Function; works with iframe viewer.
+  - Cons: requires a backend endpoint to generate SAS and optionally authentication for that endpoint.
+- Azure AD bearer tokens / direct AD auth
+  - Pros: strong enterprise auth and RBAC.
+  - Cons: more complex frontend flow, user sign-in, token management.
+- Proxying blobs through your server
+  - Pros: full control & audit, hides storage URLs.
+  - Cons: increases server bandwidth and complexity.
+
+Best general practice: use SAS tokens (server-issued) for private data; use public containers only for truly public, non-sensitive files.
+
+## Exactly what we changed and why (concrete)
+Files edited
+- ResourceDetails.tsx
+  - Removed demo fallback that generated sample PDF chapters.
+  - Added a friendly "No resources found" UI when mapping is missing.
+  - Reason: prevent the app from silently showing the demo PDF and surface missing-mapping cases.
+- pdfMappings.json
+  - Replaced placeholder entries with full public blob URLs (for the container you made public).
+  - Fixed the first mapping's `subjectId` from `2nd-electronics` → `2nd-digital` so it matches subjects.json route params.
+  - Reason: make the mapping discoverable by the route and point to public blob locations.
+- (You ran) `az storage container set-permission --account-name storagegceto2 --name boe301 --public-access blob`
+  - Result: container is now blob-public so the browser can fetch PDFs directly.
+
+What this achieves
+- The route `/resources/2nd/2nd-digital/aktu-pyq` now finds the mapping in pdfMappings.json.
+- The chapter card appears and clicking it opens the PDF using the public blob URL in the iframe (no more sample fallback).
+- When a mapping is missing, the UI clearly shows "No resources found" instead of showing a demo PDF.
+
+## Verification
+- You confirmed the app now shows the mapped chapter and the PDF loads — this validates:
+  - mapping key names match the route params,
+  - the container is publicly readable,
+  - the fallback was removed so the sample PDF no longer appears.
+
+## Recommendations / next steps
+- If files must remain private later, switch to SAS tokens:
+  - Add a tiny serverless endpoint (Azure Function or Express) that issues short-lived SAS URLs for requested blob paths.
+  - Client requests a SAS URL before opening the PDF and uses that URL in the iframe.
+- Add a 404/health check for mapped URLs (or graceful error handling in `PdfViewer`) so the UI shows a friendly "file not found" instead of a broken viewer.
+- Upload the other PDF files to the container using the same paths/filenames used in pdfMappings.json, or update the JSON to match actual uploaded names.
+- Add an automated check or unit test that validates every mapping entry has a reachable URL (optional, but useful).
+- Consider CORS settings only if loading via XHR/Fetch; direct iframe GETs work when blobs are public. If you later use SAS with fetches, ensure CORS permits your origin.
+
+## Requirements coverage
+- Remove demo fallback and stop showing sample PDF — Done (changed in ResourceDetails.tsx).  
+- Make blob accessible publicly — Done (you set container public).  
+- Update mapping to correct subject ID and set full public URLs — Done (pdfMappings.json).  
+- Provide recommended production approach — Done (SAS recommended).
+
+If you want, I can:
+- Implement the small SAS endpoint (Azure Function or Node/Express) and wire `ResourceDetails`/`PdfViewer` to request SAS URLs instead of using public URLs — I can create the server code and update the client in this repo.  
+- Add a tiny runtime URL-check that flags missing or unreachable mapping URLs and surfaces that in the UI.
+
+Which follow-up would you like me to do next?

@@ -1,0 +1,52 @@
+[
+  {
+  "year": "2nd",
+  "subjectId": "2nd-digital",
+    "resourceType": "aktu-pyq",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "PYQ 2023",
+        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/document3.pdf"
+      }
+    ]
+  },
+  {
+    "year": "2nd",
+    "subjectId": "2nd-dsa",
+    "resourceType": "pdf-notes",
+    "chapters": [
+      {
+        "id": "dsa-ch1",
+        "title": "DSA Notes - Chapter 1",
+        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/dsa-ch1.pdf"
+      }
+    ]
+  },
+  {
+    "year": "3rd",
+    "subjectId": "3rd-web",
+    "resourceType": "pdf-notes",
+    "chapters": [
+      {
+        "id": "web-ch1",
+        "title": "Web Tech - Chapter 1",
+        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/web-ch1.pdf"
+      }
+    ]
+  },
+
+  {
+    "year": "2nd",
+    "subjectId": "2nd-digital",
+      "resourceType": "aktu-pyq",
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "PYQ 2023",
+          "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/document3.pdf"
+        }
+      ]
+    
+  }
+]
