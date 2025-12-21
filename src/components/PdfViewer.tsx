@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Dialog,
   DialogContent,
@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { X, Maximize, Minimize } from "lucide-react";
 import { SubjectResource } from "./SubjectCard";
-import PdfJsViewer from "./PdfJsViewer";
+
 
 interface PdfViewerProps {
   subject: SubjectResource | null;
@@ -17,33 +17,24 @@ interface PdfViewerProps {
 }
 
 const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
-  const [isLoading, setIsLoading] = useState(true);
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const hasOpenedRef = useRef(false);
 
-  // When the dialog opens, default to full-screen mode and reset loading state.
+  // When the dialog opens, default to full-screen mode and auto-open the resource.
   useEffect(() => {
     if (isOpen) {
       setIsFullScreen(true);
-      setIsLoading(true);
+
+      if (subject?.fileUrl && !hasOpenedRef.current) {
+        hasOpenedRef.current = true;
+        window.open(subject.fileUrl, "_blank", "noopener,noreferrer");
+        onClose();
+      }
     } else {
       setIsFullScreen(false);
+      hasOpenedRef.current = false;
     }
-  }, [isOpen]);
-
-  // Reset loading whenever the subject or its file URL changes
-  useEffect(() => {
-    if (isOpen && subject?.fileUrl) {
-      setIsLoading(true);
-    }
-  }, [subject?.fileUrl, isOpen]);
-
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const handleError = () => {
-    setIsLoading(false);
-  };
+  }, [isOpen, subject?.fileUrl, onClose]);
 
   const toggleFullScreen = () => {
     setIsFullScreen(!isFullScreen);
@@ -75,24 +66,8 @@ const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
           </div>
         </DialogHeader>
 
-        <div className="relative flex-1 min-h-[70vh] mt-4 border border-gray-200 rounded-md overflow-hidden">
-          {isLoading && (
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-            </div>
-          )}
-
-          {subject?.fileUrl ? (
-            <PdfJsViewer
-              url={subject.fileUrl}
-              onLoad={handleLoad}
-              onError={handleError}
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-500">
-              No PDF selected
-            </div>
-          )}
+        <div className="flex-1 mt-4 flex items-center justify-center text-gray-500">
+          Opening Google Drive…
         </div>
       </DialogContent>
     </Dialog>
@@ -100,3 +75,4 @@ const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
 };
 
 export default PdfViewer;
+
