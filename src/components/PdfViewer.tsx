@@ -66,9 +66,16 @@ const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
           </div>
         </DialogHeader>
 
-        <div className="flex-1 mt-4 flex items-center justify-center text-gray-500">
-          Opening Google Drive…
-        </div>
+        <div className="flex-1 mt-4 flex flex-col items-center justify-center text-gray-500">
+  <img
+    src="https://imgs.search.brave.com/uALJj_lPlueJ4ER1y8M6TrTMqjwsgPk6yWVd-La791M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5tYWtlYW1lbWUu/b3JnL2NyZWF0ZWQv/ZGF5YS1rdWNoLXRv/aC01Y2FkYjMuanBn"
+    alt="Error"
+    className="w-50 h-auto mb-3 opacity-80"
+  />
+  <p className="text-red-500">
+  Something went wrong…
+</p>
+</div>
       </DialogContent>
     </Dialog>
   );

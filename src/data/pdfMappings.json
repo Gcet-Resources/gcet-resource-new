@@ -557,6 +557,86 @@
     ]
   },
   {
+    "Break": "---------------------------------Fundamentals of Electronics Engineering-----------------------------------------------------"
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "pdf-notes",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "All Notes",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "aktu-pyq",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "PYQs",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "cae",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "CAE 1 Papers",
+        "fileUrl": ""
+      },
+      {
+        "id": "chapter-2",
+        "title": "CAE 2 Papers",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "handwritten",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Handwritten Notes",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "quantum",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Quantum PDF",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BEC101",
+    "resourceType": "question-bank",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Question Banks",
+        "fileUrl": ""
+      }
+    ]
+  },
+  {
     "Break": "--------------------------------- END OF 1ST YR-----------------------------------------------------"
   },
   {

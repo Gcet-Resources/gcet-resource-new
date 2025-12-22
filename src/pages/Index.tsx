@@ -14,11 +14,11 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="inline-block animate-fade-in">
             <span className="px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full">
-              Your Learning Resource Hub
+              A student lead community
             </span>
           </div>
           <h1 className="mt-8 text-4xl md:text-6xl font-display font-bold text-gray-900 animate-fade-up">
-            Empowering GCET Students
+            Empowering B.Tech Students
             <br />
             <span className="text-primary">With Quality Resources</span>
           </h1>
