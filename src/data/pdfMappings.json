@@ -1,52 +1,581 @@
 [
+ 
   {
-  "year": "2nd",
-  "subjectId": "2nd-digital",
-    "resourceType": "aktu-pyq",
+  "year": "1st",
+  "subjectId": "1st-math",
+    "resourceType": "pdf-notes",
     "chapters": [
       {
         "id": "chapter-1",
-        "title": "PYQ 2023",
-        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/document3.pdf"
+        "title": "All Notes",
+        "fileUrl": "https://drive.google.com/file/d/101JL0JSxT6HsTRfmwzTImnZP8mEWjgzr/view"
       }
     ]
   },
   {
-    "year": "2nd",
-    "subjectId": "2nd-dsa",
-    "resourceType": "pdf-notes",
-    "chapters": [
-      {
-        "id": "dsa-ch1",
-        "title": "DSA Notes - Chapter 1",
-        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/dsa-ch1.pdf"
-      }
-    ]
-  },
-  {
-    "year": "3rd",
-    "subjectId": "3rd-web",
-    "resourceType": "pdf-notes",
-    "chapters": [
-      {
-        "id": "web-ch1",
-        "title": "Web Tech - Chapter 1",
-        "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/web-ch1.pdf"
-      }
-    ]
-  },
-
-  {
-    "year": "2nd",
-    "subjectId": "2nd-digital",
+    "year": "1st",
+    "subjectId": "1st-math",
       "resourceType": "aktu-pyq",
       "chapters": [
         {
           "id": "chapter-1",
-          "title": "PYQ 2023",
-          "fileUrl": "https://storagegceto2.blob.core.windows.net/boe301/pyqs/document3.pdf"
+          "title": "PYQs",
+          "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-engineering-mathematics-1-bas-103-2023.pdf"
         }
       ]
+    },
+  {
+    "year": "1st",
+    "subjectId": "1st-math",
+      "resourceType": "cae",
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "CAE 1 Papers",
+          "fileUrl": "https://drive.google.com/file/d/1kGJVSOI8VByGHXPTdQvO_icmlJ9qPdYL/view?usp=drivesdk"
+        },
+        {
+          "id": "chapter-2",
+          "title": "CAE 2 Papers",
+          "fileUrl": "https://drive.google.com/file/d/1WatTSOsF96ZX68Ose5zp2iohXEip9K20/view?usp=drive_link"
+        }
+      ]
+    },
+  {
+    "year": "1st",
+    "subjectId": "1st-math",
+      "resourceType": "handwritten",
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "Handwritten Notes",
+          "fileUrl": "https://drive.google.com/drive/folders/1TX0DJ3ObFNkDAdmBKHhIM-n0j2h2cnUu"
+        }
+      ]
+    },
+  {
+    "year": "1st",
+    "subjectId": "1st-math",
+      "resourceType": "quantum",
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "Quantum PDF",
+          "fileUrl": "https://drive.google.com/file/d/10Ea_MKwVCPECAapFbRtM1YMfjjKtKK68/view?usp=sharing"
+        }
+      ]
+    },
+  {
+    "year": "1st",
+    "subjectId": "1st-math",
+      "resourceType": "question-bank",
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "Question Banks",
+          "fileUrl": "https://drive.google.com/file/d/1SATTRaujux3475MW2bYTd7PPoPf5pAsO/view?usp=drive_link"
+        }
+      ]
+    },
+
+    {
+      "Break" : "---------------------------------PHYSICS-----------------------------------------------------"
+    },
+
+    {
+      "year": "1st",
+      "subjectId": "1st-physics",
+        "resourceType": "pdf-notes",
+        "chapters": [
+          {
+            "id": "chapter-1",
+            "title": "All Notes",
+            "fileUrl": "https://drive.google.com/file/d/1XkcFQA5ZqV8o8E3so9_fSz6kN5-9jnQ-/view?usp=drivesdk"
+          }
+        ]
+      },
+      {
+        "year": "1st",
+        "subjectId": "1st-physics",
+          "resourceType": "aktu-pyq",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "title": "PYQs",
+              "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-engineering-physics-bas101-2023.pdf"
+            }
+          ]
+        },
+      {
+        "year": "1st",
+        "subjectId": "1st-physics",
+          "resourceType": "cae",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "title": "CAE 1 Papers",
+              "fileUrl": "https://drive.google.com/file/d/1_QlhnsYKAhTd_hPd5dJ89F1ExIQsdlM_/view?usp=drive_link"
+            },
+            {
+              "id": "chapter-2",
+              "title": "CAE 2 Papers",
+              "fileUrl": "https://drive.google.com/file/d/1rUMDEj7ao4AN6YPi0vXpy1nT22U9QXp_/view?usp=drive_link"
+            }
+          ]
+        },
+      {
+        "year": "1st",
+        "subjectId": "1st-physics",
+          "resourceType": "handwritten",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "title": "Handwritten Notes",
+              "fileUrl": "https://drive.google.com/file/d/1IF3MjZdbcn8zmV7o-bYRz0go7HB5vAKT/view?usp=drivesdk"
+            }
+          ]
+        },
+      {
+        "year": "1st",
+        "subjectId": "1st-physics",
+          "resourceType": "quantum",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "title": "Quantum PDF",
+              "fileUrl": "https://drive.google.com/file/d/12RBYbin7opEas2vb3nwyMewPLygFMjWt/view?usp=sharing"
+            }
+          ]
+        },
+      {
+        "year": "1st",
+        "subjectId": "1st-physics",
+          "resourceType": "question-bank",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "title": "Question Banks",
+              "fileUrl": "https://drive.google.com/file/d/1Xk621m1W_zw1ZzGLQ4uKo6eZhy-lBhJ1/view?usp=drivesdk"
+            }
+          ]
+        },
+
+        {
+          "Break" : "---------------------------------CHEMISTRY-----------------------------------------------------"
+        },
     
-  }
+        {
+          "year": "1st",
+          "subjectId": "1st-chemistry", 
+            "resourceType": "pdf-notes",
+            "chapters": [
+              {
+                "id": "chapter-1",
+                "title": "All Notes",
+                "fileUrl": "https://drive.google.com/file/d/1N1qrQZdwVFlOKvxOY4LeY_aECVpxv5e_/view?usp=drivesdk"
+              }
+            ]
+          },
+          {
+            "year": "1st",
+            "subjectId": "1st-chemistry",
+              "resourceType": "aktu-pyq",
+              "chapters": [
+                {
+                  "id": "chapter-1",
+                  "title": "PYQs",
+                  "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-engineering-chemistry-bas-102-2023.pdf"
+                }
+              ]
+            },
+          {
+            "year": "1st",
+            "subjectId": "1st-chemistry",
+              "resourceType": "cae",
+              "chapters": [
+                {
+                  "id": "chapter-1",
+                  "title": "CAE 1 Papers",
+                  "fileUrl": "https://drive.google.com/file/d/1bQwDG9BloKYjfhn64zAAIYF48quOWc6j/view?usp=drive_link"
+                },
+                {
+                  "id": "chapter-2",
+                  "title": "CAE 2 Papers",
+                  "fileUrl": "https://drive.google.com/file/d/1K6oaNbhpi3sBlcmWNBKyTq-8uOQUQ834/view?usp=drive_link"
+                }
+              ]
+            },
+          {
+            "year": "1st",
+            "subjectId": "1st-chemistry",
+              "resourceType": "handwritten",
+              "chapters": [
+                {
+                  "id": "chapter-1",
+                  "title": "Handwritten Notes",
+                  "fileUrl": "https://drive.google.com/file/d/19sqT2b_tsPqZZDWTnHmxuHK_JDQWpy5v/view?usp=drivesdk"
+                }
+              ]
+            },
+          {
+            "year": "1st",
+            "subjectId": "1st-chemistry",
+              "resourceType": "quantum",
+              "chapters": [
+                {
+                  "id": "chapter-1",
+                  "title": "Quantum PDF",
+                  "fileUrl": "https://drive.google.com/file/d/1VbSlsBNd3ZDVScrglWf98xJkOTzuyuDR/view?usp=sharing"
+                }
+              ]
+            },
+          {
+            "year": "1st",
+            "subjectId": "1st-chemistry",
+              "resourceType": "question-bank",
+              "chapters": [
+                {
+                  "id": "chapter-1",
+                  "title": "Question Banks",
+                  "fileUrl": "https://drive.google.com/file/d/1RygFeAyknELVAowr0ip6KgmPu150Xj4x/view?usp=drive_link"
+                }
+              ]
+            },
+
+            {
+              "Break" : "---------------------------------PPS-----------------------------------------------------"
+            },
+        
+            {
+              "year": "1st",
+              "subjectId": "1st-programming", 
+                "resourceType": "pdf-notes",
+                "chapters": [
+                  {
+                    "id": "chapter-1",
+                    "title": "All Notes",
+                    "fileUrl": "https://drive.google.com/drive/folders/1_7vikXvAgHMuGR_VhJEsIzlY46LlGceZ"
+                  }
+                ]
+              },
+              {
+                "year": "1st",
+                "subjectId": "1st-programming",
+                  "resourceType": "aktu-pyq",
+                  "chapters": [
+                    {
+                      "id": "chapter-1",
+                      "title": "PYQs",
+                      "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-programming-for-problem-solving-bcs101-2023.pdf"
+                    }
+                  ]
+                },
+              {
+                "year": "1st",
+                "subjectId": "1st-programming",
+                  "resourceType": "cae",
+                  "chapters": [
+                    {
+                      "id": "chapter-1",
+                      "title": "CAE 1 Papers",
+                      "fileUrl": "https://drive.google.com/file/d/1_NxShYKQSnQaGRXa_b-SDS-SA6Pr2LlO/view?usp=drive_link"
+                    },
+                    {
+                      "id": "chapter-2",
+                      "title": "CAE 2 Papers",
+                      "fileUrl": "https://drive.google.com/file/d/1WPjl0UcMzMCuxSzw0iGo-CsYB0N9fLSV/view?usp=drive_link"
+                    }
+                  ]
+                },
+              {
+                "year": "1st",
+                "subjectId": "1st-programming",
+                  "resourceType": "handwritten",
+                  "chapters": [
+                    {
+                      "id": "chapter-1",
+                      "title": "Handwritten Notes",
+                      "fileUrl": "https://drive.google.com/drive/folders/1Z7TiLESFwYw_oBXXmrSz4HbBS5VMLvhr"
+                    }
+                  ]
+                },
+              {
+                "year": "1st",
+                "subjectId": "1st-programming",
+                  "resourceType": "quantum",
+                  "chapters": [
+                    {
+                      "id": "chapter-1",
+                      "title": "Quantum PDF",
+                      "fileUrl": "https://drive.google.com/file/d/12OC2ZFNgsWW8E_5fk9SBg1NeSn9IJcGt/view?usp=sharing"
+                    }
+                  ]
+                },
+              {
+                "year": "1st",
+                "subjectId": "1st-programming",
+                  "resourceType": "question-bank",
+                  "chapters": [
+                    {
+                      "id": "chapter-1",
+                      "title": "Question Banks",
+                      "fileUrl": "https://drive.google.com/file/d/1S_mac6D2WlHN6qXyvq9N4JTwk99i0954/view?usp=sharing"
+                    }
+                  ]
+                },
+
+                {
+                  "Break" : "---------------------------------Electrical-----------------------------------------------------"
+                },
+            
+                {
+                  "year": "1st",
+                  "subjectId": "1st-electrical", 
+                    "resourceType": "pdf-notes",
+                    "chapters": [
+                      {
+                        "id": "chapter-1",
+                        "title": "All Notes",
+                        "fileUrl": "https://drive.google.com/file/d/16SbxmJ-QY0Ctm6LJuLX6WFEhUIJfLnA-/view?usp=drivesdk"
+                      }
+                    ]
+                  },
+                  {
+                    "year": "1st",
+                    "subjectId": "1st-electrical",
+                      "resourceType": "aktu-pyq",
+                      "chapters": [
+                        {
+                          "id": "chapter-1",
+                          "title": "PYQs",
+                          "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-fundamentals-of-electrical-engineering-bee101-2023.pdf"
+                        }
+                      ]
+                    },
+                  {
+                    "year": "1st",
+                    "subjectId": "1st-electrical",
+                      "resourceType": "cae",
+                      "chapters": [
+                        {
+                          "id": "chapter-1",
+                          "title": "CAE 1 Papers",
+                          "fileUrl": "https://drive.google.com/file/d/1_GapdDo_usyq-cDCNGksIxuLK0jkOCgZ/view?usp=drive_link"
+                        },
+                        {
+                          "id": "chapter-2",
+                          "title": "CAE 2 Papers",
+                          "fileUrl": "https://drive.google.com/file/d/1SDqKhu1Pp1pSU9bT6RS41oC0QRh7ZrRC/view?usp=drive_link"
+                        }
+                      ]
+                    },
+                  {
+                    "year": "1st",
+                    "subjectId": "1st-electrical",
+                      "resourceType": "handwritten",
+                      "chapters": [
+                        {
+                          "id": "chapter-1",
+                          "title": "Handwritten Notes",
+                          "fileUrl": "https://drive.google.com/file/d/1VsmYMtvAWq12k6t4B32c_T_IxE4oNmNt/view"
+                        }
+                      ]
+                    },
+                  {
+                    "year": "1st",
+                    "subjectId": "1st-electrical",
+                      "resourceType": "quantum",
+                      "chapters": [
+                        {
+                          "id": "chapter-1",
+                          "title": "Quantum PDF",
+                          "fileUrl": "https://drive.google.com/file/d/1-q5fOhZd5UP2Ir-B-cXgQMFh-wDKDVyd/view?usp=sharing"
+                        }
+                      ]
+                    },
+                  {
+                    "year": "1st",
+                    "subjectId": "1st-electrical",
+                      "resourceType": "question-bank",
+                      "chapters": [
+                        {
+                          "id": "chapter-1",
+                          "title": "Question Banks",
+                          "fileUrl": "https://drive.google.com/file/d/11SHKPyBDO4nz8BvQhvOxUkyvl4g_Md0D/view?usp=drivesdk"
+                        }
+                      ]
+                    }, 
+            
+                    {
+                      "Break" : "---------------------------------Mechanics-----------------------------------------------------"
+                    },
+                
+                    {
+                      "year": "1st",
+                      "subjectId": "1st-mechanics", 
+                        "resourceType": "pdf-notes",
+                        "chapters": [
+                          {
+                            "id": "chapter-1",
+                            "title": "All Notes",
+                            "fileUrl": "https://drive.google.com/drive/folders/13eBs5M1CCcNC4s7eSonqU89v3Ov-dhi1?usp=drive_link"
+                          }
+                        ]
+                      },
+                      {
+                        "year": "1st",
+                        "subjectId": "1st-mechanics",
+                          "resourceType": "aktu-pyq",
+                          "chapters": [
+                            {
+                              "id": "chapter-1",
+                              "title": "PYQs",
+                              "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-fundamentals-of-mechanical-engineering-bme101-2023.pdf"
+                            }
+                          ]
+                        },
+                      {
+                        "year": "1st",
+                        "subjectId": "1st-mechanics",
+                          "resourceType": "cae",
+                          "chapters": [
+                            {
+                              "id": "chapter-1",
+                              "title": "CAE 1 Papers",
+                              "fileUrl": "https://drive.google.com/file/d/1ZpVf6zE-zm_vXocugJL5xHlRFNvMFPWz/view?usp=drive_link"
+                            },
+                            {
+                              "id": "chapter-2",
+                              "title": "CAE 2 Papers",
+                              "fileUrl": "https://drive.google.com/file/d/1sYPS6sHeABUzXGoVnpp0bsXMTDoJmVzh/view?usp=drive_link"
+                            }
+                          ]
+                        },
+                      {
+                        "year": "1st",
+                        "subjectId": "1st-mechanics",
+                          "resourceType": "handwritten",
+                          "chapters": [
+                            {
+                              "id": "chapter-1",
+                              "title": "Handwritten Notes",
+                              "fileUrl": "https://drive.google.com/file/d/1_2nEm7Df52beKZPA9pp8w19jOZYIJ9pw/view?usp=drivesdk"
+                            }
+                          ]
+                        },
+                      {
+                        "year": "1st",
+                        "subjectId": "1st-mechanics",
+                          "resourceType": "quantum",
+                          "chapters": [
+                            {
+                              "id": "chapter-1",
+                              "title": "Quantum PDF",
+                              "fileUrl": "https://drive.google.com/file/d/1bfj79BsYgwh9x_8I2R8lpJ5VWNCOsQx9/view?usp=drivesdk"
+                            }
+                          ]
+                        },
+                      {
+                        "year": "1st",
+                        "subjectId": "1st-mechanics",
+                          "resourceType": "question-bank",
+                          "chapters": [
+                            {
+                              "id": "chapter-1",
+                              "title": "Question Banks",
+                              "fileUrl": "https://drive.google.com/file/d/1RtYndGzEqKUVUC1IrTWxXlwguPUn2uux/view?usp=drive_link"
+                            }
+                          ]
+                        },
+
+                        {
+                          "Break" : "---------------------------------Soft Skills-----------------------------------------------------"
+                        },
+                    
+                        {
+                          "year": "1st",
+                          "subjectId": "1st-communication",  
+                            "resourceType": "pdf-notes",
+                            "chapters": [
+                              {
+                                "id": "chapter-1",
+                                "title": "All Notes",
+                                "fileUrl": "https://drive.google.com/drive/folders/1GMFnVM8j6Rbpv8IufYGtXX981pcWc_mL"
+                              }
+                            ]
+                          },
+                          {
+                            "year": "1st",
+                            "subjectId": "1st-communication",
+                              "resourceType": "aktu-pyq",
+                              "chapters": [
+                                {
+                                  "id": "chapter-1",
+                                  "title": "PYQs",
+                                  "fileUrl": "https://www.aktuonline.com/btech/btech-2-sem-soft-skills-bas205-2023.pdf"
+                                }
+                              ]
+                            },
+                          {
+                            "year": "1st",
+                            "subjectId": "1st-communication",
+                              "resourceType": "cae",
+                              "chapters": [
+                                {
+                                  "id": "chapter-1",
+                                  "title": "CAE 1 Papers",
+                                  "fileUrl": "https://drive.google.com/file/d/1_O2NlwNQULEHmtFxtMl8x16PlTaW3hzA/view?usp=drive_link"
+                                },
+                                {
+                                  "id": "chapter-2",
+                                  "title": "CAE 2 Papers",
+                                  "fileUrl": "https://drive.google.com/file/d/1tnV5heIZKQzE6hxb_F-ky00frdo8bnaz/view?usp=drive_link"
+                                }
+                              ]
+                            },
+                          {
+                            "year": "1st",
+                            "subjectId": "1st-communication",
+                              "resourceType": "handwritten",
+                              "chapters": [
+                                {
+                                  "id": "chapter-1",
+                                  "title": "Handwritten Notes",
+                                  "fileUrl": "https://drive.google.com/drive/folders/1GMFnVM8j6Rbpv8IufYGtXX981pcWc_mL"
+                                }
+                              ]
+                            },
+                          {
+                            "year": "1st",
+                            "subjectId": "1st-communication",
+                              "resourceType": "quantum",
+                              "chapters": [
+                                {
+                                  "id": "chapter-1",
+                                  "title": "Quantum PDF",
+                                  "fileUrl": "https://drive.google.com/file/d/126Q7NfVpS5lGd8CKFCM4EeNEH4-Lt5zp/view?usp=sharing"
+                                }
+                              ]
+                            },
+                          {
+                            "year": "1st",
+                            "subjectId": "1st-communication",
+                              "resourceType": "question-bank",
+                              "chapters": [
+                                {
+                                  "id": "chapter-1",
+                                  "title": "Question Banks",
+                                  "fileUrl": "https://drive.google.com/file/d/1RcmKPBlvrpBLJXcQHPu2d0OlQn9oaLyo/view?usp=drive_link"
+                                }
+                              ]
+                            },
+    
+                            {
+                              "Break" : "--------------------------------- END OF 1ST YR-----------------------------------------------------"
+                            }
+                            
+
+
+  
+  
 ]

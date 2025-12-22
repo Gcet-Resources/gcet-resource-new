@@ -1,15 +1,14 @@
 {
   "1st": [
-    { "id": "1st-math", "title": "Engineering Mathematics", "description": "Calculus, Linear Algebra, and Differential Equations", "color": "text-blue-600", "bgColor": "bg-blue-100" },
+    { "id": "1st-math", "title": "Engineering Mathematics 1", "description": "Calculus, Linear Algebra, and Differential Equations", "color": "text-blue-600", "bgColor": "bg-blue-100" },
+    { "id": "1st-math2", "title": "Engineering Mathematics 2", "description": "DANGER", "color": "text-red-600", "bgColor": "bg-red-100" },
     { "id": "1st-physics", "title": "Engineering Physics", "description": "Mechanics, Thermodynamics, and Optics", "color": "text-purple-600", "bgColor": "bg-purple-100" },
     { "id": "1st-chemistry", "title": "Engineering Chemistry", "description": "Organic, Inorganic, and Physical Chemistry", "color": "text-green-600", "bgColor": "bg-green-100" },
-    { "id": "1st-programming", "title": "Computer Programming", "description": "Fundamentals of Programming and Data Structures", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-    { "id": "1st-electrical", "title": "Basic Electrical Engineering", "description": "Circuit Theory and Electrical Machines", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "1st-mechanics", "title": "Engineering Mechanics", "description": "Statics, Dynamics, and Strength of Materials", "color": "text-teal-600", "bgColor": "bg-teal-100" },
-    { "id": "1st-graphics", "title": "Engineering Graphics", "description": "Technical Drawing and Computer-Aided Design", "color": "text-indigo-600", "bgColor": "bg-indigo-100" },
-    { "id": "1st-communication", "title": "Communication Skills", "description": "Technical Writing and Verbal Communication", "color": "text-pink-600", "bgColor": "bg-pink-100" },
-    { "id": "1st-environment", "title": "Environmental Studies", "description": "Ecosystems, Pollution Control, and Sustainability", "color": "text-emerald-600", "bgColor": "bg-emerald-100" },
-    { "id": "1st-workshop", "title": "Workshop Practice", "description": "Fabrication, Fitting, and Machining Techniques", "color": "text-amber-600", "bgColor": "bg-amber-100" }
+    { "id": "1st-programming", "title": "PPS", "description": "Fundamentals of Programming and Data Structures", "color": "text-orange-600", "bgColor": "bg-orange-100" },
+    { "id": "1st-electrical", "title": "Fundamentals of Electrical Engineering", "description": "Circuit Theory and Electrical Machines", "color": "text-red-600", "bgColor": "bg-red-100" },
+    { "id": "1st-mechanics", "title": "Fundamentals of Mechanical Engineering", "description": "Statics, Dynamics, and Strength of Materials", "color": "text-teal-600", "bgColor": "bg-teal-100" },
+    { "id": "1st-communication", "title": "Soft Skills", "description": "Technical Writing and Verbal Communication", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
+    { "id": "1st-environment", "title": "Environmental Studies", "description": "Ecosystems, Pollution Control, and Sustainability (DIY)", "color": "text-blue-600", "bgColor": "bg-blue-100" }
   ],
   "2nd": [
     { "id": "2nd-dsa", "title": "Data Structures & Algorithms", "description": "Advanced data structures and algorithmic techniques", "color": "text-blue-600", "bgColor": "bg-blue-100" },

@@ -76,19 +76,19 @@ const ResourceDetails = () => {
       color: "bg-orange-100",
       textColor: "text-orange-600",
     },
-    cae: {
+    "cae": {
       title: "CAE",
       icon: Grid,
       color: "bg-purple-100",
       textColor: "text-purple-600",
     },
-    handwritten: {
+    "handwritten": {
       title: "Handwritten Notes",
       icon: PenTool,
       color: "bg-rose-100",
       textColor: "text-rose-600",
     },
-    quantum: {
+    "quantum": {
       title: "Quantum Notes",
       icon: Book,
       color: "bg-green-100",
@@ -109,6 +109,7 @@ const ResourceDetails = () => {
     const subjectMap: Record<string, string> = {
       // 1st year subjects
       "1st-math": "Engineering Mathematics",
+      "1st-math2": "Engineering Mathematics 2",
       "1st-physics": "Engineering Physics",
       "1st-chemistry": "Engineering Chemistry",
       "1st-programming": "Computer Programming",
