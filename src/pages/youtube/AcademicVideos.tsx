@@ -6,10 +6,10 @@ import { Youtube } from "lucide-react";
 const AcademicVideos = () => {
   const videos = [
     {
-      title: "Introduction to Data Structures",
-      description: "Learn the basics of data structures in programming",
-      thumbnail: "https://i.ytimg.com/vi/sample1/maxresdefault.jpg",
-      link: "https://youtube.com/watch?v=sample1"
+      title: "Engineering Mathematics 1 Playlist",
+      description: "Best resource for M1",
+      thumbnail: "https://i.ytimg.com/vi/TStqBRLePoM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAB71K-dSL3UxaJFMeKYGtGFdiKOg",
+      link: "https://www.youtube.com/playlist?list=PL5Dqs90qDljVTfWmYSWjD99kcqdkI5zMM"
     },
     {
       title: "Advanced Mathematics",

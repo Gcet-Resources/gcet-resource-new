@@ -1,49 +1,1789 @@
 {
   "1st": [
-    { "id": "1st-math", "title": "Engineering Mathematics 1", "description": "Calculus, Linear Algebra, and Differential Equations", "color": "text-blue-600", "bgColor": "bg-blue-100" },
-    { "id": "1st-math2", "title": "Engineering Mathematics 2", "description": "DANGER", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "1st-physics", "title": "Engineering Physics", "description": "Mechanics, Thermodynamics, and Optics", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-    { "id": "1st-chemistry", "title": "Engineering Chemistry", "description": "Organic, Inorganic, and Physical Chemistry", "color": "text-green-600", "bgColor": "bg-green-100" },
-    { "id": "1st-programming", "title": "PPS", "description": "Fundamentals of Programming and Data Structures", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-    { "id": "1st-electrical", "title": "Fundamentals of Electrical Engineering", "description": "Circuit Theory and Electrical Machines", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "1st-mechanics", "title": "Fundamentals of Mechanical Engineering", "description": "Statics, Dynamics, and Strength of Materials", "color": "text-teal-600", "bgColor": "bg-teal-100" },
-    { "id": "1st-communication", "title": "Soft Skills", "description": "Technical Writing and Verbal Communication", "color": "text-yellow-600", "bgColor": "bg-yellow-100" },
-    { "id": "1st-environment", "title": "Environmental Studies", "description": "Ecosystems, Pollution Control, and Sustainability (DIY)", "color": "text-blue-600", "bgColor": "bg-blue-100" }
+    {
+      "id": "BAS101",
+      "title": "Engineering Physics",
+      "description": "BAS101",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BAS102",
+      "title": "Engineering Chemistry",
+      "description": "BAS102",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BAS103",
+      "title": "Engineering Mathematics I",
+      "description": "BAS103",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BAS104",
+      "title": "Environment and Ecology",
+      "description": "BAS104",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BAS105",
+      "title": "Soft Skills",
+      "description": "BAS105",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCS101",
+      "title": "Programming for Problem Solving",
+      "description": "BCS101",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BEC101",
+      "title": "Fundamentals of Electronics Engineering",
+      "description": "BEC101",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BEE101",
+      "title": "Fundamentals of Electrical Engineering",
+      "description": "BEE101",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BME101",
+      "title": "Fundamentals of Mechanical Engineering",
+      "description": "BME101",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    }
+    
   ],
   "2nd": [
-    { "id": "2nd-dsa", "title": "Data Structures & Algorithms", "description": "Advanced data structures and algorithmic techniques", "color": "text-blue-600", "bgColor": "bg-blue-100" },
-    { "id": "2nd-oops", "title": "Object-Oriented Programming", "description": "OOP concepts and implementation in various languages", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-    { "id": "2nd-dbms", "title": "Database Management Systems", "description": "Relational databases, SQL, and normalization", "color": "text-green-600", "bgColor": "bg-green-100" },
-    { "id": "2nd-os", "title": "Operating Systems", "description": "Process management, memory management, and file systems", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-    { "id": "2nd-coa", "title": "Computer Organization & Architecture", "description": "Digital logic, assembly language, and CPU design", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "2nd-discrete", "title": "Discrete Mathematics", "description": "Logic, sets, relations, graphs, and combinatorics", "color": "text-teal-600", "bgColor": "bg-teal-100" },
-    { "id": "2nd-digital", "title": "Digital Electronics", "description": "Boolean algebra, sequential and combinational circuits", "color": "text-indigo-600", "bgColor": "bg-indigo-100" },
-    { "id": "2nd-signal", "title": "Signals & Systems", "description": "Linear time-invariant systems and signal processing", "color": "text-pink-600", "bgColor": "bg-pink-100" },
-    { "id": "2nd-prob", "title": "Probability & Statistics", "description": "Random variables, probability distributions, and inference", "color": "text-emerald-600", "bgColor": "bg-emerald-100" },
-    { "id": "2nd-automata", "title": "Automata Theory", "description": "Formal languages, finite automata, and computational theory", "color": "text-amber-600", "bgColor": "bg-amber-100" }
+    {
+      "id": "BAS301",
+      "title": "Technical Communication",
+      "description": "BAS301",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BAS303",
+      "title": "Mathematics IV",
+      "description": "BAS303",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCC301",
+      "title": "Cyber Security",
+      "description": "BCC301",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCC302",
+      "title": "Python Programming",
+      "description": "BCC302",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCS301",
+      "title": "Data Structure",
+      "description": "BCS301",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCS302",
+      "title": "Computer Organization and Architecture",
+      "description": "BCS302",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCS303",
+      "title": "Discrete Structures Theory of Logic",
+      "description": "BCS303",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BOE301",
+      "title": "Electric and Hybrid Vehicles",
+      "description": "BOE301",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BOE302",
+      "title": "Automation and Robotics",
+      "description": "BOE302",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BOE303",
+      "title": "Material Science",
+      "description": "BOE303",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BOE304",
+      "title": "Energy Science Engineering",
+      "description": "BOE304",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BOE305",
+      "title": "Sensor Instrumentation",
+      "description": "BOE305",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BOE306",
+      "title": "Basics Data Structure Algorithms",
+      "description": "BOE306",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BOE307",
+      "title": "Basics of Database Management Systems",
+      "description": "BOE307",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BOE310",
+      "title": "Digital Electronics",
+      "description": "BOE310",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BOE312H",
+      "title": "Laser System and Applications",
+      "description": "BOE312H",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BOE313",
+      "title": "Food Science and Nutrition",
+      "description": "BOE313",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BOE314",
+      "title": "Building Science and Engineering",
+      "description": "BOE314",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BVE301",
+      "title": "Universal Human Values and Professional Ethics",
+      "description": "BVE301",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BAS401",
+      "title": "Technical Communication",
+      "description": "BAS401",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BAS403",
+      "title": "Mathematics IV",
+      "description": "BAS403",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCC401",
+      "title": "Cyber Security",
+      "description": "BCC401",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCC402",
+      "title": "Python Programming",
+      "description": "BCC402",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCE401",
+      "title": "Materials Testing Construction Practices",
+      "description": "BCE401",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCE402",
+      "title": "Introduction to Solid Mechanics",
+      "description": "BCE402",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCE403",
+      "title": "Hydraulic Engineering and Machines",
+      "description": "BCE403",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCS401",
+      "title": "Operating System",
+      "description": "BCS401",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BCS402",
+      "title": "Theory of Automata and Formal Languages",
+      "description": "BCS402",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCS403",
+      "title": "Object Oriented Programming with Java",
+      "description": "BCS403",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BEC401",
+      "title": "Communication Engineering",
+      "description": "BEC401",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BEC402",
+      "title": "Analog Circuits",
+      "description": "BEC402",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BEC403",
+      "title": "Signal System",
+      "description": "BEC403",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BEE401",
+      "title": "Digital Electronics",
+      "description": "BEE401",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BEE402",
+      "title": "Electrical Machines I",
+      "description": "BEE402",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BEE403",
+      "title": "Networks Analysis Synthesis",
+      "description": "BEE403",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BME401",
+      "title": "Applied Thermodynamics",
+      "description": "BME401",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BME402",
+      "title": "Engineering Mechanics Strength Material",
+      "description": "BME402",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BME403",
+      "title": "Manufacturing Processes",
+      "description": "BME403",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BOE401",
+      "title": "Electric and Hybrid Vehicles",
+      "description": "BOE401",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BOE402",
+      "title": "Automation and Robotics",
+      "description": "BOE402",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BOE403",
+      "title": "Material Science",
+      "description": "BOE403",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BOE404",
+      "title": "Energy Science Engineering",
+      "description": "BOE404",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BOE405",
+      "title": "Sensor Instrumentation",
+      "description": "BOE405",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BOE406",
+      "title": "Basics Data Structure Algorithms",
+      "description": "BOE406",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BOE407",
+      "title": "Basics of Database Management Systems",
+      "description": "BOE407",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BOE408",
+      "title": "Analog Electronics Circuits",
+      "description": "BOE408",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BOE409",
+      "title": "Electronics Engineering",
+      "description": "BOE409",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BOE410",
+      "title": "Digital Electronics",
+      "description": "BOE410",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BOE411",
+      "title": "Polymer Science and Technology",
+      "description": "BOE411",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BOE412",
+      "title": "Laser System and Applications",
+      "description": "BOE412",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BOE413",
+      "title": "Food Science and Nutrition",
+      "description": "BOE413",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BOE414",
+      "title": "Building Science and Engineering",
+      "description": "BOE414",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BVE401",
+      "title": "Universal Human Values Professional Ethics",
+      "description": "BVE401",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    }
   ],
   "3rd": [
-    { "id": "3rd-web", "title": "Web Technologies", "description": "HTML, CSS, JavaScript, and modern frameworks", "color": "text-blue-600", "bgColor": "bg-blue-100" },
-    { "id": "3rd-ai", "title": "Artificial Intelligence", "description": "Search algorithms, knowledge representation, and machine learning", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-    { "id": "3rd-networks", "title": "Computer Networks", "description": "Network protocols, architecture, and security", "color": "text-green-600", "bgColor": "bg-green-100" },
-    { "id": "3rd-se", "title": "Software Engineering", "description": "Software development lifecycle and project management", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-    { "id": "3rd-theory", "title": "Theory of Computation", "description": "Automata theory, formal languages, and computability", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "3rd-compiler", "title": "Compiler Design", "description": "Lexical analysis, parsing, and code generation", "color": "text-teal-600", "bgColor": "bg-teal-100" },
-    { "id": "3rd-embedded", "title": "Embedded Systems", "description": "Microcontrollers, real-time systems, and IoT", "color": "text-indigo-600", "bgColor": "bg-indigo-100" },
-    { "id": "3rd-datamining", "title": "Data Mining", "description": "Pattern discovery, clustering, and classification techniques", "color": "text-pink-600", "bgColor": "bg-pink-100" },
-    { "id": "3rd-distributed", "title": "Distributed Systems", "description": "Distributed computing models and middleware technologies", "color": "text-emerald-600", "bgColor": "bg-emerald-100" },
-    { "id": "3rd-mobile", "title": "Mobile Computing", "description": "Mobile platforms, wireless networks, and application development", "color": "text-amber-600", "bgColor": "bg-amber-100" }
+    {
+      "id": "BCAI051",
+      "title": "Mathematical Foundation AI ML and Data Science",
+      "description": "BCAI051",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCAI052",
+      "title": "Natural Language Processing",
+      "description": "BCAI052",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCAI501",
+      "title": "Artificial Intelligence",
+      "description": "BCAI501",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCAM051",
+      "title": "Cloud Computing",
+      "description": "BCAM051",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCDS051",
+      "title": "Business Intelligence and Analytics",
+      "description": "BCDS051",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCDS501",
+      "title": "Introduction to Data Analytics and Visualization",
+      "description": "BCDS501",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCE051",
+      "title": "Concrete Technology",
+      "description": "BCE051",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BCE052",
+      "title": "Modern Construction Materials",
+      "description": "BCE052",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCE054",
+      "title": "Engineering Geology",
+      "description": "BCE054",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BCE501",
+      "title": "Geotechnical Engineering",
+      "description": "BCE501",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BCE502",
+      "title": "Structural Analysis",
+      "description": "BCE502",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCE503",
+      "title": "Quantity Estimation and Construction Management",
+      "description": "BCE503",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCIT052",
+      "title": "IoT Architecture and Protocols",
+      "description": "BCIT052",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCIT053",
+      "title": "Computer Vision",
+      "description": "BCIT053",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCIT054",
+      "title": "Artificial Intelligence",
+      "description": "BCIT054",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCIT055",
+      "title": "Programming and Interfacing with Microcontrollers",
+      "description": "BCIT055",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCIT056",
+      "title": "Privacy and Security in IoT",
+      "description": "BCIT056",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BCS052",
+      "title": "Data Analytics",
+      "description": "BCS052",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCS054",
+      "title": "Object Oriented System Design with C",
+      "description": "BCS054",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BCS055",
+      "title": "Machine Learning Techniques",
+      "description": "BCS055",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BCS056",
+      "title": "Application of Soft Computing",
+      "description": "BCS056",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCS057",
+      "title": "Image Processing",
+      "description": "BCS057",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCS501",
+      "title": "Database Management System",
+      "description": "BCS501",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCS502",
+      "title": "Web Technology",
+      "description": "BCS502",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCS503",
+      "title": "Design and Analysis of Algorithm",
+      "description": "BCS503",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BEC051",
+      "title": "IoT Architecture Communication Technology Its Applications",
+      "description": "BEC051",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BEC052",
+      "title": "Bio Medical Sensors Instrumentation",
+      "description": "BEC052",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BEC053",
+      "title": "Intelligent Systems and Robotics",
+      "description": "BEC053",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BEC054",
+      "title": "VLSI Technology",
+      "description": "BEC054",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BEC055",
+      "title": "Electronics Switching",
+      "description": "BEC055",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BEC056",
+      "title": "Bio Medical Signal Processing",
+      "description": "BEC056",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BEC057",
+      "title": "Optical Communication",
+      "description": "BEC057",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BEC058",
+      "title": "CMOS Analog VLSI Design",
+      "description": "BEC058",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BEC501",
+      "title": "Integrated Circuits",
+      "description": "BEC501",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BEC502",
+      "title": "Microprocessor Microcontroller",
+      "description": "BEC502",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BEC503",
+      "title": "Digital Signal Processing",
+      "description": "BEC503",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BEE051",
+      "title": "Robotics",
+      "description": "BEE051",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BEE052",
+      "title": "Sensors and Transducers",
+      "description": "BEE052",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BEE053",
+      "title": "Industrial Automation and Control",
+      "description": "BEE053",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BEE056",
+      "title": "Neural Networks Fuzzy System",
+      "description": "BEE056",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BEE057",
+      "title": "Digital Signal Processing",
+      "description": "BEE057",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BEE058",
+      "title": "Analog Digital Communication",
+      "description": "BEE058",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BEE501",
+      "title": "Power System I",
+      "description": "BEE501",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BEE502",
+      "title": "Control System",
+      "description": "BEE502",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BEE503",
+      "title": "Electrical Machines II",
+      "description": "BEE503",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BME051",
+      "title": "Advance Manufacturing Processes",
+      "description": "BME051",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BME052",
+      "title": "I C Engines Fuels Lubrication",
+      "description": "BME052",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BME054",
+      "title": "Mechatronics Systems",
+      "description": "BME054",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BME055",
+      "title": "Turbo Machines",
+      "description": "BME055",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BME056",
+      "title": "Mechanical Vibrations",
+      "description": "BME056",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BME501",
+      "title": "Heat Mass Transfer",
+      "description": "BME501",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BME502",
+      "title": "Machine Design",
+      "description": "BME502",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BME503",
+      "title": "Industrial Engineering",
+      "description": "BME503",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BNC501",
+      "title": "Constitution of India",
+      "description": "BNC501",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BNC502",
+      "title": "Essence of Indian Traditional Knowledge",
+      "description": "BNC502",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BADS601",
+      "title": "Data Analytics",
+      "description": "BADS601",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BAU061",
+      "title": "Automotive Electrical Electronics",
+      "description": "BAU061",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BAU602",
+      "title": "Electric Hybrid Vehicles Technology",
+      "description": "BAU602",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCAI061",
+      "title": "Cyber Forensic Analytics",
+      "description": "BCAI061",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BCAM061",
+      "title": "Social Media Analytics and Data Analysis",
+      "description": "BCAM061",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BCD061",
+      "title": "Digital Marketing",
+      "description": "BCD061",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCDS061",
+      "title": "Image Analytics",
+      "description": "BCDS061",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCDS062",
+      "title": "Machine Learning Techniques",
+      "description": "BCDS062",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCDS601",
+      "title": "Big Data and Analytics",
+      "description": "BCDS601",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCE061",
+      "title": "Advance Structural Analysis",
+      "description": "BCE061",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCE062",
+      "title": "River Engineering",
+      "description": "BCE062",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCE063",
+      "title": "Repair and Rehabilitation of Structures",
+      "description": "BCE063",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BCE601",
+      "title": "Design of Concrete Structures",
+      "description": "BCE601",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCE602",
+      "title": "Transportation Engineering",
+      "description": "BCE602",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BCE603",
+      "title": "Environmental Engineering",
+      "description": "BCE603",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BCIT061",
+      "title": "Energy Harvesting Technologies and Power Management for IoT Devices",
+      "description": "BCIT061",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BCIT601",
+      "title": "Data Science in IoT",
+      "description": "BCIT601",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BCS061",
+      "title": "Big Data",
+      "description": "BCS061",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BCS062",
+      "title": "Augmented Virtual Reality",
+      "description": "BCS062",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BCS063",
+      "title": "Blockchain Architecture Design",
+      "description": "BCS063",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BCS064",
+      "title": "Data Compression",
+      "description": "BCS064",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BCS601",
+      "title": "Software Engineering",
+      "description": "BCS601",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BCS602",
+      "title": "Compiler Design",
+      "description": "BCS602",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BCS603",
+      "title": "Computer Networks",
+      "description": "BCS603",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BEC061",
+      "title": "Satellite Communication",
+      "description": "BEC061",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BEC062",
+      "title": "Data Communication Networks",
+      "description": "BEC062",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BEC063",
+      "title": "CMOS Digital Design Technique",
+      "description": "BEC063",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BEC064",
+      "title": "Microwave Engineering",
+      "description": "BEC064",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BEC601",
+      "title": "Digital Communication",
+      "description": "BEC601",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BEC602",
+      "title": "Control System",
+      "description": "BEC602",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BEC603",
+      "title": "Antenna and Wave Propagation",
+      "description": "BEC603",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BEE061",
+      "title": "Special Electrical Machines",
+      "description": "BEE061",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BEE062",
+      "title": "Electrical Machine Design",
+      "description": "BEE062",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BEE063",
+      "title": "Digital Control System",
+      "description": "BEE063",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BEE064",
+      "title": "Electrical and Hybrid Vehicles",
+      "description": "BEE064",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BEE601",
+      "title": "Power System II",
+      "description": "BEE601",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BEE602",
+      "title": "Microprocessor",
+      "description": "BEE602",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BEE603",
+      "title": "Power Electronics",
+      "description": "BEE603",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BIT601",
+      "title": "Data Analytics",
+      "description": "BIT601",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BME061",
+      "title": "Industrial Robotics",
+      "description": "BME061",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BME062",
+      "title": "Computational Fluid Dynamics",
+      "description": "BME062",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BME063",
+      "title": "Tribology",
+      "description": "BME063",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BME601",
+      "title": "Refrigeration and Air Conditioning",
+      "description": "BME601",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BME602",
+      "title": "CAD CAM",
+      "description": "BME602",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BME603",
+      "title": "Theory of Machine",
+      "description": "BME603",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BNC601",
+      "title": "Constitution of India",
+      "description": "BNC601",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BNC602",
+      "title": "Essence of Indian Traditional Knowledge",
+      "description": "BNC602",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "BOE060",
+      "title": "Idea to Business Model",
+      "description": "BOE060",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "BOE061",
+      "title": "Quality Control Reliability",
+      "description": "BOE061",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "BOE062",
+      "title": "Embedded System",
+      "description": "BOE062",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "BOE063",
+      "title": "Introduction to MEMS",
+      "description": "BOE063",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "BOE064",
+      "title": "Object Oriented Programming",
+      "description": "BOE064",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "BOE065",
+      "title": "Computer Based Numerical Techniques",
+      "description": "BOE065",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "BOE066",
+      "title": "GIS Remote Sensing",
+      "description": "BOE066",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "BOE067",
+      "title": "Basics of Data Base Management System",
+      "description": "BOE067",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "BOE068",
+      "title": "Software Project Management",
+      "description": "BOE068",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "BOE069",
+      "title": "Understanding the Human Being Comprehensively",
+      "description": "BOE069",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    }
   ],
   "4th": [
-    { "id": "4th-ml", "title": "Machine Learning", "description": "Supervised and unsupervised learning algorithms", "color": "text-blue-600", "bgColor": "bg-blue-100" },
-    { "id": "4th-cloud", "title": "Cloud Computing", "description": "Virtualization, service models, and deployment", "color": "text-purple-600", "bgColor": "bg-purple-100" },
-    { "id": "4th-security", "title": "Information Security", "description": "Cryptography, network security, and cyber threats", "color": "text-green-600", "bgColor": "bg-green-100" },
-    { "id": "4th-bigdata", "title": "Big Data Analytics", "description": "Hadoop, MapReduce, and data processing frameworks", "color": "text-orange-600", "bgColor": "bg-orange-100" },
-    { "id": "4th-mobile", "title": "Mobile App Development", "description": "Native and cross-platform mobile application development", "color": "text-red-600", "bgColor": "bg-red-100" },
-    { "id": "4th-iot", "title": "Internet of Things", "description": "Connected devices, sensors, and smart environments", "color": "text-teal-600", "bgColor": "bg-teal-100" },
-    { "id": "4th-blockchain", "title": "Blockchain Technology", "description": "Distributed ledgers, smart contracts, and cryptocurrencies", "color": "text-indigo-600", "bgColor": "bg-indigo-100" },
-    { "id": "4th-devops", "title": "DevOps Practices", "description": "Continuous integration, deployment, and infrastructure as code", "color": "text-pink-600", "bgColor": "bg-pink-100" },
-    { "id": "4th-nlp", "title": "Natural Language Processing", "description": "Text analysis, language understanding, and generation", "color": "text-emerald-600", "bgColor": "bg-emerald-100" },
-    { "id": "4th-ar", "title": "AR/VR Technologies", "description": "Augmented and virtual reality principles and applications", "color": "text-amber-600", "bgColor": "bg-amber-100" }
+    {
+      "id": "KCE079",
+      "title": "Disaster Preparedness and Management",
+      "description": "KCE079",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KCS071",
+      "title": "Artificial Intelligence",
+      "description": "KCS071",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KCS072",
+      "title": "Natural Language Processing",
+      "description": "KCS072",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KCS073",
+      "title": "High Performance Computing",
+      "description": "KCS073",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KCS074",
+      "title": "Cryptography and Network Security",
+      "description": "KCS074",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KCS075",
+      "title": "Design Development of Applications",
+      "description": "KCS075",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KCS078",
+      "title": "Deep Learning",
+      "description": "KCS078",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KCS079",
+      "title": "Service Oriented Architecture",
+      "description": "KCS079",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KCS710",
+      "title": "Quantum Computing",
+      "description": "KCS710",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KCS711",
+      "title": "Mobile Computing",
+      "description": "KCS711",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KCS712",
+      "title": "Internet of Things",
+      "description": "KCS712",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KCS713",
+      "title": "Cloud Computing",
+      "description": "KCS713",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KCS714",
+      "title": "Blockchain Architecture Design",
+      "description": "KCS714",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KDS071",
+      "title": "Artificial Intelligence",
+      "description": "KDS071",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KDS073",
+      "title": "Text Analysis",
+      "description": "KDS073",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KDS078",
+      "title": "Deep Learning",
+      "description": "KDS078",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KDS079",
+      "title": "Service Oriented Architecture",
+      "description": "KDS079",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KEC071",
+      "title": "Digital Image Processing",
+      "description": "KEC071",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KEC072",
+      "title": "VLSI Design",
+      "description": "KEC072",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KEC073",
+      "title": "Optical Network",
+      "description": "KEC073",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KEC074",
+      "title": "Microwave Radar Engineering",
+      "description": "KEC074",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KEC075",
+      "title": "Information Theory Coding",
+      "description": "KEC075",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KEC076",
+      "title": "Wireless Mobile Communication",
+      "description": "KEC076",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KEC077",
+      "title": "Micro Smart Systems",
+      "description": "KEC077",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KEC078",
+      "title": "Speech Processing",
+      "description": "KEC078",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KEE070",
+      "title": "Advanced Micro Processors Micro Controllers",
+      "description": "KEE070",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KEE071",
+      "title": "Energy Conservation and Auditing",
+      "description": "KEE071",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KEE072",
+      "title": "HVDC AC Transmission",
+      "description": "KEE072",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KEE073",
+      "title": "High Voltage Engineering",
+      "description": "KEE073",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KEE074",
+      "title": "Power Quality and Facts",
+      "description": "KEE074",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KEE075",
+      "title": "Electric Drives",
+      "description": "KEE075",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KEE076",
+      "title": "Power System Dynamics and Control",
+      "description": "KEE076",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KEE077",
+      "title": "Power System Protection",
+      "description": "KEE077",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KEE078",
+      "title": "Deregulated Power System",
+      "description": "KEE078",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KEE079",
+      "title": "Utilization of Electrical Energy Electric Traction",
+      "description": "KEE079",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KHU701",
+      "title": "Rural Development Administration Planning",
+      "description": "KHU701",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KHU702",
+      "title": "Project Management Entrepreneurship",
+      "description": "KHU702",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KIT071",
+      "title": "Software Project Management",
+      "description": "KIT071",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KME071",
+      "title": "Additive Manufacturing",
+      "description": "KME071",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KME072",
+      "title": "HVAC Systems",
+      "description": "KME072",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KME073",
+      "title": "Mathematical Modeling of Manufacturing Processes",
+      "description": "KME073",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KME074",
+      "title": "Machine Learning",
+      "description": "KME074",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KME075",
+      "title": "Maintenance Engineering Management",
+      "description": "KME075",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KME076",
+      "title": "Power Plant Engineering",
+      "description": "KME076",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KOE071",
+      "title": "Filter Design",
+      "description": "KOE071",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KOE072",
+      "title": "Bioeconomics",
+      "description": "KOE072",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KOE073",
+      "title": "Machine Learning",
+      "description": "KOE073",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KOE074",
+      "title": "Renewable Energy Resources",
+      "description": "KOE074",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KOE075",
+      "title": "Operations Research",
+      "description": "KOE075",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KOE076",
+      "title": "Vision for Humane Society",
+      "description": "KOE076",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KOE077",
+      "title": "Design Thinking",
+      "description": "KOE077",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KOE078",
+      "title": "Soil Water Conservation Engineering",
+      "description": "KOE078",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KOE079",
+      "title": "Introduction to Womens Gender Studies",
+      "description": "KOE079",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KOT071",
+      "title": "IoT Security",
+      "description": "KOT071",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KOT075",
+      "title": "Real Time Operating Systems",
+      "description": "KOT075",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KOT076",
+      "title": "Deep Learning",
+      "description": "KOT076",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KOT710",
+      "title": "IoT System Architecture",
+      "description": "KOT710",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KOT712",
+      "title": "Mobile Application Development for IoT",
+      "description": "KOT712",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KHU801",
+      "title": "Rural Development Administration and Planning",
+      "description": "KHU801",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KHU802",
+      "title": "Project Management Entrepreneurship",
+      "description": "KHU802",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KOE080",
+      "title": "Fundamentals of Drone Technology",
+      "description": "KOE080",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KOE081",
+      "title": "Cloud Computing",
+      "description": "KOE081",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KOE082",
+      "title": "Bio Medical Signal Processing",
+      "description": "KOE082",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KOE083",
+      "title": "Entrepreneurship Development",
+      "description": "KOE083",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KOE084",
+      "title": "Introduction to Smart Grid",
+      "description": "KOE084",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KOE085",
+      "title": "Quality Management",
+      "description": "KOE085",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KOE086",
+      "title": "Industrial Optimization Techniques",
+      "description": "KOE086",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KOE087",
+      "title": "Virology",
+      "description": "KOE087",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KOE088",
+      "title": "Natural Language Processing",
+      "description": "KOE088",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KOE089",
+      "title": "Human Values in Madhyasth Darshan",
+      "description": "KOE089",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    },
+    {
+      "id": "KOE090",
+      "title": "Electric Vehicles",
+      "description": "KOE090",
+      "color": "text-green-600",
+      "bgColor": "bg-green-100"
+    },
+    {
+      "id": "KOE091",
+      "title": "Automation and Robotics",
+      "description": "KOE091",
+      "color": "text-orange-600",
+      "bgColor": "bg-orange-100"
+    },
+    {
+      "id": "KOE092",
+      "title": "Computerized Process Control",
+      "description": "KOE092",
+      "color": "text-red-600",
+      "bgColor": "bg-red-100"
+    },
+    {
+      "id": "KOE093",
+      "title": "Data Warehousing Data Mining",
+      "description": "KOE093",
+      "color": "text-teal-600",
+      "bgColor": "bg-teal-100"
+    },
+    {
+      "id": "KOE094",
+      "title": "Digital and Social Media Marketing",
+      "description": "KOE094",
+      "color": "text-violet-600",
+      "bgColor": "bg-violet-100"
+    },
+    {
+      "id": "KOE095",
+      "title": "Modeling of Field Effect Nano Devices",
+      "description": "KOE095",
+      "color": "text-rose-600",
+      "bgColor": "bg-rose-100"
+    },
+    {
+      "id": "KOE096",
+      "title": "Modeling and Simulation of Dynamics Systems",
+      "description": "KOE096",
+      "color": "text-cyan-600",
+      "bgColor": "bg-cyan-100"
+    },
+    {
+      "id": "KOE097",
+      "title": "Big Data",
+      "description": "KOE097",
+      "color": "text-yellow-600",
+      "bgColor": "bg-yellow-100"
+    },
+    {
+      "id": "KOE098",
+      "title": "Human Values in Buddha and Jain Darshan",
+      "description": "KOE098",
+      "color": "text-blue-600",
+      "bgColor": "bg-blue-100"
+    },
+    {
+      "id": "KOE099",
+      "title": "Human Values in Vedic Darshan",
+      "description": "KOE099",
+      "color": "text-purple-600",
+      "bgColor": "bg-purple-100"
+    }
   ]
 }
