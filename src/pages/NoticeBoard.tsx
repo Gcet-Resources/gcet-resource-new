@@ -11,63 +11,13 @@ const NoticeBoard = () => {
   const notices = [
     {
       id: 1,
-      title: "Exam Schedule for Even Semester 2023-24",
-      date: "June 15, 2023",
-      time: "2:30 PM",
+      title: "End Sem Exam Schedule for 1st to 4th Year",
+      date: "Dec 20, 2025",
+      time: "5:30 PM",
       category: "examination",
-      description: "The end semester examination for Even Semester 2023-24 will commence from July 5, 2023. All students are requested to check the detailed schedule on the university portal.",
+      description: "The end semester examination for Odd Semester 2025-26 will commence from 23 Dec 2025 to 31 Jan 2026. All students are requested to check the detailed schedule on the university portal.",
       important: true,
-      link: "#"
-    },
-    {
-      id: 2,
-      title: "Workshop on Artificial Intelligence & Machine Learning",
-      date: "June 20, 2023",
-      time: "10:00 AM",
-      category: "event",
-      description: "A two-day workshop on AI & ML will be conducted by the Department of Computer Science. Interested students can register at the department office.",
-      important: false,
-      link: "#"
-    },
-    {
-      id: 3,
-      title: "Fee Submission Deadline for Odd Semester 2023-24",
-      date: "July 10, 2023",
-      time: "11:59 PM",
-      category: "administrative",
-      description: "Last date for fee submission for Odd Semester 2023-24 is July 15, 2023. Late fee will be charged after the deadline.",
-      important: true,
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "National Conference on Emerging Technologies",
-      date: "August 5-6, 2023",
-      time: "9:00 AM",
-      category: "event",
-      description: "A national level conference on emerging technologies will be organized by the university. Students are encouraged to submit their research papers.",
-      important: false,
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "AKTU Minor Project Submission Guidelines",
-      date: "June 25, 2023",
-      time: "3:00 PM",
-      category: "academic",
-      description: "The guidelines for minor project submission for 3rd year students have been updated. All students must follow the new format available on the portal.",
-      important: true,
-      link: "#"
-    },
-    {
-      id: 6,
-      title: "Campus Placement Drive - TCS",
-      date: "July 20, 2023",
-      time: "9:00 AM",
-      category: "placement",
-      description: "TCS will conduct a campus placement drive for B.Tech final year students. Registration is mandatory through the placement cell.",
-      important: true,
-      link: "#"
+      link: "http://fms.aktu.ac.in/Resources/Attachments/Circular/209357b4dcddwd.pdf"
     }
   ];
 

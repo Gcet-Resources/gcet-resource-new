@@ -63,6 +63,8 @@ const ResourceDetails = () => {
   const [selectedChapter, setSelectedChapter] = useState<Chapter | null>(null);
   const [isPdfOpen, setIsPdfOpen] = useState(false);
 
+  // WARNING: DO NOT CHANGE THIS "resourceTypeInfo" THIS WILL END THIS WORLD BEFORE 2026 
+
   const resourceTypeInfo = {
     "pdf-notes": {
       title: "PDF Notes",
