@@ -6,16 +6,16 @@ import { Code, ExternalLink } from "lucide-react";
 const DSA = () => {
   const resources = [
     {
-      title: "Arrays and Strings",
-      description: "Complete guide to array manipulation and string algorithms",
-      difficulty: "Easy",
-      link: "#"
+      title: "Striver Sheet",
+      description: "A-Z DSA Sheet",
+      difficulty: "Medium",
+      link: "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
     },
     {
-      title: "Linked Lists",
-      description: "Understanding linked lists and their implementations",
+      title: "DSA in C++",
+      description: "Complete DSA YouTube playlist for C++ programmers",
       difficulty: "Medium",
-      link: "#"
+      link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA"
     },
     // Add more sample resources
   ];

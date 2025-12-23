@@ -37,7 +37,7 @@ const CodingResources = () => {
               <FolderGit2 className="w-16 h-16 text-primary" />
               <h2 className="text-2xl font-semibold">Projects</h2>
               <p className="text-gray-600">
-                Explore student projects and get inspired
+                Explore student projects and get inspired (coming soon..)
               </p>
             </div>
           </Card>

@@ -30,7 +30,7 @@ const Index = () => {
               onClick={() => navigate("/year-selection")}
               className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors inline-flex items-center gap-2"
             >
-              Explore Resources
+              Explore Academic Resources
               <ArrowRight size={18} />
             </button>
           </div>
@@ -38,14 +38,14 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4">
+      <section className="py-15 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: Youtube,
                 title: "YouTube Resources",
-                description: "Access curated academic and non-academic video content",
+                description: "Access curated academic and non-academic video content (coming soon)",
                 link: "/youtube-resources"
               },
               {
