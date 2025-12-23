@@ -56,8 +56,8 @@ const Index = () => {
               },
               {
                 icon: Gamepad,
-                title: "You are not allowed",
-                description: "Take a break and challenge yourself with our game",
+                title: "Cool Products",
+                description: "Must have products for every Engineering student",
                 link: "/game"
               }
             ].map((feature, index) => (

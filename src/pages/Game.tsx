@@ -1,98 +1,97 @@
-
 import { Navigation } from "@/components/Navigation";
-import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
+
+const products = [
+  {
+    id: 1,
+    title: "Casio FX-100MS",
+    description: "Best budget calculator for students. Will work till 4th Year without any problems",
+    price: "₹971",
+    image: "https://m.media-amazon.com/images/I/61gYf0RIFiL._SX679_.jpg",
+    link: "https://amzn.to/496sArV",
+  },
+  {
+    id: 2,
+    title: "Laptop Stand (Ergonomic)",
+    description: "Improve posture and productivity during long coding sessions.",
+    price: "₹1799",
+    image: "https://m.media-amazon.com/images/I/615sV-wxJyL._SX679_.jpg",
+    link: "https://amzn.to/48TqBIV",
+  },
+  {
+    id: 3,
+    title: "EvoFox Mechanical Keyboard",
+    description: "Tactile mechanical keyboard ideal for programmers.",
+    price: "₹1799",
+    image: "https://m.media-amazon.com/images/I/61cvMO-HeeL._SX679_.jpg",
+    link: "https://amzn.to/4pO3Hsd",
+  },
+  {
+    id: 4,
+    title: "Cool Developer stickers",
+    description: "Most asked coding interview questions with solutions.",
+    price: "₹148",
+    image: "https://m.media-amazon.com/images/I/81h9hPUM8uL._SX679_.jpg",
+    link: "https://amzn.to/4p88eEG",
+  },
+];
 
 const Game = () => {
-  const { toast } = useToast();
-  const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30);
-  const [gameActive, setGameActive] = useState(false);
-  const [position, setPosition] = useState({ x: 50, y: 50 });
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (gameActive && timeLeft > 0) {
-      timer = setInterval(() => {
-        setTimeLeft((prev) => prev - 1);
-      }, 1000);
-    } else if (timeLeft === 0) {
-      endGame();
-    }
-    return () => clearInterval(timer);
-  }, [gameActive, timeLeft]);
-
-  const startGame = () => {
-    setGameActive(true);
-    setScore(0);
-    setTimeLeft(30);
-    moveButton();
-  };
-
-  const endGame = () => {
-    setGameActive(false);
-    toast({
-      title: "Game Over!",
-      description: `Your final score: ${score}`,
-    });
-  };
-
-  const moveButton = () => {
-    if (gameActive) {
-      const newX = Math.random() * (window.innerWidth - 100);
-      const newY = Math.random() * (window.innerHeight - 100);
-      setPosition({ x: newX, y: newY });
-    }
-  };
-
-  const handleClick = () => {
-    if (gameActive) {
-      setScore((prev) => prev + 1);
-      moveButton();
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Navigation />
-      <div className="container mx-auto px-4 pt-32 pb-20">
-        <Card className="max-w-2xl mx-auto p-8 text-center mb-8">
-          <h1 className="text-4xl font-display font-bold mb-6">
-            You are not allowed
-          </h1>
-          <p className="text-gray-600 mb-8">
-            Try to click the moving button as many times as you can in 30 seconds!
-          </p>
-          {!gameActive ? (
-            <Button onClick={startGame} className="w-48">
-              Start Game
-            </Button>
-          ) : (
-            <div className="space-y-4">
-              <div className="flex justify-around text-lg">
-                <span>Score: {score}</span>
-                <span>Time: {timeLeft}s</span>
-              </div>
-            </div>
-          )}
-        </Card>
 
-        {gameActive && (
-          <div className="relative h-[60vh]">
-            <Button
-              className="absolute transition-all duration-200 animate-bounce"
-              style={{
-                left: `${position.x}px`,
-                top: `${position.y}px`,
-              }}
-              onClick={handleClick}
+      <div className="container mx-auto px-4 pt-32 pb-20">
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h1 className="text-4xl font-display font-bold mb-4">
+            Recommended Products for Students
+          </h1>
+          <p className="text-gray-600">
+            Handpicked tools and resources that genuinely help B.Tech students
+            learn better and code smarter.
+          </p>
+        </div>
+
+        {/* Product Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+          {products.map((product) => (
+            <Card
+              key={product.id}
+              className="p-6 flex flex-col justify-between hover:shadow-lg transition-shadow"
             >
-              Click me!
-            </Button>
-          </div>
-        )}
+              <div>
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-40 object-contain rounded-md mb-4 bg-white"
+                />
+                <h3 className="text-xl font-semibold mb-2">
+                  {product.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  {product.description}
+                </p>
+              </div>
+
+              <div className="flex items-center justify-between mt-4">
+                <span className="font-medium text-green-700">
+                  {product.price}
+                </span>
+                <Button asChild>
+                  <a
+                    href={product.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Product
+                  </a>
+                </Button>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
