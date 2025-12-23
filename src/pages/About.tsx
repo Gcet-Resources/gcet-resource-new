@@ -1,13 +1,13 @@
 
 import { Navigation } from "@/components/Navigation";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, User } from "lucide-react";
 
 const About = () => {
-  const team = [
+  const leads = [
     {
       name: "Gulshan Yadav",
-      role: "Developer",
-      image: "gulshan.jpg",
+      role: "Product Lead",
+      image: "https://lh3.googleusercontent.com/d/18o6QHd3vhljGdEZ7AsXKRyP36VIZjVW1",
       social: {
         github: "https://github.com/gulshan214",
         instagram: "https://www.instagram.com/gulshan_214",
@@ -16,8 +16,8 @@ const About = () => {
     },
     {
       name: "Anshul Kushwaha",
-      role: "Developer",
-      image: "anshul.jpg",
+      role: "Engineering Lead",
+      image: "https://lh3.googleusercontent.com/d/1MsETTS1HStn9Ae5K9aWveS9NFxRDbrm0",
       social: {
         github: "https://github.com/sudo-anshul",
         instagram: "https://www.instagram.com/sudo_anshul/",
@@ -26,8 +26,8 @@ const About = () => {
     },
     {
       name: "Harshita",
-      role: "Technical support",
-      image: "harshita.jpg",
+      role: "Design Lead",
+      image: "https://lh3.googleusercontent.com/d/1RRXazoVId5U-q4HqKS6zKVoFrgWnZL2h",
       social: {
         github: "https://gcetresources.me/about-us#",
         instagram: "https://www.instagram.com/hyhh.harshita.124?utm_source=qr&igsh=MTR4OHFmZzhkMzlr",
@@ -36,8 +36,8 @@ const About = () => {
     },
     {
       name: "Himanshu Srivastava",
-      role: "Resource Management",
-      image: "himanshu.jpg",
+      role: "Content Lead",
+      image: "https://lh3.googleusercontent.com/d/1CEN2QeUPSBuhwJFdYbnoXAcq39E9JDO6",
       social: {
         github: "https://github.com/travor21",
         instagram: "#",
@@ -46,8 +46,8 @@ const About = () => {
     },
     {
       name: "Aditya Kumar Gupta",
-      role: "Resource Management",
-      image: "aditya.jpg",
+      role: "Operations Lead",
+      image: "https://lh3.googleusercontent.com/d/11HOBGN3vyEmiYHXJRKLX65Kkq_LA3a-E",
       social: {
         github: "#",
         instagram: "#",
@@ -56,8 +56,8 @@ const About = () => {
     },
     {
       name: "Vinayak Sonthalia",
-      role: "Resource Management",
-      image: "vinayak.jpg",
+      role: "Community Lead",
+      image: "https://lh3.googleusercontent.com/d/1FOUds4jlGc_d9_Px8xzDcWWelUkH9hB0",
       social: {
         github: "#",
         instagram: "https://www.instagram.com/vinayak.sonthalia/",
@@ -66,53 +66,165 @@ const About = () => {
     }
   ];
 
+  const juniors = [
+    {
+      name: "Junior Developer",
+      role: "Assistant Developer",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    },
+    {
+      name: "Junior Developer",
+      role: "Assistant Developer",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    },
+    {
+      name: "Junior Designer",
+      role: "Assistant Designer",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    },
+    {
+      name: "Junior Content",
+      role: "Assistant Resource Manager",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    },
+    {
+      name: "Junior Operations",
+      role: "Assistant Resource Manager",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    },
+    {
+      name: "Junior Community",
+      role: "Assistant Resource Manager",
+      image: null,
+      social: { github: "#", instagram: "#", linkedin: "#" }
+    }
+  ];
+
+  const SocialLink = ({ href, icon: Icon }: { href: string; icon: any }) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 bg-gray-50 rounded-full text-gray-600 hover:text-primary hover:bg-primary/10 transition-all duration-300 transform hover:scale-110"
+    >
+      <Icon size={18} />
+    </a>
+  );
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Navigation />
-      <div className="container mx-auto px-4 pt-32 pb-20">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
-            Meet the team
+
+      {/* Hero Section */}
+      <div className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10" />
+        <div className="container mx-auto px-4 text-center">
+          <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-down">
+            Our Team
+          </span>
+          <h1 className="text-4xl md:text-6xl font-display font-bold text-slate-900 mb-6 tracking-tight animate-fade-up">
+            Passing the <span className="text-primary">Legacy</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're a dedicated team working to provide quality educational resources for GCET students
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            We're a dedicated team of seniors and upcoming juniors working together to build and maintain quality educational resources for GCET students.
           </p>
         </div>
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {team.map((member, index) => (
-            <div
-              key={member.name}
-              className="group p-6 text-center animate-fade-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="relative mb-6 inline-block">
-                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+      <div className="container mx-auto px-4 pb-32 space-y-32">
+        {/* Legacy Leaders Section */}
+        <section>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-display font-bold text-slate-900 mb-4 inline-flex items-center gap-3">
+              <span className="w-8 h-1 bg-primary rounded-full"></span>
+              The Leads
+              <span className="w-8 h-1 bg-primary rounded-full"></span>
+            </h2>
+            <p className="text-slate-500">The founding team passing on the torch</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            {leads.map((member, index) => (
+              <div
+                key={member.name}
+                className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <div className="relative mb-8 text-center">
+                  <div className="w-40 h-40 mx-auto rounded-full p-1 bg-gradient-to-br from-slate-100 to-white shadow-inner">
+                    <div className="w-full h-full rounded-full overflow-hidden relative">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">
+                    {member.name}
+                  </h3>
+                  <p className="text-slate-500 font-medium mb-6">{member.role}</p>
+
+                  <div className="flex justify-center space-x-3 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <SocialLink href={member.social.github} icon={Github} />
+                    <SocialLink href={member.social.instagram} icon={Instagram} />
+                    <SocialLink href={member.social.linkedin} icon={Linkedin} />
+                  </div>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                {member.name}
-              </h3>
-              <p className="text-gray-600 mb-4">{member.role}</p>
-              <div className="flex justify-center space-x-4">
-                <a href={member.social.github} className="text-gray-600 hover:text-primary transition-colors">
-                  <Github size={20} />
-                </a>
-                <a href={member.social.instagram} className="text-gray-600 hover:text-primary transition-colors">
-                  <Instagram size={20} />
-                </a>
-                <a href={member.social.linkedin} className="text-gray-600 hover:text-primary transition-colors">
-                  <Linkedin size={20} />
-                </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Future Torchbearers Section */}
+        <section className="relative">
+          <div className="absolute inset-0 bg-slate-50/50 -skew-y-3 -z-10 transform scale-110" />
+
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-display font-bold text-slate-900 mb-4">
+              The Next Generation
+            </h2>
+            <p className="text-slate-500">Upcoming leaders carrying the vision forward</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {juniors.map((member, index) => (
+              <div
+                key={index}
+                className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-slate-200/60 hover:border-primary/30 hover:bg-white transition-all duration-300 animate-fade-up"
+                style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}
+              >
+                <div className="flex items-center space-x-4">
+                  <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:bg-primary/10 transition-colors duration-300">
+                    <User size={32} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 group-hover:text-primary transition-colors">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm text-slate-500">{member.role}</p>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-100 flex justify-end space-x-2">
+                  <div className="text-xs text-slate-400 italic">Incoming</div>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
