@@ -21,76 +21,76 @@ const NoticeBoard = () => {
     }
   ];
 
-  const filteredNotices = filter === "all" 
-    ? notices 
-    : filter === "important" 
-    ? notices.filter(notice => notice.important) 
-    : notices.filter(notice => notice.category === filter);
+  const filteredNotices = filter === "all"
+    ? notices
+    : filter === "important"
+      ? notices.filter(notice => notice.important)
+      : notices.filter(notice => notice.category === filter);
 
   const getCategoryColor = (category: string) => {
-    switch(category) {
-      case "examination": return "bg-orange-100 text-orange-700";
-      case "event": return "bg-purple-100 text-purple-700";
-      case "administrative": return "bg-blue-100 text-blue-700";
-      case "academic": return "bg-green-100 text-green-700";
-      case "placement": return "bg-rose-100 text-rose-700";
-      default: return "bg-gray-100 text-gray-700";
+    switch (category) {
+      case "examination": return "bg-orange-100 dark:bg-orange-500/20 text-orange-700 dark:text-orange-400";
+      case "event": return "bg-purple-100 dark:bg-purple-500/20 text-purple-700 dark:text-purple-400";
+      case "administrative": return "bg-blue-100 dark:bg-blue-500/20 text-blue-700 dark:text-blue-400";
+      case "academic": return "bg-green-100 dark:bg-green-500/20 text-green-700 dark:text-green-400";
+      case "placement": return "bg-rose-100 dark:bg-rose-500/20 text-rose-700 dark:text-rose-400";
+      default: return "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300";
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
       <div className="container mx-auto px-4 pt-32 pb-20">
         <div className="flex items-center justify-center mb-6">
-          <Bell className="h-8 w-8 text-primary mr-3" />
-          <h1 className="text-4xl font-display font-bold text-center">
+          <Bell className="h-8 w-8 text-primary dark:text-teal-400 mr-3" />
+          <h1 className="text-4xl font-display font-bold text-center text-gray-900 dark:text-white">
             Notice Board
           </h1>
         </div>
-        
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
           Stay updated with the latest announcements, events, and important dates from the college and university.
         </p>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-2 mb-8">
-          <Button 
+          <Button
             variant={filter === "all" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("all")}
           >
             All Notices
           </Button>
-          <Button 
+          <Button
             variant={filter === "important" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("important")}
           >
             <Info className="mr-1 h-4 w-4" /> Important
           </Button>
-          <Button 
+          <Button
             variant={filter === "examination" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("examination")}
           >
             Examination
           </Button>
-          <Button 
+          <Button
             variant={filter === "academic" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("academic")}
           >
             Academic
           </Button>
-          <Button 
+          <Button
             variant={filter === "event" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("event")}
           >
             Events
           </Button>
-          <Button 
+          <Button
             variant={filter === "placement" ? "default" : "outline"}
             className="rounded-full"
             onClick={() => setFilter("placement")}
@@ -102,22 +102,22 @@ const NoticeBoard = () => {
         {/* Notices Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {filteredNotices.map((notice) => (
-            <Card 
-              key={notice.id} 
-              className={`overflow-hidden hover:shadow-lg transition-all duration-300 ${notice.important ? 'border-l-4 border-l-red-500' : ''}`}
+            <Card
+              key={notice.id}
+              className={`overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all duration-300 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 ${notice.important ? 'border-l-4 border-l-red-500' : ''}`}
             >
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="text-lg font-semibold">{notice.title}</CardTitle>
-                    <CardDescription className="mt-2 flex items-center gap-1">
+                    <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white">{notice.title}</CardTitle>
+                    <CardDescription className="mt-2 flex items-center gap-1 text-gray-500 dark:text-gray-400">
                       <Calendar className="h-3.5 w-3.5" /> {notice.date}
                       <span className="mx-1">•</span>
                       <Clock className="h-3.5 w-3.5" /> {notice.time}
                     </CardDescription>
                   </div>
                   {notice.important && (
-                    <div className="bg-red-100 text-red-700 p-1 rounded-full">
+                    <div className="bg-red-100 dark:bg-red-500/20 text-red-700 dark:text-red-400 p-1 rounded-full">
                       <Pin className="h-4 w-4" />
                     </div>
                   )}
@@ -129,10 +129,10 @@ const NoticeBoard = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm mb-4">{notice.description}</p>
-                <a 
-                  href={notice.link} 
-                  className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">{notice.description}</p>
+                <a
+                  href={notice.link}
+                  className="inline-flex items-center text-sm font-medium text-primary dark:text-teal-400 hover:underline"
                 >
                   Read more <ExternalLink className="ml-1 h-3.5 w-3.5" />
                 </a>

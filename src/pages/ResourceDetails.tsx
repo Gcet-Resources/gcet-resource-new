@@ -117,7 +117,7 @@ const ResourceDetails = () => {
       "BEC101": "Fundamentals of Electronics Engineering",
       "BEE101": "Fundamentals of Electrical Engineering",
       "BME101": "Fundamentals of Mechanical Engineering",
-     
+
 
       // 2nd Year (3rd & 4th Sem)
       "BAS301": "Technical Communication",
@@ -391,10 +391,10 @@ const ResourceDetails = () => {
 
   if (!info) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
         <Navigation />
         <div className="container mx-auto px-4 pt-32 pb-20">
-          <h1 className="text-4xl font-display font-bold text-center mb-12">
+          <h1 className="text-4xl font-display font-bold text-center mb-12 text-gray-900 dark:text-white">
             Resource Not Found
           </h1>
         </div>
@@ -403,7 +403,7 @@ const ResourceDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
       <div className="container mx-auto px-4 pt-32 pb-20">
         <div className="flex flex-col items-center mb-12">
@@ -412,19 +412,19 @@ const ResourceDetails = () => {
           >
             <info.icon size={36} />
           </div>
-          <h1 className="text-4xl font-display font-bold text-center">
+          <h1 className="text-4xl font-display font-bold text-center text-gray-900 dark:text-white">
             {info.title}
           </h1>
-          <h2 className="text-2xl text-gray-600 mt-2">
+          <h2 className="text-2xl text-gray-600 dark:text-gray-300 mt-2">
             {getSubjectName(subjectId)}
           </h2>
-          <p className="text-gray-500 mt-2">{year?.toUpperCase()} Year</p>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">{year?.toUpperCase()} Year</p>
         </div>
 
         {chapters.length === 0 ? (
           <div className="max-w-3xl mx-auto py-20 text-center">
-            <h3 className="text-2xl font-semibold mb-4">No resources found</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">No resources found</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               There are no mapped resources for{" "}
               <strong>{getSubjectName(subjectId)}</strong> ({resourceType}) in{" "}
               {year?.toUpperCase()} year.
@@ -432,7 +432,7 @@ const ResourceDetails = () => {
             <div className="space-x-3">
               <button
                 onClick={() => navigate(-1)}
-                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                className="inline-flex items-center px-4 py-2 bg-primary dark:bg-teal-600 text-white rounded-md hover:bg-primary/90 dark:hover:bg-teal-500"
               >
                 Go back
               </button>

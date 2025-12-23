@@ -21,22 +21,22 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
       <div className="container mx-auto px-4 pt-32 pb-20">
-        <h1 className="text-4xl font-display font-bold text-center mb-12">
+        <h1 className="text-4xl font-display font-bold text-center mb-12 text-gray-900 dark:text-white">
           Student Projects
         </h1>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-all">
+            <Card key={index} className="p-6 hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
               <div className="flex flex-col h-full">
                 <div className="flex items-center space-x-2 mb-4">
-                  <FolderGit2 className="w-6 h-6 text-primary" />
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <FolderGit2 className="w-6 h-6 text-primary dark:text-teal-400" />
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
                 </div>
-                <p className="text-gray-600 mb-4 flex-grow">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
                   {project.description}
                 </p>
                 <div className="space-y-4">
@@ -44,7 +44,7 @@ const Projects = () => {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="text-sm px-2 py-1 rounded-full bg-gray-100 text-gray-600"
+                        className="text-sm px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300"
                       >
                         {tech}
                       </span>
@@ -54,7 +54,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:text-primary/80"
+                    className="inline-flex items-center text-primary dark:text-teal-400 hover:text-primary/80 dark:hover:text-teal-300"
                   >
                     <Github className="mr-2 w-4 h-4" />
                     View on GitHub

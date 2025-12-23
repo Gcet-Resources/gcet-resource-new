@@ -23,7 +23,7 @@ const SubjectResources = () => {
       "BEC101": "Fundamentals of Electronics Engineering",
       "BEE101": "Fundamentals of Electrical Engineering",
       "BME101": "Fundamentals of Mechanical Engineering",
-     
+
 
       // 2nd Year (3rd & 4th Sem)
       "BAS301": "Technical Communication",
@@ -332,18 +332,19 @@ const SubjectResources = () => {
     }
   ];
 
+
   const handleResourceClick = (resourceId: string) => {
     navigate(`/resources/${year}/${subjectId}/${resourceId}`);
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
       <div className="container mx-auto px-4 pt-32 pb-20">
-        <h1 className="text-4xl font-display font-bold text-center mb-4">
+        <h1 className="text-4xl font-display font-bold text-center mb-4 text-gray-900 dark:text-white">
           {getSubjectName(subjectId)}
         </h1>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
           {year?.toUpperCase()} Year - Select a resource type
         </p>
 
@@ -351,23 +352,23 @@ const SubjectResources = () => {
           {resources.map((resource, index) => (
             <Card
               key={resource.id}
-              className="overflow-hidden rounded-lg border-0 shadow-md hover:shadow-xl transition-all duration-300 group animate-fade-up cursor-pointer bg-gradient-to-br hover:scale-105"
+              className="overflow-hidden rounded-lg border-0 shadow-md hover:shadow-xl dark:hover:shadow-gray-900/50 transition-all duration-300 group animate-fade-up cursor-pointer bg-gradient-to-br hover:scale-105 dark:bg-gray-800"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`
               }}
               onClick={() => handleResourceClick(resource.id)}
             >
-              <CardContent className={`p-0 h-full ${resource.gradient}`}>
+              <CardContent className={`p-0 h-full ${resource.gradient} dark:from-gray-800 dark:to-gray-800`}>
                 <div className="p-6 flex flex-col items-center text-center h-full">
                   <div className={`w-16 h-16 rounded-full ${resource.color} ${resource.textColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-md`}>
                     <resource.icon size={28} strokeWidth={2.5} />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {resource.title}
                   </h3>
                   <div className="mt-auto">
-                    <span className={`inline-block px-3 py-1 rounded-full text-xs ${resource.textColor} bg-white bg-opacity-60 mt-4`}>
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs ${resource.textColor} bg-white dark:bg-gray-700 bg-opacity-60 mt-4`}>
                       Explore
                     </span>
                   </div>

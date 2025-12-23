@@ -55,16 +55,16 @@ const products = [
 
 const Game = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
 
       <div className="container mx-auto px-4 pt-32 pb-20">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-4xl font-display font-bold mb-4">
+          <h1 className="text-4xl font-display font-bold mb-4 text-gray-900 dark:text-white">
             Recommended Products for Students
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Handpicked tools and resources that genuinely help B.Tech students
             learn better and code smarter.
           </p>
@@ -75,24 +75,24 @@ const Game = () => {
           {products.map((product) => (
             <Card
               key={product.id}
-              className="p-6 flex flex-col justify-between hover:shadow-lg transition-shadow"
+              className="p-6 flex flex-col justify-between hover:shadow-lg dark:hover:shadow-gray-900/50 transition-shadow bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
             >
               <div>
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-40 object-contain rounded-md mb-4 bg-white"
+                  className="w-full h-40 object-contain rounded-md mb-4 bg-white dark:bg-gray-700"
                 />
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                   {product.description}
                 </p>
               </div>
 
               <div className="flex items-center justify-between mt-4">
-                <span className="font-medium text-green-700">
+                <span className="font-medium text-green-700 dark:text-green-400">
                   {product.price}
                 </span>
                 <Button asChild>

@@ -86,13 +86,13 @@ const ResourceSelection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
       <div className="container mx-auto px-4 pt-32 pb-20">
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 text-center mb-4">
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white text-center mb-4">
           Study Material for {year?.toUpperCase()} Year
         </h1>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
           Do not use college email to download resources. Use your personal
           E-mail ID
         </p>

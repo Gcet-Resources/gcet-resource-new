@@ -14,10 +14,10 @@ const SocialShare = () => {
   };
 
   return (
-    <Card className="p-6 space-y-4">
+    <Card className="p-6 space-y-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
       <div className="flex items-center space-x-2">
-        <Share2 className="text-primary h-6 w-6" />
-        <h2 className="text-2xl font-semibold">Share with friends</h2>
+        <Share2 className="text-primary dark:text-teal-400 h-6 w-6" />
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Share with friends</h2>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
