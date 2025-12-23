@@ -30,10 +30,26 @@ const products = [
   {
     id: 4,
     title: "Cool Developer stickers",
-    description: "Most asked coding interview questions with solutions.",
+    description: "Decorate your digital weapon with trendy stickers",
     price: "₹148",
     image: "https://m.media-amazon.com/images/I/81h9hPUM8uL._SX679_.jpg",
     link: "https://amzn.to/4p88eEG",
+  },
+  {
+    id: 5,
+    title: "Cracking The Coding Interview",
+    description: "Most asked coding interview questions with solutions.",
+    price: "₹418",
+    image: "https://m.media-amazon.com/images/I/51BKztjHJAL.jpg",
+    link: "https://amzn.to/3KLMn8h",
+  },
+  {
+    id: 6,
+    title: "GitHub t-shirt",
+    description: "DUDEME Git Hub The Place Where I Fork Half Sleeve 100% Cotton 180 GSM T-Shirt",
+    price: "₹468",
+    image: "https://m.media-amazon.com/images/I/51s2A-F2T-L._SX679_.jpg",
+    link: "https://amzn.to/4994tZM",
   },
 ];
 

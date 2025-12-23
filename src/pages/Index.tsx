@@ -56,7 +56,7 @@ const Index = () => {
               },
               {
                 icon: Gamepad,
-                title: "Cool Products",
+                title: "Student Essentials",
                 description: "Must have products for every Engineering student",
                 link: "/game"
               }
