@@ -21,6 +21,7 @@ import DSA from "./pages/coding/DSA";
 import Projects from "./pages/coding/Projects";
 import Game from "./pages/Game";
 import NoticeBoard from "./pages/NoticeBoard";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GoogleAnalytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
