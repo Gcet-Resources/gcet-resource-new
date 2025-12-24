@@ -51,17 +51,18 @@ const Index = () => {
                 link: "/youtube-resources"
               },
               {
-                icon: Code,
-                title: "Coding Resources",
-                description: "Learn DSA and explore student projects",
-                link: "/coding-resources"
-              },
-              {
                 icon: Gamepad,
                 title: "Student Essentials",
                 description: "Must have products for every Engineering student",
                 link: "/game"
+              },
+              {
+                icon: Code,
+                title: "Coding Resources",
+                description: "Learn DSA and explore student projects",
+                link: "/coding-resources"
               }
+             
             ].map((feature, index) => (
               <div
                 key={feature.title}
