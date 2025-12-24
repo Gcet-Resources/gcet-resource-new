@@ -12,20 +12,12 @@ const products = [
     link: "https://amzn.to/496sArV",
   },
   {
-    id: 2,
-    title: "Laptop Stand (Ergonomic)",
-    description: "Improve posture and productivity during long coding sessions.",
-    price: "₹1799",
-    image: "https://m.media-amazon.com/images/I/615sV-wxJyL._SX679_.jpg",
-    link: "https://amzn.to/48TqBIV",
-  },
-  {
-    id: 3,
-    title: "EvoFox Mechanical Keyboard",
-    description: "Tactile mechanical keyboard ideal for programmers.",
-    price: "₹1799",
-    image: "https://m.media-amazon.com/images/I/61cvMO-HeeL._SX679_.jpg",
-    link: "https://amzn.to/4pO3Hsd",
+    id: 6,
+    title: "GitHub t-shirt",
+    description: "DUDEME Git Hub The Place Where I Fork Half Sleeve 100% Cotton 180 GSM T-Shirt",
+    price: "₹468",
+    image: "https://m.media-amazon.com/images/I/51s2A-F2T-L._SX679_.jpg",
+    link: "https://amzn.to/4994tZM",
   },
   {
     id: 4,
@@ -44,13 +36,23 @@ const products = [
     link: "https://amzn.to/3KLMn8h",
   },
   {
-    id: 6,
-    title: "GitHub t-shirt",
-    description: "DUDEME Git Hub The Place Where I Fork Half Sleeve 100% Cotton 180 GSM T-Shirt",
-    price: "₹468",
-    image: "https://m.media-amazon.com/images/I/51s2A-F2T-L._SX679_.jpg",
-    link: "https://amzn.to/4994tZM",
+    id: 2,
+    title: "Laptop Stand (Ergonomic)",
+    description: "Improve posture and productivity during long coding sessions.",
+    price: "₹1799",
+    image: "https://m.media-amazon.com/images/I/615sV-wxJyL._SX679_.jpg",
+    link: "https://amzn.to/48TqBIV",
   },
+  {
+    id: 3,
+    title: "EvoFox Mechanical Keyboard",
+    description: "Tactile mechanical keyboard ideal for programmers.",
+    price: "₹1799",
+    image: "https://m.media-amazon.com/images/I/61cvMO-HeeL._SX679_.jpg",
+    link: "https://amzn.to/4pO3Hsd",
+  },
+  
+  
 ];
 
 const Game = () => {
