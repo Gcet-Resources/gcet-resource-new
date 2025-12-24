@@ -1,12 +1,16 @@
 
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { BookText, FileText, PenTool, Book, HelpCircle, Grid } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRecentlyViewed } from "@/hooks/useRecentlyViewed";
 
 const SubjectResources = () => {
   const { year, subjectId } = useParams();
   const navigate = useNavigate();
+  const { addRecentSubject } = useRecentlyViewed();
+
 
   // Get subject name from subjectId
   const getSubjectName = (id: string | undefined) => {
@@ -281,7 +285,22 @@ const SubjectResources = () => {
     return subjectMap[id] || "Unknown Subject";
   };
 
+  // Track this subject as recently viewed
+  useEffect(() => {
+    if (year && subjectId) {
+      const subjectName = getSubjectName(subjectId);
+      if (subjectName !== "Unknown Subject") {
+        addRecentSubject({
+          id: subjectId,
+          title: subjectName,
+          year: year,
+        });
+      }
+    }
+  }, [year, subjectId, addRecentSubject]);
+
   const resources = [
+
     {
       id: "pdf-notes",
       title: "PDF NOTES",

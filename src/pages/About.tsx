@@ -1,6 +1,8 @@
 
 import { Navigation } from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Github, Instagram, Linkedin, User } from "lucide-react";
+
 
 const About = () => {
   const leads = [
@@ -226,8 +228,11 @@ const About = () => {
           </div>
         </section>
       </div>
+
+      <Footer />
     </div>
   );
 };
 
 export default About;
+

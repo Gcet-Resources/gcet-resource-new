@@ -1,8 +1,10 @@
 
 import { Navigation } from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { MessageCircle, Mail, MessagesSquare } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+
 
 const Contact = () => {
   const { toast } = useToast();
@@ -187,8 +189,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
 
 export default Contact;
+
