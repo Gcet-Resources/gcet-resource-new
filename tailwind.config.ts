@@ -14,7 +14,7 @@ export default {
       },
     },
     extend: {
-      
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,5 +50,6 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

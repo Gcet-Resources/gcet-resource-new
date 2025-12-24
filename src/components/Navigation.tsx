@@ -33,7 +33,7 @@ export const Navigation = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Resources", href: "/year-selection" },
-    { label: "Notice Board", href: "/notice-board", icon: Bell },
+    { label: "Notice Board", href: "/notice-board" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Support", href: "/support" },
@@ -65,7 +65,6 @@ export const Navigation = () => {
                   href={item.href}
                   className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-teal-400 transition-colors flex items-center gap-1"
                 >
-                  {item.icon && <item.icon size={16} />}
                   {item.label}
                 </a>
               ))}
@@ -114,7 +113,6 @@ export const Navigation = () => {
                     className="flex items-center gap-2 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-teal-400 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {item.icon && <item.icon size={16} />}
                     {item.label}
                   </a>
                 ))}

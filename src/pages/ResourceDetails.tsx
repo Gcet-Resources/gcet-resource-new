@@ -31,6 +31,7 @@ const getChapters = (
   if (!subjectId || !resourceType || !yearParam) return [];
 
   // pdfMappings.json expected shape: PdfMappingEntry[] with year, subjectId, resourceType, chapters
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const entry = (pdfMappings as any[]).find(
     (m) =>
       m.year === yearParam &&
@@ -40,6 +41,7 @@ const getChapters = (
 
   if (entry && Array.isArray(entry.chapters) && entry.chapters.length > 0) {
     // Map incoming mapping entries to local Chapter type
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return entry.chapters.map((c: any) => ({
       id:
         c.id ||

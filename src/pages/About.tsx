@@ -107,6 +107,7 @@ const About = () => {
     }
   ];
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const SocialLink = ({ href, icon: Icon }: { href: string; icon: any }) => (
     <a
       href={href}

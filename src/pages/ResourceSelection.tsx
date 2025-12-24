@@ -16,6 +16,7 @@ import type { Chapter, PdfMappingEntry } from "@/lib/types";
 
 // load subjects from JSON file
 const getSubjectsForYear = (year: string): SubjectResource[] => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (subjectsData as any)[year] || [];
 };
 
