@@ -44,7 +44,7 @@ const DSA = () => {
                   href={resource.link}
                   className="inline-flex items-center text-primary dark:text-teal-400 hover:text-primary/80 dark:hover:text-teal-300"
                 >
-                  Learn More <ExternalLink className="ml-2 w-4 h-4" />
+                  Go to resource <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </div>
             </Card>
