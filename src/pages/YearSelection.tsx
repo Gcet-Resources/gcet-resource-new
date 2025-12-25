@@ -36,7 +36,7 @@ const YearSelection = () => {
       color: "text-pink-500",
       bgColor: "bg-pink-50 dark:bg-pink-500/10",
       borderColor: "border-pink-200 dark:border-pink-500/30",
-      description: "Final year projects and specialized electives"
+      description: "Coming soon.."
     }
   ];
 
