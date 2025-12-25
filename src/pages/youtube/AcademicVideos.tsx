@@ -11,12 +11,7 @@ const AcademicVideos = () => {
       thumbnail: "https://i.ytimg.com/vi/TStqBRLePoM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAB71K-dSL3UxaJFMeKYGtGFdiKOg",
       link: "https://www.youtube.com/playlist?list=PL5Dqs90qDljVTfWmYSWjD99kcqdkI5zMM"
     },
-    {
-      title: "Advanced Mathematics",
-      description: "Complex mathematical concepts explained simply",
-      thumbnail: "https://i.ytimg.com/vi/sample2/maxresdefault.jpg",
-      link: "https://youtube.com/watch?v=sample2"
-    },
+   
     // Add more sample videos here
   ];
 
