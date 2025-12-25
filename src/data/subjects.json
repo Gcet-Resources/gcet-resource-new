@@ -269,27 +269,7 @@
       "color": "text-cyan-600",
       "bgColor": "bg-cyan-100"
     },
-    {
-      "id": "BEC401",
-      "title": "Communication Engineering",
-      "description": "BEC401",
-      "color": "text-yellow-600",
-      "bgColor": "bg-yellow-100"
-    },
-    {
-      "id": "BEC402",
-      "title": "Analog Circuits",
-      "description": "BEC402",
-      "color": "text-blue-600",
-      "bgColor": "bg-blue-100"
-    },
-    {
-      "id": "BEC403",
-      "title": "Signal System",
-      "description": "BEC403",
-      "color": "text-purple-600",
-      "bgColor": "bg-purple-100"
-    },
+    
     {
       "id": "BEE401",
       "title": "Digital Electronics",
@@ -297,76 +277,7 @@
       "color": "text-green-600",
       "bgColor": "bg-green-100"
     },
-    {
-      "id": "BEE402",
-      "title": "Electrical Machines I",
-      "description": "BEE402",
-      "color": "text-orange-600",
-      "bgColor": "bg-orange-100"
-    },
-    {
-      "id": "BEE403",
-      "title": "Networks Analysis Synthesis",
-      "description": "BEE403",
-      "color": "text-red-600",
-      "bgColor": "bg-red-100"
-    },
-    {
-      "id": "BME401",
-      "title": "Applied Thermodynamics",
-      "description": "BME401",
-      "color": "text-teal-600",
-      "bgColor": "bg-teal-100"
-    },
-    {
-      "id": "BME402",
-      "title": "Engineering Mechanics Strength Material",
-      "description": "BME402",
-      "color": "text-violet-600",
-      "bgColor": "bg-violet-100"
-    },
-    {
-      "id": "BME403",
-      "title": "Manufacturing Processes",
-      "description": "BME403",
-      "color": "text-rose-600",
-      "bgColor": "bg-rose-100"
-    },
-    {
-      "id": "BOE401",
-      "title": "Electric and Hybrid Vehicles",
-      "description": "BOE401",
-      "color": "text-cyan-600",
-      "bgColor": "bg-cyan-100"
-    },
-    {
-      "id": "BOE402",
-      "title": "Automation and Robotics",
-      "description": "BOE402",
-      "color": "text-yellow-600",
-      "bgColor": "bg-yellow-100"
-    },
-    {
-      "id": "BOE403",
-      "title": "Material Science",
-      "description": "BOE403",
-      "color": "text-blue-600",
-      "bgColor": "bg-blue-100"
-    },
-    {
-      "id": "BOE404",
-      "title": "Energy Science Engineering",
-      "description": "BOE404",
-      "color": "text-purple-600",
-      "bgColor": "bg-purple-100"
-    },
-    {
-      "id": "BOE405",
-      "title": "Sensor Instrumentation",
-      "description": "BOE405",
-      "color": "text-green-600",
-      "bgColor": "bg-green-100"
-    },
+    
     {
       "id": "BOE406",
       "title": "Basics Data Structure Algorithms",
@@ -381,13 +292,7 @@
       "color": "text-red-600",
       "bgColor": "bg-red-100"
     },
-    {
-      "id": "BOE408",
-      "title": "Analog Electronics Circuits",
-      "description": "BOE408",
-      "color": "text-teal-600",
-      "bgColor": "bg-teal-100"
-    },
+
     {
       "id": "BOE409",
       "title": "Electronics Engineering",
@@ -402,34 +307,7 @@
       "color": "text-rose-600",
       "bgColor": "bg-rose-100"
     },
-    {
-      "id": "BOE411",
-      "title": "Polymer Science and Technology",
-      "description": "BOE411",
-      "color": "text-cyan-600",
-      "bgColor": "bg-cyan-100"
-    },
-    {
-      "id": "BOE412",
-      "title": "Laser System and Applications",
-      "description": "BOE412",
-      "color": "text-yellow-600",
-      "bgColor": "bg-yellow-100"
-    },
-    {
-      "id": "BOE413",
-      "title": "Food Science and Nutrition",
-      "description": "BOE413",
-      "color": "text-blue-600",
-      "bgColor": "bg-blue-100"
-    },
-    {
-      "id": "BOE414",
-      "title": "Building Science and Engineering",
-      "description": "BOE414",
-      "color": "text-purple-600",
-      "bgColor": "bg-purple-100"
-    },
+    
     {
       "id": "BVE401",
       "title": "Universal Human Values Professional Ethics",
