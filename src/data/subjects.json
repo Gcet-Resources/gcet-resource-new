@@ -1111,13 +1111,7 @@
       "color": "text-teal-600",
       "bgColor": "bg-teal-100"
     },
-    {
-      "id": "BME063",
-      "title": "Tribology",
-      "description": "BME063",
-      "color": "text-violet-600",
-      "bgColor": "bg-violet-100"
-    },
+  
     {
       "id": "BME601",
       "title": "Refrigeration and Air Conditioning",
