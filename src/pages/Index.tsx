@@ -44,11 +44,13 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
+              
+              
               {
-                icon: Youtube,
-                title: "YouTube Resources",
-                description: "Access curated academic and non-academic video content",
-                link: "/youtube-resources"
+                icon: Code,
+                title: "Coding Resources",
+                description: "Learn DSA and explore student projects",
+                link: "/coding-resources"
               },
               {
                 icon: Gamepad,
@@ -57,10 +59,10 @@ const Index = () => {
                 link: "/game"
               },
               {
-                icon: Code,
-                title: "Coding Resources",
-                description: "Learn DSA and explore student projects",
-                link: "/coding-resources"
+                icon: Youtube,
+                title: "YouTube Resources",
+                description: "Access curated academic and non-academic video content",
+                link: "/youtube-resources"
               }
              
             ].map((feature, index) => (
