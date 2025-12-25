@@ -5254,6 +5254,18 @@
     "resourceType": "aktu-pyq",
     "chapters": [
       {
+        "id": "2025",
+        "title": "PYQs",
+        "fileUrl": "https://www.abesit.in/wp-content/uploads/2025/05/BNC501-CONSTITUTION-OF-INDIA.pdf"
+      }
+    ]
+  },
+  {
+    "year": "3rd",
+    "subjectId": "BNC501",
+    "resourceType": "aktu-pyq",
+    "chapters": [
+      {
         "id": "chapter-1",
         "title": "PYQs",
         "fileUrl": ""
