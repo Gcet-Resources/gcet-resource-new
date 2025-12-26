@@ -3973,9 +3973,14 @@
     "resourceType": "aktu-pyq",
     "chapters": [
       {
-        "id": "chapter-1",
-        "title": "PYQs",
-        "fileUrl": ""
+        "id": "2025",
+        "title": "2024-2025",
+        "fileUrl": "https://www.abesit.in/wp-content/uploads/2025/05/BCAM051-CLOUD-COMPUTING.pdf"
+      },
+      {
+        "id": "2024",
+        "title": "2023-2024",
+        "fileUrl": "https://www.abesit.in/wp-content/uploads/2024/07/KML051-CLOUD-COMPUTING.pdf"
       }
     ]
   },
