@@ -24,12 +24,35 @@ import NoticeBoard from "./pages/NoticeBoard";
 
 const queryClient = new QueryClient();
 
+import useAckee from "use-ackee";
+import { useLocation } from "react-router-dom";
+
+const AckeeTracker = () => {
+  const location = useLocation();
+
+  useAckee(
+    location.pathname,
+    {
+      server: import.meta.env.VITE_ACKEE_SERVER_URL || "",
+      domainId: import.meta.env.VITE_ACKEE_DOMAIN_ID || "",
+    },
+    {
+      detailed: true,
+      ignoreLocalhost: false,
+      ignoreOwnVisits: false,
+    }
+  );
+
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AckeeTracker />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
