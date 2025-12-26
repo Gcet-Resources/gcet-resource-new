@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { ThemeProvider } from "@/context/ThemeProvider";
-import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -23,9 +21,33 @@ import DSA from "./pages/coding/DSA";
 import Projects from "./pages/coding/Projects";
 import Game from "./pages/Game";
 import NoticeBoard from "./pages/NoticeBoard";
+const queryClient = new QueryClient();
+
+import useAckee from "use-ackee";
+import { useLocation } from "react-router-dom";
+
+import { ThemeProvider } from "@/context/ThemeProvider";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
-const queryClient = new QueryClient();
+const AckeeTracker = () => {
+  const location = useLocation();
+
+  useAckee(
+    location.pathname,
+    {
+      server: import.meta.env.VITE_ACKEE_SERVER_URL || "",
+      domainId: import.meta.env.VITE_ACKEE_DOMAIN_ID || "",
+    },
+    {
+      detailed: true,
+      ignoreLocalhost: false,
+      ignoreOwnVisits: false,
+    }
+  );
+
+  return null;
+};
 
 const App = () => (
   <ThemeProvider>
@@ -35,6 +57,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <GoogleAnalytics />
+          <AckeeTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
