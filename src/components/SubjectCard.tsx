@@ -18,7 +18,7 @@ interface SubjectCardProps {
 const SubjectCard = ({ subject, onClick }: SubjectCardProps) => {
   return (
     <Card
-      className="hover:shadow-lg transition-all cursor-pointer group overflow-hidden"
+      className="hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all cursor-pointer group overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
       onClick={() => onClick(subject)}
     >
       <CardContent className="p-6">
@@ -28,8 +28,8 @@ const SubjectCard = ({ subject, onClick }: SubjectCardProps) => {
           >
             <File className="w-7 h-7" />
           </div>
-          <h3 className="text-xl font-semibold">{subject.title}</h3>
-          <p className="text-gray-600 text-sm">{subject.description}</p>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{subject.title}</h3>
+          <p className="text-gray-600 dark:text-gray-400 text-sm">{subject.description}</p>
         </div>
       </CardContent>
     </Card>

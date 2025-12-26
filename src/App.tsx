@@ -21,7 +21,6 @@ import DSA from "./pages/coding/DSA";
 import Projects from "./pages/coding/Projects";
 import Game from "./pages/Game";
 import NoticeBoard from "./pages/NoticeBoard";
-
 const queryClient = new QueryClient();
 
 import useAckee from "use-ackee";
@@ -86,3 +85,4 @@ const App = () => (
 );
 
 export default App;
+
