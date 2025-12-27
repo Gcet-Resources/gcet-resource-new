@@ -148,8 +148,28 @@
     "chapters": [
       {
         "id": "chapter-1",
-        "title": "Handwritten Notes",
-        "fileUrl": "https://drive.google.com/file/d/1IF3MjZdbcn8zmV7o-bYRz0go7HB5vAKT/view?usp=drivesdk"
+        "title": "Quantum Mechanics",
+        "fileUrl": "https://drive.google.com/file/d/1O3-ls-OMTmBfQ8T0EdSTTzh5ZR187X_c/view?usp=drive_link"
+      }
+      {
+        "id": "chapter-2",
+        "title": "Electromagnetic Field Theory",
+        "fileUrl": "https://drive.google.com/file/d/1n1gaHKzCpLi7yuz5Y-M8z8oWmQ9eykk8/view?usp=drive_link"
+      }
+      {
+        "id": "chapter-3",
+        "title": "Wave Optics",
+        "fileUrl": "https://drive.google.com/drive/folders/1-5g9D33ELw2HmE_C4qFqkDRp8AK5eauD?usp=drive_link"
+      }
+      {
+        "id": "chapter-4",
+        "title": "Fiber Optics & Laser",
+        "fileUrl": "https://drive.google.com/file/d/1zyBFELdnD6rSJBk0DcHLyRk1ShGOcny_/view?usp=drive_link"
+      }
+      {
+        "id": "chapter-5",
+        "title": "Superconductors & Nano-materials",
+        "fileUrl": "https://drive.google.com/file/d/16gksEiulrHfG0SByOjvlYJkosAfcAI89/view?usp=drive_link"
       }
     ]
   },
@@ -494,6 +514,54 @@
         "id": "chapter-1",
         "title": "Question Banks",
         "fileUrl": "https://drive.google.com/file/d/1RtYndGzEqKUVUC1IrTWxXlwguPUn2uux/view?usp=drive_link"
+      }
+    ]
+  },
+  
+  {
+    "Break": "---------------------------------Environment and Ecology-----------------------------------------------------"
+  },
+  {
+    "year": "1st",
+    "subjectId": "BAS104",
+    "resourceType": "handwritten",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Unit-1",
+        "fileUrl": "https://drive.google.com/file/d/1KdpFfG6_pdZrdHTnYLyrkQRbrk8AwPS5/view?usp=drive_link"
+      }
+       {
+        "id": "chapter-2",
+        "title": "Unit-2",
+        "fileUrl": "https://drive.google.com/file/d/1ubvaP3cv4LzJ0P9uyo5ZoyXjZqGtoMmg/view?usp=drive_link"
+      }
+       {
+        "id": "chapter-3",
+        "title": "Unit-3",
+        "fileUrl": "https://drive.google.com/file/d/1yfBgL-yAhTqjXF5TSd4MHPh1zpO6T20t/view?usp=drive_link"
+      }
+       {
+        "id": "chapter-4",
+        "title": "Unit-4",
+        "fileUrl": "https://drive.google.com/file/d/1MBWXYPjN4VlWYpIkoAy1m39gbmhsCssA/view?usp=drive_link"
+      }
+       {
+        "id": "chapter-5",
+        "title": "Unit-5",
+        "fileUrl": "https://drive.google.com/file/d/1HfRYE4HAq_wE-hyrNmk4CoodmsPihgEC/view?usp=drive_link"
+      }
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BAS104",
+    "resourceType": "quantum",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "Quantum PDF",
+        "fileUrl": "https://drive.google.com/file/d/1R0_YMr6d7xhA5VRvBAen9DZNEcV7GAdT/view?usp=drive_link"
       }
     ]
   },
