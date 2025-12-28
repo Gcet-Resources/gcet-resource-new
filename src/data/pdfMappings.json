@@ -118,9 +118,29 @@
     "resourceType": "aktu-pyq",
     "chapters": [
       {
-        "id": "chapter-1",
-        "title": "PYQs",
+        "id": "2022-odd",
+        "title": "2022-odd",
         "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-engineering-physics-bas101-2023.pdf"
+      },
+      {
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1ySaxTRpPdbpI1JN3M8gETgYp6UYkCwzD/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/169yrz5Iym-WP8_WCbyv33EpWdQjTIsZz/view?usp=drive_link"
+      },
+      {
+        "id": "2024-odd",
+        "title": "2024-odd",
+        "fileUrl": "https://drive.google.com/file/d/102D-7VSvS2gIBIgUR4oSYK3jmCSR-mCV/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/1xhBN1q5q6IpryyvQUH8kuFxdkjnQ4-6B/view?usp=drive_link"
       }
     ]
   },
