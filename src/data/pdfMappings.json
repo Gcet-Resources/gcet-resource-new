@@ -218,9 +218,24 @@
     "resourceType": "aktu-pyq",
     "chapters": [
       {
-        "id": "chapter-1",
-        "title": "PYQs",
-        "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-engineering-chemistry-bas-102-2023.pdf"
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1sx3LScBuRX6p8-XBghx9v2l6NIBGr4Nh/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/1x-rk-cLYNOuvY4wIPtW-6CjNE9AtsOQc/view?usp=drive_link"
+      },
+      {
+        "id": "2024-odd",
+        "title": "2024-odd",
+        "fileUrl": "https://drive.google.com/file/d/1t-YV5fOFUGKNG7b6wLznDcJxuNZKgesd/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/1X2bN_VJx8oX_BHAD9e33qPYlZoVwkCh3/view?usp=drive_link"
       }
     ]
   },
