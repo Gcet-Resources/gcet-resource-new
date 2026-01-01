@@ -416,7 +416,24 @@
         "id": "chapter-1",
         "title": "PYQs",
         "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-fundamentals-of-electrical-engineering-bee101-2023.pdf"
+      },
+      {
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1ZTzsTd5IDUUnr8FJhSmgig64WzFG1ixT/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/1IwdoAfe0tNQwL1EgKnybzJp4XN2GDg0v/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/15LSrmrGzdeWgNkv2icPDj12Xm-YmpqMv/view?usp=drive_link"
       }
+    
+      
     ]
   },
   {
@@ -701,10 +718,16 @@
     "resourceType": "aktu-pyq",
     "chapters": [
       {
-        "id": "chapter-1",
-        "title": "PYQs",
+        "id": "2022-odd",
+        "title": "2022-odds",
         "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-fundamentals-of-electronics-engineering-bec101-2023.pdf"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/15LSrmrGzdeWgNkv2icPDj12Xm-YmpqMv/view?usp=drive_link"
       }
+    
     ]
   },
   {
