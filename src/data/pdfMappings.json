@@ -332,11 +332,28 @@
     "subjectId": "BCS101",
     "resourceType": "aktu-pyq",
     "chapters": [
+      
       {
-        "id": "chapter-1",
-        "title": "PYQs",
-        "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-programming-for-problem-solving-bcs101-2023.pdf"
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1E6cFFsTexRu2SUzOq0-cj4FctfiEV7xR/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/1sbDFeoSpiB5ZWmwMvhYst1MNq1Bo-ZRJ/view?usp=drive_link"
+      },
+      {
+        "id": "2024-odd",
+        "title": "2024-odd",
+        "fileUrl": "https://drive.google.com/file/d/15-yVHnAXymyHvRhyOLCyonl_onE93rxd/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/1mY4HB9d-OaExCyZNjOLAiVM1L-vJkO18/view?usp=drive_link"
       }
+    
     ]
   },
   {
