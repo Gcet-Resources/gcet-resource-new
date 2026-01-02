@@ -526,11 +526,29 @@
     "subjectId": "BME101",
     "resourceType": "aktu-pyq",
     "chapters": [
+      
       {
-        "id": "chapter-1",
-        "title": "PYQs",
-        "fileUrl": "https://www.aktuonline.com/btech/btech-1-sem-fundamentals-of-mechanical-engineering-bme101-2023.pdf"
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1q6q3TTfwPZbcUNxxjj6Z6uzkwIZZsz9y/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/1TtWoFes9o80Ko3ZGpTh-OVJl4oXRV9oh/view?usp=drive_link"
+      },
+      {
+        "id": "2024-odd",
+        "title": "2024-odd",
+        "fileUrl": "https://drive.google.com/file/d/1DGoRypKYZ40nM0MDVqN2kXdKuhessrnN/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/1zSR5VZeRt903XCicRyRaZ4Y8spKMEI48/view?usp=drive_link"
       }
+    
+    
     ]
   },
   {
