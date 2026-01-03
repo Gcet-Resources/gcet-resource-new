@@ -4836,8 +4836,13 @@
     "chapters": [
       {
         "id": "chapter-1",
-        "title": "PYQs",
+        "title": "2019-2023",
         "fileUrl": "https://drive.google.com/drive/folders/1bLL-h6KuvVtW_2JD65xpexeS3JejNFsV?usp=drive_link"
+      },
+      {
+        "id": "chapter-1",
+        "title": "2024-25",
+        "fileUrl": "https://www.abesit.in/wp-content/uploads/2025/05/BCS503-DESIGN-AND-ANALYSIS-OF-ALGORITHM.pdf"
       }
     ]
   },
