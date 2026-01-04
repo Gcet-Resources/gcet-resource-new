@@ -31,7 +31,7 @@ const About = () => {
       role: "Design Lead",
       image: "https://lh3.googleusercontent.com/d/1RRXazoVId5U-q4HqKS6zKVoFrgWnZL2h",
       social: {
-        github: "https://gcetresources.me/about-us#",
+        github: "https://github.com/HARSHITA2450",
         instagram: "https://www.instagram.com/hyhh.harshita.124?utm_source=qr&igsh=MTR4OHFmZzhkMzlr",
         linkedin: "https://www.linkedin.com/in/harshita-pandey-4b322a274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       }
@@ -42,7 +42,6 @@ const About = () => {
       image: "https://lh3.googleusercontent.com/d/1CEN2QeUPSBuhwJFdYbnoXAcq39E9JDO6",
       social: {
         github: "https://github.com/travor21",
-        instagram: "#",
         linkedin: "https://www.linkedin.com/in/himanshu-srivastava-276929280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       }
     },
@@ -51,9 +50,8 @@ const About = () => {
       role: "Operations Lead",
       image: "https://lh3.googleusercontent.com/d/11HOBGN3vyEmiYHXJRKLX65Kkq_LA3a-E",
       social: {
-        github: "#",
-        instagram: "#",
-        linkedin: "#"
+        github: "https://github.com/Aditya05-max",
+        linkedin: "https://www.linkedin.com/in/aditya-kumar-786302314/"
       }
     },
     {
@@ -61,8 +59,7 @@ const About = () => {
       role: "Community Lead",
       image: "https://lh3.googleusercontent.com/d/1FOUds4jlGc_d9_Px8xzDcWWelUkH9hB0",
       social: {
-        github: "#",
-        instagram: "https://www.instagram.com/vinayak.sonthalia/",
+        github: "https://github.com/vinayaksonthalia",
         linkedin: "https://in.linkedin.com/in/vinayak-sonthalia-b472411b7"
       }
     }
