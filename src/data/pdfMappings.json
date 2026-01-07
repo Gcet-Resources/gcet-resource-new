@@ -643,6 +643,36 @@
   {
     "year": "1st",
     "subjectId": "BAS104",
+    "resourceType": "aktu-pyq",
+    "chapters": [
+      
+      {
+        "id": "2023-odd",
+        "title": "2023-odd",
+        "fileUrl": "https://drive.google.com/file/d/1SCuyjxSUT2eUplRSs4AwgEvo81PS0b_-/view?usp=drive_link"
+      },
+      {
+        "id": "2023-even",
+        "title": "2023-even",
+        "fileUrl": "https://drive.google.com/file/d/1vgtjPnOBP5Q9E9_bzzNstlPfIeQGK-Km/view?usp=drive_link"
+      },
+      {
+        "id": "2024-odd",
+        "title": "2024-odd",
+        "fileUrl": "https://drive.google.com/file/d/1tj7ITFE-DEweKexo5YSVyt95NGEiGhA1/view?usp=drive_link"
+      },
+      {
+        "id": "2024-even",
+        "title": "2024-even",
+        "fileUrl": "https://drive.google.com/file/d/1z6m-8WzbDgw3s7twjpaYZnxvhL_V4MXP/view?usp=drive_link"
+      }
+    
+    
+    ]
+  },
+  {
+    "year": "1st",
+    "subjectId": "BAS104",
     "resourceType": "quantum",
     "chapters": [
       {
