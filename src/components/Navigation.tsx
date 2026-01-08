@@ -34,6 +34,7 @@ export const Navigation = () => {
     { label: "Home", href: "/" },
     { label: "Resources", href: "/year-selection" },
     { label: "Notice Board", href: "/notice-board" },
+    { label: "Store", href: "/store" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Support", href: "/support" },

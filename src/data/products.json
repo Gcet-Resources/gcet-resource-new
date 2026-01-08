@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Vintage Leather Jacket",
+    "price": 1500,
+    "image": "/images/products/Jacket.jpg",
+    "sellerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Antique Wooden Chair",
+    "price": 750,
+    "image": "/images/products/Chair.jpg",
+    "sellerId": 1
+  },
+  {
+    "id": 3,
+    "name": "Signed First Edition Book",
+    "price": 1800,
+    "image": "/images/products/book.jpg",
+    "sellerId": 2
+  },
+  {
+    "id": 4,
+    "name": "Handmade Ceramic Mug",
+    "price": 450,
+    "image": "/images/products/mug.jpg",
+    "sellerId": 2
+  },
+  {
+    "id": 5,
+    "name": "Custom-Printed T-Shirt",
+    "price": 600,
+    "image": "/images/products/tshirt.jpeg",
+    "sellerId": 1
+  },
+  {
+    "id": 6,
+    "name": "Original Watercolor Painting",
+    "price": 1200,
+    "image": "/images/products/painting.jpeg",
+    "sellerId": 2
+  }
+]
