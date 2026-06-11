@@ -1,101 +1,52 @@
-import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { useParams, useNavigate } from "react-router-dom";
-import {
-  BookText,
-  PenTool,
-  Book,
-  Grid,
-  FileText,
-  HelpCircle,
-} from "lucide-react";
 import SubjectCard, { SubjectResource } from "@/components/SubjectCard";
-import pdfMappings from "@/data/pdfMappings.json"; // Example path
-import subjectsData from "@/data/subjects.json";
-import type { Chapter, PdfMappingEntry } from "@/lib/types";
-
-// load subjects from JSON file
-const getSubjectsForYear = (year: string): SubjectResource[] => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return (subjectsData as any)[year] || [];
-};
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Seo } from "@/components/Seo";
+import { getSubjectsForYear, getYearLabel } from "@/lib/subjects";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const ResourceSelection = () => {
   const { year } = useParams();
   const navigate = useNavigate();
 
-  const resources = [
-    {
-      title: "PDF NOTES",
-      icon: BookText,
-      color: "bg-blue-100",
-      textColor: "text-blue-600",
-      link: "#pdf-notes",
-    },
-    {
-      title: "Handwritten notes",
-      icon: PenTool,
-      color: "bg-rose-100",
-      textColor: "text-rose-600",
-      link: "#",
-    },
-    {
-      title: "Quantum notes",
-      icon: Book,
-      color: "bg-green-100",
-      textColor: "text-green-600",
-      link: "#",
-    },
-    {
-      title: "CAE papers",
-      icon: Grid,
-      color: "bg-purple-100",
-      textColor: "text-purple-600",
-      link: "#",
-    },
-    {
-      title: "Aktu PYQ's",
-      icon: FileText,
-      color: "bg-orange-100",
-      textColor: "text-orange-600",
-      link: "#",
-    },
-    {
-      title: "Question banks",
-      icon: HelpCircle,
-      color: "bg-teal-100",
-      textColor: "text-teal-600",
-      link: "#",
-    },
-  ];
-
   const yearPrefix = year?.split(" ")[0] || "1st";
   const subjects = getSubjectsForYear(yearPrefix);
+  const yearLabel = getYearLabel(yearPrefix);
 
   const handleSubjectClick = (subject: SubjectResource) => {
     navigate(`/resources/${yearPrefix}/${subject.id}`);
   };
 
-  const getChapters = (subjectId: string, resourceType: string): Chapter[] => {
-    const entry = pdfMappings.find(
-      (m) =>
-        m.year === yearPrefix &&
-        m.subjectId === subjectId &&
-        m.resourceType === resourceType
-    );
-    return entry ? entry.chapters : [];
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
+      <Seo
+        title={`${yearLabel} Study Materials — AKTU Notes & PYQs`}
+        description={`Browse all ${yearLabel} B.Tech subjects — free PDF notes, AKTU PYQs, CAE papers and more for GCET students.`}
+        path={`/resources/${yearPrefix}`}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: `${yearLabel} Resources`,
+          url: `${SITE_URL}/resources/${yearPrefix}`,
+          isPartOf: { "@type": "WebSite", name: SITE_NAME },
+        }}
+      />
       <Navigation />
-      <div className="container mx-auto px-4 pt-32 pb-20">
+      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
+        <Breadcrumbs
+          items={[
+            { label: "Resources", href: "/year-selection" },
+            { label: yearLabel },
+          ]}
+        />
+
         <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white text-center mb-4">
-          Study Material for {year?.toUpperCase()} Year
+          Study Material for {yearLabel}
         </h1>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
           Do not use college email to download resources. Use your personal
-          E-mail ID
+          e-mail ID.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -104,10 +55,11 @@ const ResourceSelection = () => {
               key={subject.id}
               subject={subject}
               onClick={handleSubjectClick}
+              year={yearPrefix}
             />
           ))}
         </div>
-      </div>
+      </main>
     </div>
   );
 };

@@ -1,6 +1,4 @@
-
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,14 +19,12 @@ import DSA from "./pages/coding/DSA";
 import Projects from "./pages/coding/Projects";
 import Game from "./pages/Game";
 import NoticeBoard from "./pages/NoticeBoard";
-const queryClient = new QueryClient();
-
 import useAckee from "use-ackee";
 import { useLocation } from "react-router-dom";
-
 import { ThemeProvider } from "@/context/ThemeProvider";
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import { SkipToContent } from "@/components/SkipToContent";
 
 const AckeeTracker = () => {
   const location = useLocation();
@@ -51,38 +47,37 @@ const AckeeTracker = () => {
 
 const App = () => (
   <ThemeProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <GoogleAnalytics />
-          <AckeeTracker />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/support" element={<Support />} />
-            <Route path="/year-selection" element={<YearSelection />} />
-            <Route path="/resources/:year" element={<ResourceSelection />} />
-            <Route path="/resources/:year/:subjectId" element={<SubjectResources />} />
-            <Route path="/resources/:year/:subjectId/:resourceType" element={<ResourceDetails />} />
-            <Route path="/youtube-resources" element={<YouTubeResources />} />
-            <Route path="/youtube-resources/academic" element={<AcademicVideos />} />
-            <Route path="/youtube-resources/non-academic" element={<NonAcademicVideos />} />
-            <Route path="/coding-resources" element={<CodingResources />} />
-            <Route path="/coding-resources/dsa" element={<DSA />} />
-            <Route path="/coding-resources/projects" element={<Projects />} />
-            <Route path="/game" element={<Game />} />
-            <Route path="/notice-board" element={<NoticeBoard />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <PWAInstallPrompt />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <SkipToContent />
+        <GoogleAnalytics />
+        <AckeeTracker />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/year-selection" element={<YearSelection />} />
+          <Route path="/resources/:year" element={<ResourceSelection />} />
+          <Route path="/resources/:year/:subjectId" element={<SubjectResources />} />
+          <Route path="/resources/:year/:subjectId/:resourceType" element={<ResourceDetails />} />
+          <Route path="/youtube-resources" element={<YouTubeResources />} />
+          <Route path="/youtube-resources/academic" element={<AcademicVideos />} />
+          <Route path="/youtube-resources/non-academic" element={<NonAcademicVideos />} />
+          <Route path="/coding-resources" element={<CodingResources />} />
+          <Route path="/coding-resources/dsa" element={<DSA />} />
+          <Route path="/coding-resources/projects" element={<Projects />} />
+          <Route path="/essentials" element={<Game />} />
+          <Route path="/game" element={<Navigate to="/essentials" replace />} />
+          <Route path="/notice-board" element={<NoticeBoard />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <PWAInstallPrompt />
+      </BrowserRouter>
+    </TooltipProvider>
   </ThemeProvider>
 );
 
 export default App;
-

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "End Sem Exam Schedule for 1st to 4th Year",
+    "date": "Dec 20, 2025",
+    "time": "5:30 PM",
+    "category": "examination",
+    "description": "The end semester examination for Odd Semester 2025-26 will commence from 23 Dec 2025 to 31 Jan 2026. All students are requested to check the detailed schedule on the university portal.",
+    "important": true,
+    "link": "http://fms.aktu.ac.in/Resources/Attachments/Circular/209357b4dcddwd.pdf",
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "title": "AKTU Result Portal Open",
+    "date": "Jan 15, 2026",
+    "time": "10:00 AM",
+    "category": "announcement",
+    "description": "Results for previous semester examinations are now available on the AKTU result portal. Check your grades using your roll number.",
+    "important": false,
+    "link": "https://aktu.ac.in",
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "title": "New PYQs Added — 3rd Year CS Subjects",
+    "date": "Jun 1, 2026",
+    "time": "2:00 PM",
+    "category": "resources",
+    "description": "We've added 2024-25 AKTU PYQs for BCS501, BCS502, and BCS503. Browse 3rd year resources to access them.",
+    "important": false,
+    "link": "/year-selection",
+    "isNew": true
+  }
+]

@@ -6,92 +6,125 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X, Maximize, Minimize } from "lucide-react";
+import { X, Maximize, Minimize, Download, ExternalLink } from "lucide-react";
 import { SubjectResource } from "./SubjectCard";
-
+import { ReportBrokenLink } from "./ReportBrokenLink";
+import { trackPdfOpen } from "@/lib/analytics";
 
 interface PdfViewerProps {
   subject: SubjectResource | null;
   isOpen: boolean;
   onClose: () => void;
+  subjectId?: string;
+  year?: string;
+  resourceType?: string;
 }
 
-const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
+const PdfViewer = ({
+  subject,
+  isOpen,
+  onClose,
+  subjectId,
+  year,
+  resourceType,
+}: PdfViewerProps) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
-  const hasOpenedRef = useRef(false);
+  const trackedRef = useRef<string | null>(null);
 
-
-  // When the dialog opens, default to full-screen mode
   useEffect(() => {
     if (isOpen) {
       setIsFullScreen(true);
+      if (subject && trackedRef.current !== subject.id) {
+        trackedRef.current = subject.id;
+        trackPdfOpen(subject.title, subjectId || "", year || "");
+      }
     } else {
       setIsFullScreen(false);
     }
-  }, [isOpen]);
-
-  const toggleFullScreen = () => {
-    setIsFullScreen(!isFullScreen);
-  };
+  }, [isOpen, subject, subjectId, year]);
 
   const getEmbedUrl = (url: string) => {
     if (!url) return "";
 
-    // Handle Google Drive File URLs (convert /view to /preview)
     if (url.includes("drive.google.com") && url.includes("/file/d/")) {
       return url.replace(/\/view.*/, "/preview");
     }
 
-    // Handle Google Drive Folder URLs (convert to embedded folder view)
     if (url.includes("drive.google.com") && url.includes("/folders/")) {
       const match = url.match(/\/folders\/([a-zA-Z0-9_-]+)/);
-      if (match && match[1]) {
+      if (match?.[1]) {
         return `https://drive.google.com/embeddedfolderview?id=${match[1]}#list`;
       }
     }
 
-    // Handle direct PDF links (use Google Docs Viewer)
     if (url.endsWith(".pdf")) {
-      return `https://docs.google.com/gview?url=${encodeURIComponent(
-        url
-      )}&embedded=true`;
+      return `https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`;
     }
 
     return url;
   };
 
-  const embedUrl = subject ? getEmbedUrl(subject.fileUrl) : "";
+  const getDownloadUrl = (url: string) => {
+    if (url.includes("drive.google.com") && url.includes("/file/d/")) {
+      const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (match?.[1]) {
+        return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+      }
+    }
+    return url;
+  };
+
+  const embedUrl = subject?.fileUrl ? getEmbedUrl(subject.fileUrl) : "";
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent
-        className={`${isFullScreen
-          ? "max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh]"
-          : "max-w-4xl w-[90vw] max-h-[90vh]"
-          } flex flex-col p-1 gap-0 bg-white dark:bg-gray-900 [&>button:last-child]:hidden`}
+        className={`${
+          isFullScreen
+            ? "max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh]"
+            : "max-w-4xl w-[90vw] max-h-[90vh]"
+        } flex flex-col p-1 gap-0 bg-white dark:bg-gray-900 [&>button:last-child]:hidden`}
       >
         <DialogHeader className="flex flex-row items-center justify-between p-3 border-b border-gray-100 dark:border-gray-800">
           <DialogTitle className="text-base md:text-lg font-medium pr-8 truncate flex-1 text-left text-gray-900 dark:text-white">
             {subject?.title}
           </DialogTitle>
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-1 shrink-0">
             {subject?.fileUrl && (
-              <Button
-                variant="outline"
-                size="sm"
-                className="hidden sm:flex h-8 text-xs"
-                onClick={() =>
-                  window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
-                }
-              >
-                Open Original
-              </Button>
+              <>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hidden sm:flex h-8 text-xs"
+                  onClick={() =>
+                    window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
+                  }
+                >
+                  <ExternalLink className="w-3 h-3 mr-1" />
+                  Open
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hidden md:flex h-8 text-xs"
+                  onClick={() =>
+                    window.open(
+                      getDownloadUrl(subject.fileUrl!),
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                >
+                  <Download className="w-3 h-3 mr-1" />
+                  Download
+                </Button>
+              </>
             )}
             <Button
               variant="ghost"
               size="icon"
               className="h-8 w-8"
-              onClick={toggleFullScreen}
+              onClick={() => setIsFullScreen(!isFullScreen)}
             >
               {isFullScreen ? (
                 <Minimize className="h-4 w-4" />
@@ -126,17 +159,28 @@ const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
           )}
         </div>
 
-        {/* Mobile Open Button Footer */}
         {subject?.fileUrl && (
-          <div className="sm:hidden p-2 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
-            <Button
-              className="w-full bg-primary dark:bg-teal-600 text-white"
-              onClick={() =>
-                window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
-              }
-            >
-              Open in Drive App / Browser
-            </Button>
+          <div className="p-2 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-wrap items-center justify-between gap-2">
+            <ReportBrokenLink
+              title={subject.title}
+              url={subject.fileUrl}
+              subjectId={subjectId}
+              year={year}
+              resourceType={resourceType}
+              className="text-xs h-8"
+            />
+            <div className="flex gap-2 sm:hidden">
+              <Button
+                size="sm"
+                variant="outline"
+                className="text-xs"
+                onClick={() =>
+                  window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
+                }
+              >
+                Open in browser
+              </Button>
+            </div>
           </div>
         )}
       </DialogContent>
@@ -144,6 +188,4 @@ const PdfViewer = ({ subject, isOpen, onClose }: PdfViewerProps) => {
   );
 };
 
-
 export default PdfViewer;
-

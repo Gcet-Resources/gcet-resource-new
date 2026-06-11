@@ -1,0 +1,21 @@
+{
+  "exams": [
+    {
+      "id": "end-sem-odd-2025-26",
+      "name": "End Semester Examination (Odd 2025-26)",
+      "startDate": "2025-12-23T09:00:00",
+      "endDate": "2026-01-31T17:00:00",
+      "description": "AKTU end semester exams for Odd Semester 2025-26",
+      "link": "http://fms.aktu.ac.in/Resources/Attachments/Circular/209357b4dcddwd.pdf"
+    },
+    {
+      "id": "cae-odd-2025-26",
+      "name": "CAE / Mid Sem (Odd 2025-26)",
+      "startDate": "2025-10-15T09:00:00",
+      "endDate": "2025-10-25T17:00:00",
+      "description": "Continuous assessment examinations",
+      "link": null
+    }
+  ],
+  "defaultExamId": "end-sem-odd-2025-26"
+}

@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Seo } from "@/components/Seo";
 
 const products = [
   {
@@ -58,9 +59,14 @@ const products = [
 const Game = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
+      <Seo
+        title="Student Essentials — Recommended Products"
+        description="Handpicked calculators, books, and gear for B.Tech engineering students."
+        path="/essentials"
+      />
       <Navigation />
 
-      <div className="container mx-auto px-4 pt-32 pb-20">
+      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl font-display font-bold mb-4 text-gray-900 dark:text-white">
@@ -83,6 +89,7 @@ const Game = () => {
                 <img
                   src={product.image}
                   alt={product.title}
+                  loading="lazy"
                   className="w-full h-40 object-contain rounded-md mb-4 bg-white dark:bg-gray-700"
                 />
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
@@ -110,7 +117,7 @@ const Game = () => {
             </Card>
           ))}
         </div>
-      </div>
+      </main>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { File } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { ResourceBadges } from "@/components/ResourceBadges";
 
 export interface SubjectResource {
   id: string;
@@ -13,9 +14,10 @@ export interface SubjectResource {
 interface SubjectCardProps {
   subject: SubjectResource;
   onClick: (subject: SubjectResource) => void;
+  year?: string;
 }
 
-const SubjectCard = ({ subject, onClick }: SubjectCardProps) => {
+const SubjectCard = ({ subject, onClick, year }: SubjectCardProps) => {
   return (
     <Card
       className="hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all cursor-pointer group overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
@@ -28,8 +30,15 @@ const SubjectCard = ({ subject, onClick }: SubjectCardProps) => {
           >
             <File className="w-7 h-7" />
           </div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{subject.title}</h3>
-          <p className="text-gray-600 dark:text-gray-400 text-sm">{subject.description}</p>
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            {subject.title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 text-sm">
+            {subject.description}
+          </p>
+          {year && (
+            <ResourceBadges year={year} subjectId={subject.id} className="justify-center" />
+          )}
         </div>
       </CardContent>
     </Card>

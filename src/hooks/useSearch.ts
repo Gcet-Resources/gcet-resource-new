@@ -1,68 +1,95 @@
-import { useState, useMemo } from 'react';
-import subjectsData from '@/data/subjects.json';
+import { useMemo } from "react";
+import searchIndex from "@/data/search-index.json";
+import { getAllSubjectsFlat } from "@/lib/subjects";
 
 export interface SearchResult {
-    id: string;
-    title: string;
-    description: string;
-    year: string;
-    color: string;
-    bgColor: string;
+  id: string;
+  title: string;
+  description: string;
+  year: string;
+  color: string;
+  bgColor: string;
+  matchType?: "subject" | "chapter";
+  resourceType?: string;
+  href?: string;
 }
 
-type SubjectsData = {
-    [key: string]: Array<{
-        id: string;
-        title: string;
-        description: string;
-        color: string;
-        bgColor: string;
-    }>;
+type SearchIndexEntry = {
+  year: string;
+  subjectId: string;
+  resourceType: string;
+  title: string;
+  searchText: string;
 };
 
+const subjectLookup = getAllSubjectsFlat();
+
 export const useSearch = (query: string) => {
-    const results = useMemo(() => {
-        if (!query.trim()) return [];
+  const results = useMemo(() => {
+    if (!query.trim()) return [];
 
-        const searchTerm = query.toLowerCase().trim();
-        const allResults: SearchResult[] = [];
+    const searchTerm = query.toLowerCase().trim();
+    const allResults: SearchResult[] = [];
+    const seen = new Set<string>();
 
-        const years = ['1st', '2nd', '3rd', '4th'];
+    subjectLookup.forEach((subject) => {
+      const matchesTitle = subject.title.toLowerCase().includes(searchTerm);
+      const matchesId = subject.id.toLowerCase().includes(searchTerm);
 
-        years.forEach((year) => {
-            const subjects = (subjectsData as SubjectsData)[year] || [];
+      if (matchesTitle || matchesId) {
+        const key = `subject-${subject.year}-${subject.id}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          allResults.push({
+            ...subject,
+            matchType: "subject",
+            href: `/resources/${subject.year}/${subject.id}`,
+          });
+        }
+      }
+    });
 
-            subjects.forEach((subject) => {
-                const matchesTitle = subject.title.toLowerCase().includes(searchTerm);
-                const matchesId = subject.id.toLowerCase().includes(searchTerm);
+    (searchIndex as SearchIndexEntry[]).forEach((entry) => {
+      if (!entry.searchText.includes(searchTerm)) return;
 
-                if (matchesTitle || matchesId) {
-                    allResults.push({
-                        ...subject,
-                        year,
-                    });
-                }
-            });
-        });
+      const subject = subjectLookup.find(
+        (s) => s.id === entry.subjectId && s.year === entry.year
+      );
+      if (!subject) return;
 
-        // Sort by relevance: exact matches first, then partial matches
-        return allResults.sort((a, b) => {
-            const aExact = a.title.toLowerCase() === searchTerm || a.id.toLowerCase() === searchTerm;
-            const bExact = b.title.toLowerCase() === searchTerm || b.id.toLowerCase() === searchTerm;
+      const key = `chapter-${entry.year}-${entry.subjectId}-${entry.resourceType}-${entry.title}`;
+      if (seen.has(key)) return;
+      seen.add(key);
 
-            if (aExact && !bExact) return -1;
-            if (!aExact && bExact) return 1;
+      allResults.push({
+        id: entry.subjectId,
+        title: `${entry.title} — ${subject.title}`,
+        description: `${entry.resourceType} · ${entry.subjectId}`,
+        year: entry.year,
+        color: subject.color,
+        bgColor: subject.bgColor,
+        matchType: "chapter",
+        resourceType: entry.resourceType,
+        href: `/resources/${entry.year}/${entry.subjectId}/${entry.resourceType}`,
+      });
+    });
 
-            // Then sort by title starting with search term
-            const aStarts = a.title.toLowerCase().startsWith(searchTerm);
-            const bStarts = b.title.toLowerCase().startsWith(searchTerm);
+    const sorted = allResults.sort((a, b) => {
+      const aExact =
+        a.title.toLowerCase() === searchTerm ||
+        a.id.toLowerCase() === searchTerm;
+      const bExact =
+        b.title.toLowerCase() === searchTerm ||
+        b.id.toLowerCase() === searchTerm;
+      if (aExact && !bExact) return -1;
+      if (!aExact && bExact) return 1;
+      if (a.matchType === "subject" && b.matchType === "chapter") return -1;
+      if (a.matchType === "chapter" && b.matchType === "subject") return 1;
+      return 0;
+    });
 
-            if (aStarts && !bStarts) return -1;
-            if (!aStarts && bStarts) return 1;
+    return sorted.slice(0, 12);
+  }, [query]);
 
-            return 0;
-        }).slice(0, 10); // Limit to 10 results
-    }, [query]);
-
-    return results;
+  return results;
 };
