@@ -50,7 +50,12 @@ export function ShareButton({
   };
 
   return (
-    <Button variant="outline" size="sm" className={className} onClick={handleShare}>
+    <Button
+      variant="outline"
+      size="sm"
+      className={className}
+      onClick={handleShare}
+    >
       <Share2 className="w-3.5 h-3.5 mr-1.5" />
       Share
     </Button>

@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +21,9 @@ const CodingResources = () => {
           >
             <div className="flex flex-col items-center text-center space-y-4">
               <Code className="w-16 h-16 text-primary dark:text-teal-400" />
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">DSA Materials</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                DSA Materials
+              </h2>
               <p className="text-gray-600 dark:text-gray-400">
                 Learn Data Structures and Algorithms with our curated resources
               </p>
@@ -35,10 +36,10 @@ const CodingResources = () => {
           >
             <div className="flex flex-col items-center text-center space-y-4">
               <FolderGit2 className="w-16 h-16 text-primary dark:text-teal-400" />
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Projects</h2>
-              <p className="text-gray-600 dark:text-gray-400">
-                coming soon..
-              </p>
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                Projects
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400">coming soon..</p>
             </div>
           </Card>
         </div>

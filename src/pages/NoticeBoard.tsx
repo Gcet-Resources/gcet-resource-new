@@ -40,8 +40,8 @@ const NoticeBoard = () => {
       filter === "all"
         ? true
         : filter === "important"
-          ? notice.important
-          : notice.category === filter;
+        ? notice.important
+        : notice.category === filter;
 
     const matchesSearch =
       notice.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -86,13 +86,17 @@ const NoticeBoard = () => {
     const isInternal = notice.link.startsWith("/");
     const label = (
       <>
-        Read <ExternalLink className="w-3 h-3 group-hover/link:translate-x-0.5 transition-transform" />
+        Read{" "}
+        <ExternalLink className="w-3 h-3 group-hover/link:translate-x-0.5 transition-transform" />
       </>
     );
 
     if (isInternal) {
       return (
-        <Link to={notice.link} className="flex items-center gap-1 text-primary dark:text-teal-400 hover:underline group/link">
+        <Link
+          to={notice.link}
+          className="flex items-center gap-1 text-primary dark:text-teal-400 hover:underline group/link"
+        >
           {label}
         </Link>
       );
@@ -121,7 +125,9 @@ const NoticeBoard = () => {
 
       <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
         <div
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 transform ${mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 transform ${
+            mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
         >
           <div className="relative inline-block mb-6">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-30 animate-pulse" />
@@ -134,7 +140,8 @@ const NoticeBoard = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
-            Notice Board <span className="text-primary dark:text-teal-400">Hub</span>
+            Notice Board{" "}
+            <span className="text-primary dark:text-teal-400">Hub</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
             Live updates on exams, events, and essential announcements.
@@ -142,7 +149,9 @@ const NoticeBoard = () => {
         </div>
 
         <div
-          className={`sticky top-24 z-30 bg-white/80 dark:bg-gray-950/80 backdrop-blur-xl border border-gray-200 dark:border-gray-800 rounded-2xl p-4 mb-12 shadow-lg transition-all duration-700 delay-100 transform ${mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+          className={`sticky top-24 z-30 bg-white/80 dark:bg-gray-950/80 backdrop-blur-xl border border-gray-200 dark:border-gray-800 rounded-2xl p-4 mb-12 shadow-lg transition-all duration-700 delay-100 transform ${
+            mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
         >
           <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
             <div className="flex flex-wrap gap-2 justify-center md:justify-start w-full md:w-auto">
@@ -185,11 +194,17 @@ const NoticeBoard = () => {
             filteredNotices.map((notice, index) => (
               <div
                 key={notice.id}
-                className={`group relative transition-all duration-500 transform ${mounted ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
+                className={`group relative transition-all duration-500 transform ${
+                  mounted
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-20 opacity-0"
+                }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <Card
-                  className={`h-full border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:-translate-y-1 transition-all shadow-sm hover:shadow-xl overflow-hidden relative ${notice.important ? "ring-1 ring-red-500/20" : ""}`}
+                  className={`h-full border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:-translate-y-1 transition-all shadow-sm hover:shadow-xl overflow-hidden relative ${
+                    notice.important ? "ring-1 ring-red-500/20" : ""
+                  }`}
                 >
                   {notice.isNew && (
                     <div className="absolute top-4 right-4 flex items-center gap-1">
@@ -212,9 +227,13 @@ const NoticeBoard = () => {
                   <CardContent className="p-6 flex flex-col h-full">
                     <Badge
                       variant="outline"
-                      className={`w-fit mb-4 px-3 py-1 rounded-full text-xs font-semibold capitalize border ${getCategoryColor(notice.category)}`}
+                      className={`w-fit mb-4 px-3 py-1 rounded-full text-xs font-semibold capitalize border ${getCategoryColor(
+                        notice.category
+                      )}`}
                     >
-                      <span className="mr-1.5">{getCategoryIcon(notice.category)}</span>
+                      <span className="mr-1.5">
+                        {getCategoryIcon(notice.category)}
+                      </span>
                       {notice.category}
                     </Badge>
 

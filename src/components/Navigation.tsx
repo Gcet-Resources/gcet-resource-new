@@ -1,9 +1,8 @@
-
-import { useState, useEffect } from 'react';
-import { Menu, X, Bell, Search } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X, Bell, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { DarkModeToggle } from './DarkModeToggle';
-import { GlobalSearch } from './GlobalSearch';
+import { DarkModeToggle } from "./DarkModeToggle";
+import { GlobalSearch } from "./GlobalSearch";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,20 +13,20 @@ export const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Cmd/Ctrl + K keyboard shortcut
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
         setIsSearchOpen(true);
       }
     };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const navItems = [
@@ -90,7 +89,10 @@ export const Navigation = () => {
                 onClick={() => setIsSearchOpen(true)}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               >
-                <Search size={20} className="text-gray-700 dark:text-gray-200" />
+                <Search
+                  size={20}
+                  className="text-gray-700 dark:text-gray-200"
+                />
               </button>
               <DarkModeToggle />
               <button
@@ -123,7 +125,10 @@ export const Navigation = () => {
       </nav>
 
       {/* Global Search Modal */}
-      <GlobalSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      <GlobalSearch
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
+      />
     </>
   );
 };

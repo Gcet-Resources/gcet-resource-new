@@ -37,7 +37,11 @@ const SubjectCard = ({ subject, onClick, year }: SubjectCardProps) => {
             {subject.description}
           </p>
           {year && (
-            <ResourceBadges year={year} subjectId={subject.id} className="justify-center" />
+            <ResourceBadges
+              year={year}
+              subjectId={subject.id}
+              className="justify-center"
+            />
           )}
         </div>
       </CardContent>

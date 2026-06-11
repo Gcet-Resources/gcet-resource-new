@@ -28,10 +28,10 @@ export function useFavorites() {
         const filtered = prev.filter(
           (s) => s.id !== subject.id || s.year !== subject.year
         );
-        const next = [
-          { ...subject, savedAt: Date.now() },
-          ...filtered,
-        ].slice(0, MAX_ITEMS);
+        const next = [{ ...subject, savedAt: Date.now() }, ...filtered].slice(
+          0,
+          MAX_ITEMS
+        );
         localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
         return next;
       });

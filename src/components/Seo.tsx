@@ -44,9 +44,7 @@ export function Seo({
 
       {jsonLd && (
         <script type="application/ld+json">
-          {JSON.stringify(
-            Array.isArray(jsonLd) ? jsonLd : jsonLd
-          )}
+          {JSON.stringify(Array.isArray(jsonLd) ? jsonLd : jsonLd)}
         </script>
       )}
     </Helmet>

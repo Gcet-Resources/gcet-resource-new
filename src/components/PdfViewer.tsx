@@ -1,4 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import type {
+  PDFDocumentProxy,
+  PDFPageProxy,
+  GetDocumentParameters,
+} from "pdfjs-dist";
+import type { PDFWorker } from "pdfjs-dist";
 import {
   Dialog,
   DialogContent,
@@ -58,7 +64,9 @@ const PdfViewer = ({
     }
 
     if (url.endsWith(".pdf")) {
-      return `https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`;
+      return `https://docs.google.com/gview?url=${encodeURIComponent(
+        url
+      )}&embedded=true`;
     }
 
     return url;
@@ -75,6 +83,148 @@ const PdfViewer = ({
   };
 
   const embedUrl = subject?.fileUrl ? getEmbedUrl(subject.fileUrl) : "";
+  const isPdfUrl = subject?.fileUrl?.toLowerCase().endsWith(".pdf");
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const loadingTaskRef = useRef<any>(null);
+  const pdfRef = useRef<PDFDocumentProxy | null>(null);
+  const pageCacheRef = useRef<Map<number, ImageBitmap | string>>(new Map());
+
+  useEffect(() => {
+    let cancelled = false;
+    async function renderFirstPage() {
+      if (!isOpen || !isPdfUrl || !subject?.fileUrl) return;
+      setError(null);
+      setLoading(true);
+      try {
+        const pdfjs = await import("pdfjs-dist/legacy/build/pdf");
+        // configure worker
+        try {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+            "pdfjs-dist/legacy/build/pdf.worker.min.js",
+            import.meta.url
+          ).toString();
+        } catch (e) {
+          // ignore worker config errors, PDF.js may fallback
+        }
+
+        const loadingTask = pdfjs.getDocument({
+          url: subject.fileUrl,
+          disableStream: false,
+        } as any);
+        loadingTaskRef.current = loadingTask;
+        const pdf: PDFDocumentProxy = await loadingTask.promise;
+        pdfRef.current = pdf;
+        if (cancelled) {
+          pdf.cleanup?.();
+          return;
+        }
+        const page: PDFPageProxy = await pdf.getPage(1);
+        const viewport = page.getViewport({ scale: 1 });
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const context = canvas.getContext("2d");
+        // size canvas appropriately for crisp rendering
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(viewport.width * dpr);
+        canvas.height = Math.floor(viewport.height * dpr);
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        if (context) {
+          context.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+        const renderContext = {
+          canvasContext: context,
+          viewport,
+        } as any;
+        const renderTask = page.render(renderContext);
+        await renderTask.promise;
+        // keep PDF loaded for potential further pages; we only render first page eagerly
+      } catch (err: any) {
+        console.error("PDF render error:", err);
+        setError(String(err?.message || err));
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    // Start sequential background prefetch: page 2 then 3, then remaining pages (low priority)
+    (function schedulePrefetch() {
+      const pdfDoc = pdfRef.current;
+      if (!pdfDoc || pdfDoc.numPages <= 1) return;
+
+      const prefetch = async () => {
+        const maxPrefetch = Math.min(pdfDoc.numPages, 6); // limit prefetch depth
+        for (let i = 2; i <= maxPrefetch; i++) {
+          try {
+            // yield to idle time to avoid blocking the UI
+            await new Promise((res) => setTimeout(res, 250));
+            const p = await pdfDoc.getPage(i);
+            const vp = p.getViewport({ scale: 1 });
+            // offscreen canvas if available
+            let offCanvas: HTMLCanvasElement | OffscreenCanvas | null = null;
+            if ((window as any).OffscreenCanvas) {
+              offCanvas = new (window as any).OffscreenCanvas(
+                Math.floor(vp.width),
+                Math.floor(vp.height)
+              );
+            } else {
+              offCanvas = document.createElement("canvas");
+              offCanvas.width = Math.floor(vp.width);
+              offCanvas.height = Math.floor(vp.height);
+            }
+            const offCtx = (offCanvas as any).getContext
+              ? (offCanvas as any).getContext("2d")
+              : null;
+            const renderCtx = { canvasContext: offCtx, viewport: vp } as any;
+            const rt = p.render(renderCtx);
+            await rt.promise;
+            // try to cache image bitmap for faster display later
+            try {
+              if (
+                (window as any).createImageBitmap &&
+                offCanvas instanceof HTMLCanvasElement
+              ) {
+                const blob = await new Promise<Blob | null>((resolve) =>
+                  offCanvas.toBlob((b) => resolve(b))
+                );
+                if (blob) {
+                  const bitmap = await (window as any).createImageBitmap(blob);
+                  pageCacheRef.current.set(i, bitmap);
+                }
+              }
+            } catch (e) {
+              // ignore per-page cache errors
+            }
+          } catch (e) {
+            // stop prefetching on errors
+            break;
+          }
+        }
+      };
+
+      if ((window as any).requestIdleCallback) {
+        (window as any).requestIdleCallback(() => prefetch(), {
+          timeout: 2000,
+        });
+      } else {
+        setTimeout(() => prefetch(), 500);
+      }
+    })();
+    renderFirstPage();
+
+    return () => {
+      cancelled = true;
+      try {
+        loadingTaskRef.current?.destroy?.();
+      } catch (e) {
+        // ignore
+      }
+    };
+  }, [isOpen, isPdfUrl, subject?.fileUrl]);
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
@@ -97,7 +247,11 @@ const PdfViewer = ({
                   size="sm"
                   className="hidden sm:flex h-8 text-xs"
                   onClick={() =>
-                    window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
+                    window.open(
+                      subject.fileUrl,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
                   }
                 >
                   <ExternalLink className="w-3 h-3 mr-1" />
@@ -145,13 +299,38 @@ const PdfViewer = ({
 
         <div className="flex-1 w-full bg-gray-100 dark:bg-gray-950 relative overflow-hidden rounded-b-lg">
           {embedUrl ? (
-            <iframe
-              src={embedUrl}
-              className="w-full h-full border-0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              title={subject?.title || "PDF Viewer"}
-            />
+            // If it's a direct PDF url (not Google Drive), use a PDF.js-powered canvas
+            isPdfUrl && !embedUrl.includes("docs.google.com") ? (
+              <div className="w-full h-full flex items-center justify-center p-2">
+                <div className="w-full h-full relative">
+                  <canvas
+                    ref={canvasRef}
+                    className="w-full h-full block"
+                    aria-label={subject?.title || "PDF canvas"}
+                  />
+                  {loading && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-700" />
+                    </div>
+                  )}
+                  {error && (
+                    <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-red-600">
+                      Failed to load document — defaulting to browser viewer.
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : (
+              // Fallback to iframe/embed (Google viewer or generic URL)
+              <iframe
+                src={embedUrl}
+                className="w-full h-full border-0"
+                loading="lazy"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title={subject?.title || "PDF Viewer"}
+              />
+            )
           ) : (
             <div className="flex flex-col items-center justify-center h-full p-6 text-center text-gray-500">
               <p>No document URL found.</p>

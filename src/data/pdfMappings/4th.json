@@ -1,1 +1,3202 @@
-[{"year":"4th","subjectId":"KCE079","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCE079","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCE079","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCE079","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCE079","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCE079","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS072","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS074","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS078","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS079","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS710","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS711","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS712","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS713","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KCS714","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KDS071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KDS073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KDS078","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KDS079","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC072","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC074","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC076","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC077","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEC078","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE070","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE072","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE074","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE076","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE077","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE078","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KEE079","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KHU701","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KHU702","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KIT071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME072","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME074","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KME076","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE072","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE073","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE074","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE076","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE077","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE078","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE079","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOT071","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOT075","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOT076","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOT710","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOT712","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KHU801","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KHU802","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE080","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE081","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE082","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE083","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE084","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE085","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE086","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE087","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE088","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE089","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE090","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE091","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE092","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE093","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE094","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE095","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE096","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE097","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE098","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"pdf-notes","chapters":[{"id":"chapter-1","title":"All Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"aktu-pyq","chapters":[{"id":"chapter-1","title":"PYQs","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"cae","chapters":[{"id":"chapter-1","title":"CAE Papers","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"handwritten","chapters":[{"id":"chapter-1","title":"Handwritten Notes","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"quantum","chapters":[{"id":"chapter-1","title":"Quantum PDF","fileUrl":""}]},{"year":"4th","subjectId":"KOE099","resourceType":"question-bank","chapters":[{"id":"chapter-1","title":"Question Banks","fileUrl":""}]}]
+[
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCE079",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS072",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS074",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS078",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS079",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS710",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS711",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS712",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS713",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KCS714",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS078",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KDS079",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC072",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC074",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC076",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC077",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEC078",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE070",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE072",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE074",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE076",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE077",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE078",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KEE079",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU701",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU702",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KIT071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME072",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME074",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KME076",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE072",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE073",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE074",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE076",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE077",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE078",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE079",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT071",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT075",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT076",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT710",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOT712",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU801",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KHU802",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE080",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE081",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE082",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE083",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE084",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE085",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE086",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE087",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE088",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE089",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE090",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE091",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE092",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE093",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE094",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE095",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE096",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE097",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE098",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "pdf-notes",
+    "chapters": [{ "id": "chapter-1", "title": "All Notes", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "aktu-pyq",
+    "chapters": [{ "id": "chapter-1", "title": "PYQs", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "cae",
+    "chapters": [{ "id": "chapter-1", "title": "CAE Papers", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "handwritten",
+    "chapters": [
+      { "id": "chapter-1", "title": "Handwritten Notes", "fileUrl": "" }
+    ]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "quantum",
+    "chapters": [{ "id": "chapter-1", "title": "Quantum PDF", "fileUrl": "" }]
+  },
+  {
+    "year": "4th",
+    "subjectId": "KOE099",
+    "resourceType": "question-bank",
+    "chapters": [
+      { "id": "chapter-1", "title": "Question Banks", "fileUrl": "" }
+    ]
+  }
+]

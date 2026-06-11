@@ -8,8 +8,7 @@ const AcademicVideos = () => {
     {
       title: "Engineering Mathematics 1 Playlist",
       description: "Best resource for M1",
-      thumbnail:
-        "https://i.ytimg.com/vi/TStqBRLePoM/hqdefault.jpg",
+      thumbnail: "https://i.ytimg.com/vi/TStqBRLePoM/hqdefault.jpg",
       link: "https://www.youtube.com/playlist?list=PL5Dqs90qDljVTfWmYSWjD99kcqdkI5zMM",
     },
   ];

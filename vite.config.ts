@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
 
@@ -13,7 +13,11 @@ export default defineConfig({
       output: {
         manualChunks(id: string) {
           if (!id.includes("node_modules")) return undefined;
-          if (id.includes("react") || id.includes("react-dom") || id.includes("react-router-dom")) {
+          if (
+            id.includes("react") ||
+            id.includes("react-dom") ||
+            id.includes("react-router-dom")
+          ) {
             return "vendor";
           }
           if (id.includes("@radix-ui")) return "ui";

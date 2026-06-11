@@ -1,68 +1,75 @@
-
 import { Navigation } from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Github, Instagram, Linkedin, User } from "lucide-react";
-
 
 const About = () => {
   const leads = [
     {
       name: "Gulshan Yadav",
       role: "Product Lead",
-      image: "https://lh3.googleusercontent.com/d/18o6QHd3vhljGdEZ7AsXKRyP36VIZjVW1",
+      image:
+        "https://lh3.googleusercontent.com/d/18o6QHd3vhljGdEZ7AsXKRyP36VIZjVW1",
       social: {
         github: "https://github.com/gulshan214",
         instagram: "https://www.instagram.com/gulshan_214",
-        linkedin: "https://www.linkedin.com/in/gulshan-yadav04/"
-      }
+        linkedin: "https://www.linkedin.com/in/gulshan-yadav04/",
+      },
     },
     {
       name: "Anshul Kushwaha",
       role: "Engineering Lead",
-      image: "https://lh3.googleusercontent.com/d/1MsETTS1HStn9Ae5K9aWveS9NFxRDbrm0",
+      image:
+        "https://lh3.googleusercontent.com/d/1MsETTS1HStn9Ae5K9aWveS9NFxRDbrm0",
       social: {
         github: "https://github.com/sudo-anshul",
         instagram: "https://www.instagram.com/sudo_anshul/",
-        linkedin: "https://www.linkedin.com/in/anshul-kushwaha"
-      }
+        linkedin: "https://www.linkedin.com/in/anshul-kushwaha",
+      },
     },
     {
       name: "Harshita",
       role: "Design Lead",
-      image: "https://lh3.googleusercontent.com/d/1RRXazoVId5U-q4HqKS6zKVoFrgWnZL2h",
+      image:
+        "https://lh3.googleusercontent.com/d/1RRXazoVId5U-q4HqKS6zKVoFrgWnZL2h",
       social: {
         github: "https://github.com/HARSHITA2450",
-        instagram: "https://www.instagram.com/hyhh.harshita.124?utm_source=qr&igsh=MTR4OHFmZzhkMzlr",
-        linkedin: "https://www.linkedin.com/in/harshita-pandey-4b322a274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      }
+        instagram:
+          "https://www.instagram.com/hyhh.harshita.124?utm_source=qr&igsh=MTR4OHFmZzhkMzlr",
+        linkedin:
+          "https://www.linkedin.com/in/harshita-pandey-4b322a274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
     },
     {
       name: "Himanshu Srivastava",
       role: "Content Lead",
-      image: "https://lh3.googleusercontent.com/d/1CEN2QeUPSBuhwJFdYbnoXAcq39E9JDO6",
+      image:
+        "https://lh3.googleusercontent.com/d/1CEN2QeUPSBuhwJFdYbnoXAcq39E9JDO6",
       social: {
         github: "https://github.com/travor21",
-        linkedin: "https://www.linkedin.com/in/himanshu-srivastava-276929280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      }
+        linkedin:
+          "https://www.linkedin.com/in/himanshu-srivastava-276929280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
     },
     {
       name: "Aditya Kumar Gupta",
       role: "Operations Lead",
-      image: "https://lh3.googleusercontent.com/d/11HOBGN3vyEmiYHXJRKLX65Kkq_LA3a-E",
+      image:
+        "https://lh3.googleusercontent.com/d/11HOBGN3vyEmiYHXJRKLX65Kkq_LA3a-E",
       social: {
         github: "https://github.com/Aditya05-max",
-        linkedin: "https://www.linkedin.com/in/aditya-kumar-786302314/"
-      }
+        linkedin: "https://www.linkedin.com/in/aditya-kumar-786302314/",
+      },
     },
     {
       name: "Vinayak Sonthalia",
       role: "Community Lead",
-      image: "https://lh3.googleusercontent.com/d/1FOUds4jlGc_d9_Px8xzDcWWelUkH9hB0",
+      image:
+        "https://lh3.googleusercontent.com/d/1FOUds4jlGc_d9_Px8xzDcWWelUkH9hB0",
       social: {
         github: "https://github.com/vinayaksonthalia",
-        linkedin: "https://in.linkedin.com/in/vinayak-sonthalia-b472411b7"
-      }
-    }
+        linkedin: "https://in.linkedin.com/in/vinayak-sonthalia-b472411b7",
+      },
+    },
   ];
 
   const juniors = [
@@ -70,38 +77,38 @@ const About = () => {
       name: "Junior Developer",
       role: "Assistant Developer",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
+      social: { github: "#", instagram: "#", linkedin: "#" },
     },
     {
       name: "Junior Developer",
       role: "Assistant Developer",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
+      social: { github: "#", instagram: "#", linkedin: "#" },
     },
     {
       name: "Junior Designer",
       role: "Assistant Designer",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
+      social: { github: "#", instagram: "#", linkedin: "#" },
     },
     {
       name: "Junior Content",
       role: "Assistant Resource Manager",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
+      social: { github: "#", instagram: "#", linkedin: "#" },
     },
     {
       name: "Junior Operations",
       role: "Assistant Resource Manager",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
+      social: { github: "#", instagram: "#", linkedin: "#" },
     },
     {
       name: "Junior Community",
       role: "Assistant Resource Manager",
       image: null,
-      social: { github: "#", instagram: "#", linkedin: "#" }
-    }
+      social: { github: "#", instagram: "#", linkedin: "#" },
+    },
   ];
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -128,10 +135,16 @@ const About = () => {
             Our Team
           </span>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-slate-900 dark:text-white mb-6 tracking-tight animate-fade-up">
-            Passing the <span className="text-primary dark:text-teal-400">Legacy</span>
+            Passing the{" "}
+            <span className="text-primary dark:text-teal-400">Legacy</span>
           </h1>
-          <p className="text-lg text-slate-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            We're a dedicated team of seniors and upcoming juniors working together to build and maintain quality educational resources for GCET students.
+          <p
+            className="text-lg text-slate-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed animate-fade-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            We're a dedicated team of seniors and upcoming juniors working
+            together to build and maintain quality educational resources for
+            GCET students.
           </p>
         </div>
       </div>
@@ -145,7 +158,9 @@ const About = () => {
               The Leads
               <span className="w-8 h-1 bg-primary dark:bg-teal-400 rounded-full"></span>
             </h2>
-            <p className="text-slate-500 dark:text-gray-400">The founding team passing on the torch</p>
+            <p className="text-slate-500 dark:text-gray-400">
+              The founding team passing on the torch
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
@@ -168,18 +183,22 @@ const About = () => {
                       />
                     </div>
                   </div>
-
                 </div>
 
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary dark:group-hover:text-teal-400 transition-colors">
                     {member.name}
                   </h3>
-                  <p className="text-slate-500 dark:text-gray-400 font-medium mb-6">{member.role}</p>
+                  <p className="text-slate-500 dark:text-gray-400 font-medium mb-6">
+                    {member.role}
+                  </p>
 
                   <div className="flex justify-center space-x-3 opacity-80 group-hover:opacity-100 transition-opacity">
                     <SocialLink href={member.social.github} icon={Github} />
-                    <SocialLink href={member.social.instagram} icon={Instagram} />
+                    <SocialLink
+                      href={member.social.instagram}
+                      icon={Instagram}
+                    />
                     <SocialLink href={member.social.linkedin} icon={Linkedin} />
                   </div>
                 </div>
@@ -196,7 +215,9 @@ const About = () => {
             <h2 className="text-3xl font-display font-bold text-slate-900 dark:text-white mb-4">
               The Next Generation
             </h2>
-            <p className="text-slate-500 dark:text-gray-400">Upcoming leaders carrying the vision forward</p>
+            <p className="text-slate-500 dark:text-gray-400">
+              Upcoming leaders carrying the vision forward
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -204,7 +225,7 @@ const About = () => {
               <div
                 key={index}
                 className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-slate-200/60 dark:border-gray-700 hover:border-primary/30 dark:hover:border-teal-500/30 hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 animate-fade-up"
-                style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}
+                style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-gray-700 flex items-center justify-center text-slate-400 dark:text-gray-500 group-hover:text-primary dark:group-hover:text-teal-400 group-hover:bg-primary/10 dark:group-hover:bg-teal-500/20 transition-colors duration-300">
@@ -214,12 +235,16 @@ const About = () => {
                     <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-primary dark:group-hover:text-teal-400 transition-colors">
                       {member.name}
                     </h3>
-                    <p className="text-sm text-slate-500 dark:text-gray-400">{member.role}</p>
+                    <p className="text-sm text-slate-500 dark:text-gray-400">
+                      {member.role}
+                    </p>
                   </div>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100 dark:border-gray-700 flex justify-end space-x-2">
-                  <div className="text-xs text-slate-400 dark:text-gray-500 italic">Incoming</div>
+                  <div className="text-xs text-slate-400 dark:text-gray-500 italic">
+                    Incoming
+                  </div>
                 </div>
               </div>
             ))}
@@ -233,4 +258,3 @@ const About = () => {
 };
 
 export default About;
-

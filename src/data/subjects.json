@@ -63,7 +63,6 @@
       "color": "text-cyan-600",
       "bgColor": "bg-cyan-100"
     }
-    
   ],
   "2nd": [
     {
@@ -269,7 +268,7 @@
       "color": "text-cyan-600",
       "bgColor": "bg-cyan-100"
     },
-    
+
     {
       "id": "BEE401",
       "title": "Digital Electronics",
@@ -277,7 +276,7 @@
       "color": "text-green-600",
       "bgColor": "bg-green-100"
     },
-    
+
     {
       "id": "BOE406",
       "title": "Basics Data Structure Algorithms",
@@ -307,7 +306,7 @@
       "color": "text-rose-600",
       "bgColor": "bg-rose-100"
     },
-    
+
     {
       "id": "BVE401",
       "title": "Universal Human Values Professional Ethics",
@@ -506,7 +505,7 @@
       "color": "text-cyan-600",
       "bgColor": "bg-cyan-100"
     },
-  
+
     {
       "id": "BOE064",
       "title": "Object Oriented Programming",

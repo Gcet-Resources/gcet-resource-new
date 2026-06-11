@@ -20,7 +20,10 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
           </Link>
         </li>
         {items.map((item, index) => (
-          <li key={`${item.label}-${index}`} className="flex items-center gap-1">
+          <li
+            key={`${item.label}-${index}`}
+            className="flex items-center gap-1"
+          >
             <ChevronRight className="w-3.5 h-3.5 shrink-0" />
             {item.href ? (
               <Link

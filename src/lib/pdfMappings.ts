@@ -1,6 +1,9 @@
 import type { Chapter, PdfMappingEntry } from "@/lib/types";
 
-const yearModules: Record<string, () => Promise<{ default: PdfMappingEntry[] }>> = {
+const yearModules: Record<
+  string,
+  () => Promise<{ default: PdfMappingEntry[] }>
+> = {
   "1st": () => import("@/data/pdfMappings/1st.json"),
   "2nd": () => import("@/data/pdfMappings/2nd.json"),
   "3rd": () => import("@/data/pdfMappings/3rd.json"),
@@ -29,8 +32,7 @@ export async function getChaptersForResource(
 ): Promise<Chapter[]> {
   const mappings = await loadPdfMappingsForYear(year);
   const entry = mappings.find(
-    (m) =>
-      m.subjectId === subjectId && m.resourceType === resourceType
+    (m) => m.subjectId === subjectId && m.resourceType === resourceType
   );
 
   if (!entry?.chapters?.length) return [];

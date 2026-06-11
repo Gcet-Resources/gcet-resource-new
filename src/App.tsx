@@ -53,7 +53,8 @@ const App = () => (
       <BrowserRouter>
         <SkipToContent />
         <GoogleAnalytics />
-        <AckeeTracker />
+        {import.meta.env.VITE_ACKEE_SERVER_URL &&
+          import.meta.env.VITE_ACKEE_DOMAIN_ID && <AckeeTracker />}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
@@ -61,11 +62,23 @@ const App = () => (
           <Route path="/support" element={<Support />} />
           <Route path="/year-selection" element={<YearSelection />} />
           <Route path="/resources/:year" element={<ResourceSelection />} />
-          <Route path="/resources/:year/:subjectId" element={<SubjectResources />} />
-          <Route path="/resources/:year/:subjectId/:resourceType" element={<ResourceDetails />} />
+          <Route
+            path="/resources/:year/:subjectId"
+            element={<SubjectResources />}
+          />
+          <Route
+            path="/resources/:year/:subjectId/:resourceType"
+            element={<ResourceDetails />}
+          />
           <Route path="/youtube-resources" element={<YouTubeResources />} />
-          <Route path="/youtube-resources/academic" element={<AcademicVideos />} />
-          <Route path="/youtube-resources/non-academic" element={<NonAcademicVideos />} />
+          <Route
+            path="/youtube-resources/academic"
+            element={<AcademicVideos />}
+          />
+          <Route
+            path="/youtube-resources/non-academic"
+            element={<NonAcademicVideos />}
+          />
           <Route path="/coding-resources" element={<CodingResources />} />
           <Route path="/coding-resources/dsa" element={<DSA />} />
           <Route path="/coding-resources/projects" element={<Projects />} />

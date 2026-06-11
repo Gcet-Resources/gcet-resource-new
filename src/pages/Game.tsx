@@ -7,7 +7,8 @@ const products = [
   {
     id: 1,
     title: "Casio FX-100MS",
-    description: "Best budget calculator for students. Will work till 4th Year without any problems",
+    description:
+      "Best budget calculator for students. Will work till 4th Year without any problems",
     price: "₹971",
     image: "https://m.media-amazon.com/images/I/61gYf0RIFiL._SX679_.jpg",
     link: "https://amzn.to/496sArV",
@@ -15,7 +16,8 @@ const products = [
   {
     id: 6,
     title: "GitHub t-shirt",
-    description: "DUDEME Git Hub The Place Where I Fork Half Sleeve 100% Cotton 180 GSM T-Shirt",
+    description:
+      "DUDEME Git Hub The Place Where I Fork Half Sleeve 100% Cotton 180 GSM T-Shirt",
     price: "₹468",
     image: "https://m.media-amazon.com/images/I/51s2A-F2T-L._SX679_.jpg",
     link: "https://amzn.to/4994tZM",
@@ -39,7 +41,8 @@ const products = [
   {
     id: 2,
     title: "Laptop Stand (Ergonomic)",
-    description: "Improve posture and productivity during long coding sessions.",
+    description:
+      "Improve posture and productivity during long coding sessions.",
     price: "₹1799",
     image: "https://m.media-amazon.com/images/I/615sV-wxJyL._SX679_.jpg",
     link: "https://amzn.to/48TqBIV",
@@ -52,8 +55,6 @@ const products = [
     image: "https://m.media-amazon.com/images/I/61cvMO-HeeL._SX679_.jpg",
     link: "https://amzn.to/4pO3Hsd",
   },
-  
-  
 ];
 
 const Game = () => {

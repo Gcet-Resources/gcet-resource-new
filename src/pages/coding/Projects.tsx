@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { FolderGit2, ExternalLink, Github } from "lucide-react";
@@ -7,15 +6,17 @@ const Projects = () => {
   const projects = [
     {
       title: "Student Portfolio",
-      description: "A responsive portfolio website built with React and Tailwind CSS",
+      description:
+        "A responsive portfolio website built with React and Tailwind CSS",
       tech: ["React", "Tailwind", "TypeScript"],
-      github: "https://github.com/sample/project1"
+      github: "https://github.com/sample/project1",
     },
     {
       title: "Task Manager",
-      description: "A full-stack task management application with authentication",
+      description:
+        "A full-stack task management application with authentication",
       tech: ["Next.js", "MongoDB", "Express"],
-      github: "https://github.com/sample/project2"
+      github: "https://github.com/sample/project2",
     },
     // Add more sample projects
   ];
@@ -30,11 +31,16 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+            <Card
+              key={index}
+              className="p-6 hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
+            >
               <div className="flex flex-col h-full">
                 <div className="flex items-center space-x-2 mb-4">
                   <FolderGit2 className="w-6 h-6 text-primary dark:text-teal-400" />
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {project.title}
+                  </h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
                   {project.description}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Search, X, ArrowRight } from "lucide-react";
 import { useSearch, SearchResult } from "@/hooks/useSearch";
 import { useNavigate } from "react-router-dom";
@@ -36,10 +36,13 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
     }
   }, [results, query]);
 
-  const handleSelect = (result: SearchResult) => {
-    navigate(result.href || `/resources/${result.year}/${result.id}`);
-    onClose();
-  };
+  const handleSelect = useCallback(
+    (result: SearchResult) => {
+      navigate(result.href || `/resources/${result.year}/${result.id}`);
+      onClose();
+    },
+    [navigate, onClose]
+  );
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -74,7 +77,7 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
 
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, results, selectedIndex, onClose]);
+  }, [isOpen, results, selectedIndex, onClose, handleSelect]);
 
   if (!isOpen) return null;
 
@@ -129,7 +132,9 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
           {results.length > 0 && (
             <ul className="py-2" role="listbox">
               {results.map((result, index) => (
-                <li key={`${result.year}-${result.id}-${result.title}-${index}`}>
+                <li
+                  key={`${result.year}-${result.id}-${result.title}-${index}`}
+                >
                   <button
                     role="option"
                     aria-selected={index === selectedIndex}
@@ -168,7 +173,8 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
             <div className="px-4 py-8 text-center text-gray-500 dark:text-gray-400">
               <p className="mb-2">Search subjects, PYQs, and chapter titles</p>
               <p className="text-sm">
-                Try &quot;Data Structure&quot;, &quot;BCS301&quot;, or &quot;2024 odd&quot;
+                Try &quot;Data Structure&quot;, &quot;BCS301&quot;, or
+                &quot;2024 odd&quot;
               </p>
             </div>
           )}
@@ -176,15 +182,21 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
 
         <div className="px-4 py-2 border-t border-gray-200 dark:border-gray-700 flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
           <div className="flex items-center gap-1">
-            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">↑↓</span>
+            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">
+              ↑↓
+            </span>
             Navigate
           </div>
           <div className="flex items-center gap-1">
-            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">Enter</span>
+            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">
+              Enter
+            </span>
             Select
           </div>
           <div className="flex items-center gap-1">
-            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">Esc</span>
+            <span className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded">
+              Esc
+            </span>
             Close
           </div>
         </div>

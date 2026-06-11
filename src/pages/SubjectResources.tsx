@@ -72,9 +72,7 @@ const SubjectResources = () => {
 
   const subjectName = getSubjectName(subjectId, year);
   const availability =
-    year && subjectId
-      ? getResourceAvailability(year, subjectId)
-      : null;
+    year && subjectId ? getResourceAvailability(year, subjectId) : null;
 
   useEffect(() => {
     if (year && subjectId && subjectName !== "Unknown Subject") {
@@ -83,14 +81,15 @@ const SubjectResources = () => {
   }, [year, subjectId, subjectName, addRecentSubject]);
 
   const pagePath = `/resources/${year}/${subjectId}`;
-  const favorited =
-    year && subjectId ? isFavorite(subjectId, year) : false;
+  const favorited = year && subjectId ? isFavorite(subjectId, year) : false;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Seo
         title={`${subjectName} (${subjectId}) — ${getYearLabel(year || "")}`}
-        description={`Free ${subjectName} notes, AKTU PYQs, CAE papers and question banks for ${getYearLabel(year || "")} B.Tech students at GCET.`}
+        description={`Free ${subjectName} notes, AKTU PYQs, CAE papers and question banks for ${getYearLabel(
+          year || ""
+        )} B.Tech students at GCET.`}
         path={pagePath}
         jsonLd={{
           "@context": "https://schema.org",
@@ -133,7 +132,9 @@ const SubjectResources = () => {
                   }
                 >
                   <Star
-                    className={`w-4 h-4 mr-1.5 ${favorited ? "fill-yellow-400 text-yellow-400" : ""}`}
+                    className={`w-4 h-4 mr-1.5 ${
+                      favorited ? "fill-yellow-400 text-yellow-400" : ""
+                    }`}
                   />
                   {favorited ? "Saved" : "Save subject"}
                 </Button>
@@ -163,9 +164,7 @@ const SubjectResources = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() =>
                   available &&
-                  navigate(
-                    `/resources/${year}/${subjectId}/${resource.id}`
-                  )
+                  navigate(`/resources/${year}/${subjectId}/${resource.id}`)
                 }
               >
                 <CardContent

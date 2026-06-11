@@ -4,7 +4,25 @@ export function trackEvent(
   name: string,
   params?: Record<string, string | number | boolean>
 ) {
-  ReactGA.event(name, params);
+  try {
+    // react-ga4 exposes different helper names across versions — prefer `event`, fallback to `send`.
+    // `event` may be undefined in some versions; use `send({ name, params })` for GA4-compatible call.
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    if (typeof ReactGA.event === "function") {
+      // some versions accept (name, params)
+      // eslint-disable-next-line @ts-ignore
+      ReactGA.event(name, params);
+    } else if (typeof (ReactGA as any).send === "function") {
+      // GA4-style send
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      ReactGA.send({ name, params });
+    }
+  } catch (e) {
+    // swallow analytics errors to avoid breaking the app
+    // console.debug('analytics error', e);
+  }
 }
 
 export function trackPdfOpen(title: string, subjectId: string, year: string) {

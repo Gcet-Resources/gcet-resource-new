@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { Youtube } from "lucide-react";
@@ -9,13 +8,13 @@ const NonAcademicVideos = () => {
       title: "Campus Life Vlog",
       description: "A day in the life of GCET students",
       thumbnail: "https://i.ytimg.com/vi/sample3/maxresdefault.jpg",
-      link: "https://youtube.com/watch?v=sample3"
+      link: "https://youtube.com/watch?v=sample3",
     },
     {
       title: "Student Success Stories",
       description: "Inspiring stories from our alumni",
       thumbnail: "https://i.ytimg.com/vi/sample4/maxresdefault.jpg",
-      link: "https://youtube.com/watch?v=sample4"
+      link: "https://youtube.com/watch?v=sample4",
     },
     // Add more sample videos here
   ];

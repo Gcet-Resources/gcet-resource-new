@@ -106,9 +106,7 @@ const ExamCountdown = () => {
 
       <div className="flex items-center justify-center gap-1 mt-6 text-sm text-gray-500 dark:text-gray-400">
         <Clock className="w-4 h-4" />
-        <span>
-          {upcomingExam.description || "Time to prepare! Good luck!"}
-        </span>
+        <span>{upcomingExam.description || "Time to prepare! Good luck!"}</span>
       </div>
 
       {upcomingExam.link && (

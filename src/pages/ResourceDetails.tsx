@@ -17,11 +17,7 @@ import { ReportBrokenLink } from "@/components/ReportBrokenLink";
 import { ShareButton } from "@/components/ShareButton";
 import { Skeleton } from "@/components/ui/skeleton";
 import { usePdfMappings } from "@/hooks/usePdfMappings";
-import {
-  getSubjectName,
-  getYearLabel,
-  RESOURCE_TYPES,
-} from "@/lib/subjects";
+import { getSubjectName, getYearLabel, RESOURCE_TYPES } from "@/lib/subjects";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const resourceTypeInfo = {
@@ -66,7 +62,8 @@ const resourceTypeInfo = {
 const ResourceDetails = () => {
   const { year, subjectId, resourceType } = useParams();
   const navigate = useNavigate();
-  const [selectedChapter, setSelectedChapter] = useState<SubjectResource | null>(null);
+  const [selectedChapter, setSelectedChapter] =
+    useState<SubjectResource | null>(null);
   const [isPdfOpen, setIsPdfOpen] = useState(false);
 
   const { chapters, loading, error } = usePdfMappings(
@@ -118,7 +115,9 @@ const ResourceDetails = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Seo
         title={`${subjectName} ${typeLabel} — ${getYearLabel(year || "")}`}
-        description={`Download ${subjectName} (${subjectId}) ${typeLabel} for AKTU B.Tech ${getYearLabel(year || "")}. Free GCET student resources.`}
+        description={`Download ${subjectName} (${subjectId}) ${typeLabel} for AKTU B.Tech ${getYearLabel(
+          year || ""
+        )}. Free GCET student resources.`}
         path={pagePath}
         jsonLd={{
           "@context": "https://schema.org",
@@ -193,9 +192,8 @@ const ResourceDetails = () => {
               No resources found
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              There are no mapped resources for{" "}
-              <strong>{subjectName}</strong> ({typeLabel}) in{" "}
-              {getYearLabel(year || "")}.
+              There are no mapped resources for <strong>{subjectName}</strong> (
+              {typeLabel}) in {getYearLabel(year || "")}.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <button
