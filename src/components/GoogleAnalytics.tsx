@@ -5,17 +5,25 @@ import ReactGA from "react-ga4";
 
 const GoogleAnalytics = () => {
     const location = useLocation();
+    const GA_ID = import.meta.env.VITE_GA_ID as string | undefined;
 
     useEffect(() => {
-        // Initialize Google Analytics with your Measurement ID
-        // REPLACE 'G-XXXXXXXXXX' with your actual Measurement ID
-        ReactGA.initialize("G-VSD0SZVJPL");
-    }, []);
+        if (!GA_ID) return;
+        try {
+            ReactGA.initialize(GA_ID);
+        } catch (e) {
+            // ignore init errors
+        }
+    }, [GA_ID]);
 
     useEffect(() => {
-        // Send pageview with a custom path
-        ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
-    }, [location]);
+        if (!GA_ID) return;
+        try {
+            ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+        } catch (e) {
+            // ignore send errors
+        }
+    }, [location, GA_ID]);
 
     return null;
 };

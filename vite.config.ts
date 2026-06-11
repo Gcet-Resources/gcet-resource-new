@@ -11,9 +11,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "react-router-dom"],
-          ui: ["@radix-ui/react-dialog", "@radix-ui/react-slot"],
+        manualChunks(id: string) {
+          if (!id.includes("node_modules")) return undefined;
+          if (id.includes("react") || id.includes("react-dom") || id.includes("react-router-dom")) {
+            return "vendor";
+          }
+          if (id.includes("@radix-ui")) return "ui";
+          return undefined;
         },
       },
     },
