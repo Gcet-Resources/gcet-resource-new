@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/Navigation";
-import { ArrowRight, Youtube, Code, ShoppingBag } from "lucide-react";
+import { ArrowRight, Video, Code, ShoppingBag } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import FavoritesList from "@/components/FavoritesList";
@@ -104,7 +104,7 @@ const Index = () => {
                   link: "/essentials",
                 },
                 {
-                  icon: Youtube,
+                  icon: Video,
                   title: "YouTube Resources",
                   description: "Curated academic and non-academic videos",
                   link: "/youtube-resources",

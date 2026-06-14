@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
-import { Youtube } from "lucide-react";
+import { Video } from "lucide-react";
 
 const NonAcademicVideos = () => {
   const videos = [
@@ -39,7 +39,7 @@ const NonAcademicVideos = () => {
               <Card className="overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="aspect-video relative bg-gray-100 dark:bg-gray-700">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Youtube className="w-12 h-12 text-primary dark:text-teal-400 opacity-50 group-hover:opacity-100 transition-opacity" />
+                    <Video className="w-12 h-12 text-primary dark:text-teal-400 opacity-50 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
                 <div className="p-4">

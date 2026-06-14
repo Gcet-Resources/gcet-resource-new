@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { Seo } from "@/components/Seo";
-import { Youtube } from "lucide-react";
+import { Video } from "lucide-react";
 
 const AcademicVideos = () => {
   const videos = [
@@ -44,7 +44,7 @@ const AcademicVideos = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                    <Youtube className="w-12 h-12 text-white drop-shadow-lg" />
+                    <Video className="w-12 h-12 text-white drop-shadow-lg" />
                   </div>
                 </div>
                 <div className="p-4">
