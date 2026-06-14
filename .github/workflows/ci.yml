@@ -29,6 +29,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Serve production build (SPA fallback)
+        run: |
+          npx serve -s dist -l 8080 &
+          npx wait-on http://localhost:8080 --timeout 120000
+
       - name: Run Playwright tests
         run: npx playwright test --reporter=github
         env:

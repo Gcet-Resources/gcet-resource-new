@@ -28,5 +28,8 @@ jobs:
 
       - name: Serve dist and run Playwright tests
         run: |
-          npx http-server ./dist -p 8080 &
+          # serve with SPA fallback (-s) and listen on 8080
+          npx serve -s dist -l 8080 &
+          # wait for the server to be ready
+          npx wait-on http://localhost:8080 --timeout 120000
           npx playwright test --reporter=github
