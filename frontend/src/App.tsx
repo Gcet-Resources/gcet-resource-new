@@ -14,6 +14,8 @@ import NotFound from "./pages/NotFound";
 import YouTubeResources from "./pages/youtube/YouTubeResources";
 import AcademicVideos from "./pages/youtube/AcademicVideos";
 import NonAcademicVideos from "./pages/youtube/NonAcademicVideos";
+import Login from "./pages/Login";
+import AdminApprovals from "./pages/AdminApprovals";
 import CodingResources from "./pages/coding/CodingResources";
 import DSA from "./pages/coding/DSA";
 import Projects from "./pages/coding/Projects";
@@ -85,6 +87,8 @@ const App = () => (
           <Route path="/essentials" element={<Game />} />
           <Route path="/game" element={<Navigate to="/essentials" replace />} />
           <Route path="/notice-board" element={<NoticeBoard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin/approvals" element={<AdminApprovals />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <PWAInstallPrompt />

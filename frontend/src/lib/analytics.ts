@@ -7,17 +7,14 @@ export function trackEvent(
   try {
     // react-ga4 exposes different helper names across versions — prefer `event`, fallback to `send`.
     // `event` may be undefined in some versions; use `send({ name, params })` for GA4-compatible call.
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    if (typeof ReactGA.event === "function") {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const ga = ReactGA as any;
+    if (typeof ga.event === "function") {
       // some versions accept (name, params)
-      // eslint-disable-next-line @ts-ignore
-      ReactGA.event(name, params);
-    } else if (typeof (ReactGA as any).send === "function") {
+      ga.event(name, params);
+    } else if (typeof ga.send === "function") {
       // GA4-style send
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      ReactGA.send({ name, params });
+      ga.send({ name, params });
     }
   } catch (e) {
     // swallow analytics errors to avoid breaking the app

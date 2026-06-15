@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import type {
   PDFDocumentProxy,
   PDFPageProxy,
-  GetDocumentParameters,
 } from "pdfjs-dist";
-import type { PDFWorker } from "pdfjs-dist";
 import {
   Dialog,
   DialogContent,
@@ -87,6 +85,7 @@ const PdfViewer = ({
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const loadingTaskRef = useRef<any>(null);
   const pdfRef = useRef<PDFDocumentProxy | null>(null);
   const pageCacheRef = useRef<Map<number, ImageBitmap | string>>(new Map());
@@ -98,6 +97,7 @@ const PdfViewer = ({
       setError(null);
       setLoading(true);
       try {
+        // @ts-expect-error - pdfjs-dist legacy build has no type declarations
         const pdfjs = await import("pdfjs-dist/legacy/build/pdf");
         // configure worker
         try {
@@ -114,7 +114,7 @@ const PdfViewer = ({
         const loadingTask = pdfjs.getDocument({
           url: subject.fileUrl,
           disableStream: false,
-        } as any);
+        });
         loadingTaskRef.current = loadingTask;
         const pdf: PDFDocumentProxy = await loadingTask.promise;
         pdfRef.current = pdf;
@@ -136,16 +136,12 @@ const PdfViewer = ({
         if (context) {
           context.setTransform(dpr, 0, 0, dpr, 0, 0);
         }
-        const renderContext = {
-          canvasContext: context,
-          viewport,
-        } as any;
-        const renderTask = page.render(renderContext);
+        const renderTask = page.render({ canvas, viewport });
         await renderTask.promise;
         // keep PDF loaded for potential further pages; we only render first page eagerly
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error("PDF render error:", err);
-        setError(String(err?.message || err));
+        setError(String(err instanceof Error ? err.message : err));
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -166,8 +162,8 @@ const PdfViewer = ({
             const vp = p.getViewport({ scale: 1 });
             // offscreen canvas if available
             let offCanvas: HTMLCanvasElement | OffscreenCanvas | null = null;
-            if ((window as any).OffscreenCanvas) {
-              offCanvas = new (window as any).OffscreenCanvas(
+            if (typeof OffscreenCanvas !== "undefined") {
+              offCanvas = new OffscreenCanvas(
                 Math.floor(vp.width),
                 Math.floor(vp.height)
               );
@@ -176,23 +172,22 @@ const PdfViewer = ({
               offCanvas.width = Math.floor(vp.width);
               offCanvas.height = Math.floor(vp.height);
             }
-            const offCtx = (offCanvas as any).getContext
-              ? (offCanvas as any).getContext("2d")
+            const offCtx = offCanvas?.getContext
+              ? offCanvas.getContext("2d")
               : null;
-            const renderCtx = { canvasContext: offCtx, viewport: vp } as any;
-            const rt = p.render(renderCtx);
+            const rt = p.render({ canvas: offCanvas instanceof HTMLCanvasElement ? offCanvas : null, viewport: vp });
             await rt.promise;
             // try to cache image bitmap for faster display later
             try {
               if (
-                (window as any).createImageBitmap &&
+                typeof createImageBitmap !== "undefined" &&
                 offCanvas instanceof HTMLCanvasElement
               ) {
                 const blob = await new Promise<Blob | null>((resolve) =>
                   offCanvas.toBlob((b) => resolve(b))
                 );
                 if (blob) {
-                  const bitmap = await (window as any).createImageBitmap(blob);
+                  const bitmap = await createImageBitmap(blob);
                   pageCacheRef.current.set(i, bitmap);
                 }
               }
@@ -206,8 +201,8 @@ const PdfViewer = ({
         }
       };
 
-      if ((window as any).requestIdleCallback) {
-        (window as any).requestIdleCallback(() => prefetch(), {
+      if (typeof requestIdleCallback !== "undefined") {
+        requestIdleCallback(() => prefetch(), {
           timeout: 2000,
         });
       } else {

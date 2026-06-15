@@ -3,11 +3,14 @@ import { Menu, X, Bell, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { GlobalSearch } from "./GlobalSearch";
+import { getCurrentUser, logout } from "@/lib/auth";
+import { Button } from "@/components/ui/button";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [user, setUser] = useState(() => getCurrentUser());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,6 +84,28 @@ export const Navigation = () => {
               </button>
 
               <DarkModeToggle />
+              {user ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-700 dark:text-gray-200">
+                    {user.name}
+                  </span>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => {
+                      logout();
+                      setUser(undefined);
+                      window.location.reload();
+                    }}
+                  >
+                    Logout
+                  </Button>
+                </div>
+              ) : (
+                <a href="/login" className="text-sm text-primary">
+                  Login
+                </a>
+              )}
             </div>
 
             {/* Mobile Navigation Toggle */}
@@ -95,6 +120,23 @@ export const Navigation = () => {
                 />
               </button>
               <DarkModeToggle />
+              {user ? (
+                <Button
+                  variant="icon"
+                  size="icon"
+                  onClick={() => {
+                    logout();
+                    setUser(undefined);
+                    window.location.reload();
+                  }}
+                >
+                  <X />
+                </Button>
+              ) : (
+                <a href="/login" className="p-2 text-sm text-primary">
+                  Login
+                </a>
+              )}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-700 dark:text-gray-200"
