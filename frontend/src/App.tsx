@@ -1,0 +1,100 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import Index from "./pages/Index";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Support from "./pages/Support";
+import YearSelection from "./pages/YearSelection";
+import ResourceSelection from "./pages/ResourceSelection";
+import SubjectResources from "./pages/SubjectResources";
+import ResourceDetails from "./pages/ResourceDetails";
+import NotFound from "./pages/NotFound";
+import YouTubeResources from "./pages/youtube/YouTubeResources";
+import AcademicVideos from "./pages/youtube/AcademicVideos";
+import NonAcademicVideos from "./pages/youtube/NonAcademicVideos";
+import Login from "./pages/Login";
+import AdminApprovals from "./pages/AdminApprovals";
+import CodingResources from "./pages/coding/CodingResources";
+import DSA from "./pages/coding/DSA";
+import Projects from "./pages/coding/Projects";
+import Game from "./pages/Game";
+import NoticeBoard from "./pages/NoticeBoard";
+import useAckee from "use-ackee";
+import { useLocation } from "react-router-dom";
+import { ThemeProvider } from "@/context/ThemeProvider";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
+import GoogleAnalytics from "./components/GoogleAnalytics";
+import { SkipToContent } from "@/components/SkipToContent";
+
+const AckeeTracker = () => {
+  const location = useLocation();
+
+  useAckee(
+    location.pathname,
+    {
+      server: import.meta.env.VITE_ACKEE_SERVER_URL || "",
+      domainId: import.meta.env.VITE_ACKEE_DOMAIN_ID || "",
+    },
+    {
+      detailed: true,
+      ignoreLocalhost: false,
+      ignoreOwnVisits: false,
+    }
+  );
+
+  return null;
+};
+
+const App = () => (
+  <ThemeProvider>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <SkipToContent />
+        <GoogleAnalytics />
+        {import.meta.env.VITE_ACKEE_SERVER_URL &&
+          import.meta.env.VITE_ACKEE_DOMAIN_ID && <AckeeTracker />}
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/year-selection" element={<YearSelection />} />
+          <Route path="/resources/:year" element={<ResourceSelection />} />
+          <Route
+            path="/resources/:year/:subjectId"
+            element={<SubjectResources />}
+          />
+          <Route
+            path="/resources/:year/:subjectId/:resourceType"
+            element={<ResourceDetails />}
+          />
+          <Route path="/youtube-resources" element={<YouTubeResources />} />
+          <Route
+            path="/youtube-resources/academic"
+            element={<AcademicVideos />}
+          />
+          <Route
+            path="/youtube-resources/non-academic"
+            element={<NonAcademicVideos />}
+          />
+          <Route path="/coding-resources" element={<CodingResources />} />
+          <Route path="/coding-resources/dsa" element={<DSA />} />
+          <Route path="/coding-resources/projects" element={<Projects />} />
+          <Route path="/essentials" element={<Game />} />
+          <Route path="/game" element={<Navigate to="/essentials" replace />} />
+          <Route path="/notice-board" element={<NoticeBoard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin/approvals" element={<AdminApprovals />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <PWAInstallPrompt />
+      </BrowserRouter>
+    </TooltipProvider>
+  </ThemeProvider>
+);
+
+export default App;
