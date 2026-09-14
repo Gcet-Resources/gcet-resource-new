@@ -28,5 +28,10 @@
     "version": "202609140006",
     "name": "enrolled_mfa",
     "sha256": "75ee1fe1f5a96b6ea3e1dbc53534b53656210b6f003bef6942a6b292bc3f89b7"
+  },
+  {
+    "version": "202609150007",
+    "name": "legacy_campus",
+    "sha256": "58f882b73c2f705b9c4c5bdef5d0a3c581f67ca8fd041ee56720c50faca39610"
   }
 ]

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gcetresources.com/sitemap.xml
+Sitemap: https://gcet-campus.vercel.app/sitemap.xml

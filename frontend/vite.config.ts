@@ -7,12 +7,6 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
-    proxy: {
-      "/api": {
-        target: "http://localhost:3001",
-        changeOrigin: true,
-      },
-    },
   },
   build: {
     rollupOptions: {
@@ -40,6 +34,11 @@ export default defineConfig({
       manifest: false,
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        navigateFallbackDenylist: [
+          /^\/api\//,
+          /^\/(auth|account|admin|publish|dashboard)(\/|$)/,
+        ],
+        cleanupOutdatedCaches: true,
         globIgnores: ["**/pdfMappings/**"],
         runtimeCaching: [
           {

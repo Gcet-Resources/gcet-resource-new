@@ -1,47 +1,34 @@
 import ReactGA from "react-ga4";
-
 export function trackEvent(
   name: string,
-  params?: Record<string, string | number | boolean>
+  params?: Record<string, string | number | boolean>,
 ) {
+  if (
+    !import.meta.env.VITE_GA_ID ||
+    /^\/(login|auth|account|admin|publish|dashboard)(\/|$)/.test(
+      location.pathname,
+    )
+  )
+    return;
   try {
-    // react-ga4 exposes different helper names across versions — prefer `event`, fallback to `send`.
-    // `event` may be undefined in some versions; use `send({ name, params })` for GA4-compatible call.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const ga = ReactGA as any;
-    if (typeof ga.event === "function") {
-      // some versions accept (name, params)
-      ga.event(name, params);
-    } else if (typeof ga.send === "function") {
-      // GA4-style send
-      ga.send({ name, params });
-    }
-  } catch (e) {
-    // swallow analytics errors to avoid breaking the app
-    // console.debug('analytics error', e);
+    ReactGA.event(name, params);
+  } catch {
+    /* Nonessential telemetry. */
   }
 }
-
-export function trackPdfOpen(title: string, subjectId: string, year: string) {
-  trackEvent("pdf_open", { title, subject_id: subjectId, year });
+export function trackPdfOpen(_title: string, subjectId: string, year: string) {
+  trackEvent("pdf_open", { subject_id: subjectId, year });
 }
-
-export function trackSearch(query: string, resultCount: number) {
-  trackEvent("search", { search_term: query, result_count: resultCount });
+export function trackSearch(_query: string, resultCount: number) {
+  trackEvent("search", { result_count: resultCount });
 }
-
 export function trackShare(subjectId: string, year: string) {
   trackEvent("share_subject", { subject_id: subjectId, year });
 }
-
 export function trackBrokenLinkReport(
-  title: string,
-  url: string,
-  subjectId?: string
+  _title: string,
+  _url: string,
+  subjectId?: string,
 ) {
-  trackEvent("broken_link_report", {
-    title,
-    url,
-    subject_id: subjectId || "unknown",
-  });
+  trackEvent("broken_link_report", { subject_id: subjectId || "unknown" });
 }

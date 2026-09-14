@@ -1,52 +1,53 @@
-import { File } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { File, ArrowUpRight } from "lucide-react";
 import { ResourceBadges } from "@/components/ResourceBadges";
-
 export interface SubjectResource {
   id: string;
   title: string;
   description: string;
   fileUrl?: string;
+  storagePath?: string;
   color: string;
   bgColor: string;
+  provider?: string;
 }
-
 interface SubjectCardProps {
   subject: SubjectResource;
   onClick: (subject: SubjectResource) => void;
   year?: string;
 }
-
-const SubjectCard = ({ subject, onClick, year }: SubjectCardProps) => {
+export default function SubjectCard({
+  subject,
+  onClick,
+  year,
+}: SubjectCardProps) {
   return (
-    <Card
-      className="hover:shadow-lg dark:hover:shadow-gray-900/50 transition-all cursor-pointer group overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
+    <button
+      type="button"
       onClick={() => onClick(subject)}
+      className="group w-full rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition hover:-translate-y-1 hover:border-teal-500 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-600 dark:border-slate-700 dark:bg-slate-900"
     >
-      <CardContent className="p-6">
-        <div className="flex flex-col items-center text-center space-y-4">
-          <div
-            className={`w-16 h-16 rounded-full ${subject.bgColor} ${subject.color} flex items-center justify-center group-hover:scale-110 transition-transform`}
-          >
-            <File className="w-7 h-7" />
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {subject.title}
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
-            {subject.description}
-          </p>
-          {year && (
-            <ResourceBadges
-              year={year}
-              subjectId={subject.id}
-              className="justify-center"
-            />
-          )}
-        </div>
-      </CardContent>
-    </Card>
+      <span className="flex items-center justify-between">
+        <span
+          className={`inline-flex rounded-xl p-3 ${subject.bgColor} ${subject.color}`}
+        >
+          <File size={24} />
+        </span>
+        <ArrowUpRight
+          className="text-slate-400 group-hover:text-teal-600"
+          size={20}
+        />
+      </span>
+      <span className="mt-5 block text-lg font-semibold text-slate-900 dark:text-white">
+        {subject.title}
+      </span>
+      <span className="mt-2 block text-sm leading-6 text-slate-500 dark:text-slate-400">
+        {subject.description}
+      </span>
+      {year && (
+        <span className="mt-4 block">
+          <ResourceBadges year={year} subjectId={subject.id} />
+        </span>
+      )}
+    </button>
   );
-};
-
-export default SubjectCard;
+}

@@ -25,14 +25,14 @@ const Footer = () => {
                 href="https://chat.whatsapp.com/CKrN5kPTBqz1wcNruhBSAG"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-green-500 transition-colors"
+                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-400 transition-colors"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
                 href="mailto:gcetresources@gmail.com"
-                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-red-500 transition-colors"
+                className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-red-700 dark:hover:text-red-400 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
@@ -46,14 +46,14 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="mailto:gcetresources@gmail.com?subject=Resource%20Request&body=Hi%20Team,%0A%0AI%20would%20like%20to%20request%20the%20following%20resource:%0A%0ASubject:%20%0AYear:%20%0AResource%20Type:%20%0A%0AThank%20you!"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary dark:bg-teal-600 text-white rounded-lg hover:bg-primary/90 dark:hover:bg-teal-500 transition-colors text-sm font-medium"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary dark:bg-teal-700 text-white rounded-lg hover:bg-primary/90 dark:hover:bg-teal-800 transition-colors text-sm font-medium"
               >
                 <Mail className="w-4 h-4" />
                 Request Resource
               </a>
               <a
                 href="mailto:gcetresources@gmail.com?subject=Resource%20Contribution&body=Hi%20Team,%0A%0AI%20would%20like%20to%20contribute%20the%20following%20resource:%0A%0ASubject:%20%0AYear:%20%0AResource%20Type:%20%0AGoogle%20Drive%20Link:%20%0A%0AThank%20you!"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 border border-primary dark:border-teal-500 text-primary dark:text-teal-400 rounded-lg hover:bg-primary/10 dark:hover:bg-teal-500/20 transition-colors text-sm font-medium"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 border border-primary dark:border-teal-500 text-primary dark:text-teal-400 rounded-lg hover:bg-primary/10 dark:hover:bg-teal-800/20 transition-colors text-sm font-medium"
               >
                 <Heart className="w-4 h-4" />
                 Contribute Resource
@@ -62,6 +62,30 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <nav
+        aria-label="More campus resources"
+        className="container mx-auto flex flex-wrap gap-x-7 gap-y-3 px-4 pb-8 text-sm text-gray-600 dark:text-gray-300"
+      >
+        <Link to="/coding-resources" className="hover:underline">
+          Coding practice
+        </Link>
+        <Link to="/youtube-resources" className="hover:underline">
+          Video lessons
+        </Link>
+        <Link to="/essentials" className="hover:underline">
+          Campus essentials
+        </Link>
+        <Link to="/about" className="hover:underline">
+          Our team
+        </Link>
+        <Link to="/contact" className="hover:underline">
+          Contact
+        </Link>
+        <Link to="/support" className="hover:underline">
+          Support the project
+        </Link>
+      </nav>
 
       {/* Disclaimer Section */}
       <div className="border-t border-gray-200 dark:border-gray-800 bg-gray-100/50 dark:bg-gray-900/50">
@@ -97,7 +121,7 @@ const Footer = () => {
                 us at{" "}
                 <a
                   href="mailto:gcetresources@gmail.com"
-                  className="text-primary dark:text-teal-400 hover:underline"
+                  className="text-primary dark:text-teal-400 underline underline-offset-2"
                 >
                   gcetresources@gmail.com
                 </a>{" "}

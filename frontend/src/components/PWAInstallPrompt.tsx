@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Download, X, Smartphone } from "lucide-react";
 
+import { storageGet, storageSet } from "@/lib/safe-storage";
+
 interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
@@ -16,7 +18,7 @@ const PWAInstallPrompt = () => {
     // Check if it's iOS
     const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isStandalone = window.matchMedia(
-      "(display-mode: standalone)"
+      "(display-mode: standalone)",
     ).matches;
 
     setIsIOS(isIOSDevice);
@@ -25,7 +27,7 @@ const PWAInstallPrompt = () => {
     if (isStandalone) return;
 
     // Check if user has dismissed before
-    const dismissed = localStorage.getItem("pwa-prompt-dismissed");
+    const dismissed = storageGet("pwa-prompt-dismissed");
     if (dismissed) {
       const dismissedTime = parseInt(dismissed, 10);
       // Show again after 7 days
@@ -42,27 +44,35 @@ const PWAInstallPrompt = () => {
     window.addEventListener("beforeinstallprompt", handler);
 
     // For iOS, show custom prompt after a delay
-    if (isIOSDevice && !isStandalone) {
-      setTimeout(() => setShowPrompt(true), 3000);
-    }
-
-    return () => window.removeEventListener("beforeinstallprompt", handler);
+    const timer = isIOSDevice
+      ? window.setTimeout(() => setShowPrompt(true), 3000)
+      : undefined;
+    const installed = () => {
+      setShowPrompt(false);
+      setDeferredPrompt(null);
+    };
+    window.addEventListener("appinstalled", installed);
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handler);
+      window.removeEventListener("appinstalled", installed);
+      window.clearTimeout(timer);
+    };
   }, []);
 
   const handleInstall = async () => {
     if (deferredPrompt) {
-      deferredPrompt.prompt();
+      await deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === "accepted") {
-        setShowPrompt(false);
-      }
+      setShowPrompt(false);
+      if (outcome === "dismissed")
+        storageSet("pwa-prompt-dismissed", Date.now().toString());
       setDeferredPrompt(null);
     }
   };
 
   const handleDismiss = () => {
     setShowPrompt(false);
-    localStorage.setItem("pwa-prompt-dismissed", Date.now().toString());
+    storageSet("pwa-prompt-dismissed", Date.now().toString());
   };
 
   if (!showPrompt) return null;
@@ -71,6 +81,7 @@ const PWAInstallPrompt = () => {
     <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 z-50 animate-fade-up">
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-4 relative">
         <button
+          aria-label="Dismiss installation prompt"
           onClick={handleDismiss}
           className="absolute top-3 right-3 p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
         >
@@ -100,7 +111,7 @@ const PWAInstallPrompt = () => {
             {!isIOS && deferredPrompt && (
               <button
                 onClick={handleInstall}
-                className="flex items-center gap-2 px-4 py-2 bg-primary dark:bg-teal-600 text-white rounded-lg hover:bg-primary/90 dark:hover:bg-teal-500 transition-colors text-sm font-medium"
+                className="flex items-center gap-2 px-4 py-2 bg-primary dark:bg-teal-700 text-white rounded-lg hover:bg-primary/90 dark:hover:bg-teal-800 transition-colors text-sm font-medium"
               >
                 <Download className="w-4 h-4" />
                 Install App

@@ -45,10 +45,10 @@ const Contact = () => {
 
     // Construct mailto link
     const subject = `[${formData.type.toUpperCase()}] ${formData.subject}`;
-    const body = `Name: ${formData.firstName} ${formData.lastName}%0AEmail: ${formData.email}%0A%0A${formData.message}`;
+    const body = `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\n\n${formData.message}`;
 
     const mailtoLink = `mailto:gcetresources@gmail.com?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
 
     window.open(mailtoLink, "_blank");
@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -68,8 +68,17 @@ const Contact = () => {
     });
   };
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("gcetresources@gmail.com");
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("gcetresources@gmail.com");
+    } catch {
+      toast({
+        title: "Copy failed",
+        description: "Select and copy the email address instead.",
+        variant: "destructive",
+      });
+      return;
+    }
     toast({
       title: "Email Copied!",
       description: "gcetresources@gmail.com copied to clipboard",
@@ -80,7 +89,7 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950">
       <Navigation />
 
-      <main className="container mx-auto px-4 pt-32 pb-20">
+      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
         {/* Hero Section */}
         <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
           <div className="inline-flex items-center justify-center p-3 mb-6 bg-primary/10 dark:bg-teal-500/10 rounded-full ring-1 ring-primary/20 dark:ring-teal-500/20">
@@ -107,7 +116,7 @@ const Contact = () => {
               <div className="space-y-3">
                 <a
                   href="mailto:gcetresources@gmail.com?subject=Resource%20Contribution"
-                  className="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-primary/5 dark:hover:bg-teal-500/10 group transition-colors"
+                  className="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-primary/5 dark:hover:bg-teal-800/10 group transition-colors"
                 >
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-md bg-white dark:bg-gray-700 shadow-sm text-blue-500">
@@ -147,7 +156,7 @@ const Contact = () => {
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-200 block">
                         Email Us
                       </span>
-                      <span className="text-xs text-gray-500 block">
+                      <span className="text-xs text-gray-500 dark:text-gray-400 block">
                         gcetresources@gmail.com
                       </span>
                     </div>
@@ -176,7 +185,7 @@ const Contact = () => {
                     <span className="text-sm font-medium text-gray-900 dark:text-white block">
                       WhatsApp Group
                     </span>
-                    <span className="text-xs text-green-600 dark:text-green-400">
+                    <span className="text-xs text-green-700 dark:text-green-400">
                       Join now
                     </span>
                   </div>
@@ -284,7 +293,7 @@ const Contact = () => {
                       }
                       defaultValue="student"
                     >
-                      <SelectTrigger>
+                      <SelectTrigger id="type">
                         <SelectValue placeholder="Select type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -329,7 +338,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full h-11 text-base bg-primary dark:bg-teal-600 hover:bg-primary/90 dark:hover:bg-teal-500"
+                  className="w-full h-11 text-base text-white bg-primary dark:bg-teal-700 hover:bg-primary/90 dark:hover:bg-teal-800"
                 >
                   Send Message <Send className="ml-2 w-4 h-4" />
                 </Button>

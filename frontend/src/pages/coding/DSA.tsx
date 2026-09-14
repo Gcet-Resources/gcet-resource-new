@@ -22,7 +22,7 @@ const DSA = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
       <Navigation />
-      <div className="container mx-auto px-4 pt-32 pb-20">
+      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
         <h1 className="text-4xl font-display font-bold text-center mb-12 text-gray-900 dark:text-white">
           DSA Resources
         </h1>
@@ -48,7 +48,7 @@ const DSA = () => {
                 </p>
                 <a
                   href={resource.link}
-                  className="inline-flex items-center text-primary dark:text-teal-400 hover:text-primary/80 dark:hover:text-teal-300"
+                  className="inline-flex items-center underline underline-offset-4 text-primary dark:text-teal-400 hover:text-primary/80 dark:hover:text-teal-300"
                 >
                   Go to resource <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
@@ -56,7 +56,7 @@ const DSA = () => {
             </Card>
           ))}
         </div>
-      </div>
+      </main>
     </div>
   );
 };

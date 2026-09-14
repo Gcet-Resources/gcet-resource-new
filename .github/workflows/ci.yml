@@ -1,44 +1,50 @@
-name: CI
-
+name: Campus checks
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, feat/supabase-campus-platform]
   pull_request:
     branches: [main, master]
-
+permissions:
+  contents: read
+concurrency:
+  group: campus-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  test:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    defaults:
-      run:
-        working-directory: ./frontend
+    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "22"
-          cache: "npm"
-          cache-dependency-path: "frontend/package-lock.json"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Build
-        run: npm run build
-
-      - name: Serve production build (SPA fallback)
-        run: |
-          npx serve -s dist -l 8080 &
-          npx wait-on http://localhost:8080 --timeout 120000
-
-      - name: Run Playwright tests
-        run: npx playwright test --reporter=github
-        env:
-          CI: true
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: |
+            frontend/package-lock.json
+            supabase/tests/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run check
+        working-directory: frontend
+      - run: npm ci --prefix supabase/tests
+      - run: npm test --prefix supabase/tests
+      - run: frontend/node_modules/.bin/tsc -p supabase/tests/tsconfig.edge.json
+      - run: npm run test:edge --prefix supabase/tests
+      - run: node scripts/import-catalog.mjs --check
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: npm run test:e2e
+        working-directory: frontend
+      - run: npx playwright test -c playwright.auth.config.ts
+        working-directory: frontend
+      - run: npm run test:e2e:campus
+        working-directory: frontend
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-test-results
+          path: |
+            frontend/test-results/
+            frontend/test-results-auth/
+            frontend/test-results-campus/
+          retention-days: 7

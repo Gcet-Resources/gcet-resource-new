@@ -58,3 +58,6 @@ content_path = "./supabase/templates/otp.html"
 [auth.email.template.invite]
 subject = "Your GCET Resources invitation"
 content_path = "./supabase/templates/invite.html"
+
+[auth.sms]
+enable_signup = false

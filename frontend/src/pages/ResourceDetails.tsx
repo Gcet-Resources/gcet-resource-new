@@ -1,238 +1,158 @@
-import { useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams, useSearchParams, Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
-import {
-  BookText,
-  FileText,
-  PenTool,
-  Book,
-  HelpCircle,
-  Grid,
-} from "lucide-react";
-import SubjectCard, { SubjectResource } from "@/components/SubjectCard";
+import SubjectCard, { type SubjectResource } from "@/components/SubjectCard";
 import PdfViewer from "@/components/PdfViewer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Seo } from "@/components/Seo";
-import { ReportBrokenLink } from "@/components/ReportBrokenLink";
 import { ShareButton } from "@/components/ShareButton";
-import { Skeleton } from "@/components/ui/skeleton";
-import { usePdfMappings } from "@/hooks/usePdfMappings";
-import { getSubjectName, getYearLabel, RESOURCE_TYPES } from "@/lib/subjects";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
-
-const resourceTypeInfo = {
-  "pdf-notes": {
-    title: "PDF Notes",
-    icon: BookText,
-    color: "bg-blue-100",
-    textColor: "text-blue-600",
-  },
-  "aktu-pyq": {
-    title: "AKTU PYQ",
-    icon: FileText,
-    color: "bg-orange-100",
-    textColor: "text-orange-600",
-  },
-  cae: {
-    title: "CAE",
-    icon: Grid,
-    color: "bg-purple-100",
-    textColor: "text-purple-600",
-  },
-  handwritten: {
-    title: "Handwritten Notes",
-    icon: PenTool,
-    color: "bg-rose-100",
-    textColor: "text-rose-600",
-  },
-  quantum: {
-    title: "Quantum Notes",
-    icon: Book,
-    color: "bg-green-100",
-    textColor: "text-green-600",
-  },
-  "question-bank": {
-    title: "Question Bank",
-    icon: HelpCircle,
-    color: "bg-teal-100",
-    textColor: "text-teal-600",
-  },
-} as const;
-
-const ResourceDetails = () => {
-  const { year, subjectId, resourceType } = useParams();
-  const navigate = useNavigate();
-  const [selectedChapter, setSelectedChapter] =
-    useState<SubjectResource | null>(null);
-  const [isPdfOpen, setIsPdfOpen] = useState(false);
-
-  const { chapters, loading, error } = usePdfMappings(
-    year,
-    subjectId,
-    resourceType
+import { getYearLabel, RESOURCE_TYPES } from "@/lib/subjects";
+import { useCatalog } from "@/context/CatalogProvider";
+import { CatalogStatus } from "@/components/CatalogStatus";
+import NotFound from "./NotFound";
+export default function ResourceDetails() {
+  const { year = "", subjectId = "", resourceType = "" } = useParams();
+  const [params, setParams] = useSearchParams();
+  const { subjects, resources, loading, error } = useCatalog();
+  const subject = subjects.find((s) => s.id === subjectId && s.year === year);
+  const type = RESOURCE_TYPES.find((t) => t.id === resourceType);
+  const [selected, setSelected] = useState<SubjectResource | null>(null);
+  const rows = resources.filter(
+    (r) =>
+      r.year === year && r.subjectId === subjectId && r.type === resourceType,
   );
-
-  const info = resourceType
-    ? resourceTypeInfo[resourceType as keyof typeof resourceTypeInfo]
-    : null;
-
-  const subjectName = getSubjectName(subjectId, year);
-  const typeLabel =
-    RESOURCE_TYPES.find((r) => r.id === resourceType)?.label ||
-    resourceType ||
-    "Resources";
-
-  const mappedChapters: SubjectResource[] = chapters.map((c) => ({
-    id: c.id,
-    title: c.title,
-    description: c.description || "",
-    fileUrl: c.fileUrl,
-    color: "text-blue-600",
-    bgColor: "bg-blue-100",
-  }));
-
-  const handleChapterClick = (chapter: SubjectResource) => {
-    setSelectedChapter(chapter);
-    setIsPdfOpen(true);
-  };
-
-  if (!info) {
-    return (
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
-        <Navigation />
-        <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
-          <h1 className="text-4xl font-display font-bold text-center mb-12 text-gray-900 dark:text-white">
-            Resource Not Found
-          </h1>
-        </main>
-      </div>
+  useEffect(() => {
+    const id = params.get("document");
+    const r = resources.find(
+      (r) =>
+        r.id === id &&
+        r.year === year &&
+        r.subjectId === subjectId &&
+        r.type === resourceType,
     );
-  }
-
-  const pagePath = `/resources/${year}/${subjectId}/${resourceType}`;
-
+    setSelected(
+      r
+        ? {
+            id: r.id,
+            title: r.title,
+            description: r.description,
+            fileUrl: r.url,
+            storagePath: r.storagePath,
+            provider: r.provider,
+            color: "text-teal-700",
+            bgColor: "bg-teal-50",
+          }
+        : null,
+    );
+  }, [params, resources, year, subjectId, resourceType]);
+  if (!type || (!loading && !error && !subject)) return <NotFound />;
+  const path = `/resources/${year}/${subjectId}/${resourceType}`;
+  const missingDocument =
+    !loading &&
+    !error &&
+    params.has("document") &&
+    !rows.some((row) => row.id === params.get("document"));
+  const closeDocument = () => {
+    const next = new URLSearchParams(params);
+    next.delete("document");
+    setParams(next, { replace: true });
+  };
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
-      <Seo
-        title={`${subjectName} ${typeLabel} — ${getYearLabel(year || "")}`}
-        description={`Download ${subjectName} (${subjectId}) ${typeLabel} for AKTU B.Tech ${getYearLabel(
-          year || ""
-        )}. Free GCET student resources.`}
-        path={pagePath}
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "LearningResource",
-          name: `${subjectName} — ${typeLabel}`,
-          description: `${typeLabel} for ${subjectId}`,
-          url: `${SITE_URL}${pagePath}`,
-          provider: { "@type": "Organization", name: SITE_NAME },
-          educationalLevel: getYearLabel(year || ""),
-        }}
-      />
+    <>
       <Navigation />
-      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
+      <Seo
+        title={`${subject?.title || subjectId} · ${type.label}`}
+        path={path}
+      />
+      <main
+        id="main-content"
+        className="mx-auto min-h-screen max-w-6xl px-4 pb-20 pt-28"
+      >
         <Breadcrumbs
           items={[
             { label: "Resources", href: "/year-selection" },
-            { label: getYearLabel(year || ""), href: `/resources/${year}` },
+            { label: getYearLabel(year), href: `/resources/${year}` },
             {
-              label: subjectName,
+              label: subject?.title || subjectId,
               href: `/resources/${year}/${subjectId}`,
             },
-            { label: typeLabel },
+            { label: type.label },
           ]}
         />
-
-        <div className="flex flex-col items-center mb-12">
-          <div
-            className={`w-20 h-20 rounded-full ${info.color} ${info.textColor} flex items-center justify-center mb-4`}
-          >
-            <info.icon size={36} />
-          </div>
-          <h1 className="text-4xl font-display font-bold text-center text-gray-900 dark:text-white">
-            {info.title}
-          </h1>
-          <h2 className="text-2xl text-gray-600 dark:text-gray-300 mt-2">
-            {subjectName}
-          </h2>
-          <p className="text-gray-500 dark:text-gray-400 mt-2">
-            {getYearLabel(year || "")} · {subjectId}
+        <div className="my-10">
+          <p className="text-sm text-teal-700">
+            {subject?.title} · {getYearLabel(year)}
           </p>
-          <div className="mt-4 flex gap-2">
-            <ShareButton
-              year={year || ""}
-              subjectId={subjectId || ""}
-              subjectTitle={subjectName}
-            />
-          </div>
+          <h1 className="mb-5 mt-3 text-4xl font-bold">{type.label}</h1>
+          <ShareButton
+            year={year}
+            subjectId={subjectId}
+            subjectTitle={subject?.title || subjectId}
+            path={`${path}${params.toString() ? `?${params}` : ""}`}
+          />
         </div>
-
-        {loading ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <Skeleton key={i} className="h-40 rounded-xl" />
-            ))}
-          </div>
-        ) : error ? (
-          <div className="max-w-3xl mx-auto py-20 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
-              Failed to load resources
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">{error}</p>
+        <CatalogStatus />
+        {missingDocument && (
+          <div
+            role="alert"
+            className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900"
+          >
+            This document is unavailable or is no longer published. Choose
+            another resource below.{" "}
             <button
-              onClick={() => navigate(-1)}
-              className="inline-flex items-center px-4 py-2 bg-primary dark:bg-teal-600 text-white rounded-md"
+              className="ml-1 font-semibold underline"
+              onClick={closeDocument}
             >
-              Go back
+              Dismiss
             </button>
           </div>
-        ) : mappedChapters.length === 0 ? (
-          <div className="max-w-3xl mx-auto py-20 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
-              No resources found
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              There are no mapped resources for <strong>{subjectName}</strong> (
-              {typeLabel}) in {getYearLabel(year || "")}.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <button
-                onClick={() => navigate(-1)}
-                className="inline-flex items-center px-4 py-2 bg-primary dark:bg-teal-600 text-white rounded-md hover:bg-primary/90"
-              >
-                Go back
-              </button>
+        )}
+        {!loading &&
+          !error &&
+          (rows.length ? (
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {rows.map((r) => (
+                <SubjectCard
+                  key={r.id}
+                  subject={{
+                    id: r.id,
+                    title: r.title,
+                    description: r.description || "Open this resource",
+                    fileUrl: r.url,
+                    storagePath: r.storagePath,
+                    provider: r.provider,
+                    color: "text-teal-700",
+                    bgColor: "bg-teal-50",
+                  }}
+                  onClick={() => setParams({ document: r.id })}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="rounded-2xl border border-dashed p-10 text-center">
+              <h2 className="text-xl font-semibold">
+                Resources are being prepared
+              </h2>
+              <p className="my-3 text-slate-500">
+                Nothing is published here yet. Check another resource category.
+              </p>
               <Link
-                to="/contact"
-                className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800"
+                className="text-teal-700 underline"
+                to={`/resources/${year}/${subjectId}`}
               >
-                Request content
+                Back to {subject?.title}
               </Link>
             </div>
-          </div>
-        ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {mappedChapters.map((chapter) => (
-              <SubjectCard
-                key={chapter.id}
-                subject={chapter}
-                onClick={handleChapterClick}
-              />
-            ))}
-          </div>
-        )}
+          ))}
       </main>
-
       <PdfViewer
-        subject={selectedChapter}
-        isOpen={isPdfOpen}
-        onClose={() => setIsPdfOpen(false)}
-        subjectId={subjectId}
+        subject={selected}
+        isOpen={Boolean(selected)}
+        onClose={closeDocument}
         year={year}
+        subjectId={subjectId}
         resourceType={resourceType}
       />
-    </div>
+    </>
   );
-};
-
-export default ResourceDetails;
+}

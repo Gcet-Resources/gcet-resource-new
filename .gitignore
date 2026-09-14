@@ -26,3 +26,11 @@ frontend/dist
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
+frontend/test-results*/
+frontend/playwright-report/
+frontend/.env*
+supabase/.temp/
+.env*
+!frontend/.env.example

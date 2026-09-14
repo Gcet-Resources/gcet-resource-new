@@ -1,128 +1,52 @@
-import { useState, useEffect } from "react";
-import { Clock, Calendar } from "lucide-react";
-import examCalendar from "@/data/exam-calendar.json";
-
-interface ExamInfo {
-  id: string;
-  name: string;
-  startDate: string;
-  endDate?: string | null;
-  description?: string;
-  link?: string | null;
-}
-
-const ExamCountdown = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-  const [passed, setPassed] = useState(false);
-
-  const exams = examCalendar.exams as ExamInfo[];
-  const upcomingExam =
-    exams.find((e) => e.id === examCalendar.defaultExamId) || exams[0];
-
-  const examDate = new Date(upcomingExam.startDate);
-  const startMs = examDate.getTime();
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const difference = startMs - Date.now();
-
-      if (difference <= 0) {
-        setPassed(true);
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        return;
-      }
-
-      setPassed(false);
-      setTimeLeft({
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      });
-    };
-
-    calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
-    return () => clearInterval(timer);
-  }, [startMs]);
-
-  const TimeBlock = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center">
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-3 md:p-4 min-w-[60px] md:min-w-[80px] border border-gray-100 dark:border-gray-700">
-        <span className="text-2xl md:text-4xl font-bold text-primary dark:text-teal-400 font-mono">
-          {String(value).padStart(2, "0")}
-        </span>
-      </div>
-      <span className="text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-2 uppercase tracking-wide">
-        {label}
-      </span>
-    </div>
+import { CalendarDays } from "lucide-react";
+import { useAuth } from "@/context/AuthProvider";
+import {
+  useCampusQuery,
+  loadPublicCampus,
+  formatCampusDate,
+} from "@/lib/campus";
+export default function ExamCountdown() {
+  const { profile } = useAuth();
+  const { data, loading, error } = useCampusQuery(
+    "exam-calendar",
+    loadPublicCampus,
   );
-
-  const formattedDate = examDate.toLocaleDateString("en-IN", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
+  const now = Date.now();
+  const event = data?.exams.find(
+    (e) =>
+      (!e.course_id || e.course_id === profile?.course_id) &&
+      (!e.academic_year || e.academic_year === profile?.academic_year) &&
+      Date.parse(e.ends_at || e.starts_at) >= now,
+  );
   return (
-    <div className="bg-gradient-to-r from-primary/5 via-teal-50 to-primary/5 dark:from-teal-500/10 dark:via-gray-800/50 dark:to-teal-500/10 rounded-2xl p-6 md:p-8 border border-primary/10 dark:border-teal-500/20">
-      <div className="flex items-center justify-center gap-2 mb-4">
-        <Calendar className="w-5 h-5 text-primary dark:text-teal-400" />
-        <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
-          {upcomingExam.name}
-        </h3>
-      </div>
-
-      <p className="text-center text-sm text-gray-600 dark:text-gray-400 mb-6">
-        {passed
-          ? "Exams are underway or completed. Good luck!"
-          : `Starting from ${formattedDate}`}
-      </p>
-
-      {!passed && (
-        <div className="flex justify-center items-center gap-2 md:gap-4">
-          <TimeBlock value={timeLeft.days} label="Days" />
-          <span className="text-2xl md:text-3xl font-bold text-gray-300 dark:text-gray-600 mt-[-20px]">
-            :
-          </span>
-          <TimeBlock value={timeLeft.hours} label="Hours" />
-          <span className="text-2xl md:text-3xl font-bold text-gray-300 dark:text-gray-600 mt-[-20px]">
-            :
-          </span>
-          <TimeBlock value={timeLeft.minutes} label="Mins" />
-          <span className="text-2xl md:text-3xl font-bold text-gray-300 dark:text-gray-600 mt-[-20px]">
-            :
-          </span>
-          <TimeBlock value={timeLeft.seconds} label="Secs" />
-        </div>
+    <section className="rounded-2xl border bg-card p-6">
+      <h2 className="flex items-center gap-2 text-lg font-semibold">
+        <CalendarDays className="text-teal-600" />
+        Your next exam
+      </h2>
+      {loading ? (
+        <p role="status" className="mt-3">
+          Loading calendar…
+        </p>
+      ) : error ? (
+        <p className="mt-3 text-sm" role="alert">
+          The calendar is unavailable. Please retry later.
+        </p>
+      ) : event ? (
+        <>
+          <h3 className="mt-4 font-semibold">{event.title}</h3>
+          <p className="mt-2 text-sm text-muted-foreground">
+            {Date.parse(event.starts_at) <= now
+              ? "Currently underway"
+              : `Starts ${formatCampusDate(event.starts_at, true)}`}
+          </p>
+          <p className="mt-2 text-sm">{event.description}</p>
+        </>
+      ) : (
+        <p className="mt-3 text-sm text-muted-foreground">
+          No upcoming exams have been published for your course.
+        </p>
       )}
-
-      <div className="flex items-center justify-center gap-1 mt-6 text-sm text-gray-500 dark:text-gray-400">
-        <Clock className="w-4 h-4" />
-        <span>{upcomingExam.description || "Time to prepare! Good luck!"}</span>
-      </div>
-
-      {upcomingExam.link && (
-        <div className="text-center mt-4">
-          <a
-            href={upcomingExam.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-primary dark:text-teal-400 hover:underline"
-          >
-            View official schedule →
-          </a>
-        </div>
-      )}
-    </div>
+    </section>
   );
-};
-
-export default ExamCountdown;
+}
