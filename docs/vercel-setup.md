@@ -10,6 +10,8 @@
 
 The `gcet-campus.vercel.app` domain is verified on the project. No custom domain is configured. Root Directory is `frontend`, Framework Preset is Vite, Node is `22.x`, Install Command is `npm ci`, Build Command is `npm run build`, and Output Directory is `dist`. The checked-in `frontend/vercel.json` supplies the routing and headers. Vercel's routing utility accepts the configuration: `/api` and `/api/*` resolve to the retired API handler; application deep links resolve to `index.html`.
 
+The first production deployment is READY and public: `dpl_DFBvvGt4HNbJJ8bAqiXFyNAcWTAy`, application commit `9eaccb2`. See the [deployment record](release-status.md) for verified checks and the remaining account-provider setup.
+
 Production and Preview have `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `VITE_SITE_URL`, and `VITE_PHONE_MFA_ENABLED`. The site URL is the canonical origin above; phone MFA is `false`. `VITE_GA_ID` and `VITE_TURNSTILE_SITE_KEY` are unset, which disables those integrations. No backend secret belongs in these public build variables.
 
 Local `.vercel` metadata is ignored. The temporary CLI-generated OIDC `.env.local` was removed. Run deployment commands from the repository root so Vercel applies the configured `frontend` Root Directory.

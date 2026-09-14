@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Seo } from "@/components/Seo";
 import { useAuth } from "@/context/AuthProvider";
 import { MfaSettings } from "@/components/auth/MfaSettings";
 import {
@@ -503,6 +504,12 @@ export default function Account() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+      <Seo
+        title="Account & preferences"
+        description="Manage your GCET campus profile, study preferences, and account security."
+        path="/account"
+        noIndex
+      />
       <header className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6">
         <Link to="/" className="inline-flex items-center gap-2 font-semibold">
           <GraduationCap className="h-6 w-6" aria-hidden="true" /> GCET Campus

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import type { EmailOtpType } from "@supabase/supabase-js";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import {
   ArrowLeft,
   ArrowRight,
@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Seo } from "@/components/Seo";
 import { TurnstileChallenge } from "@/components/auth/TurnstileChallenge";
 import { useAuth } from "@/context/AuthProvider";
 import {
@@ -31,6 +32,8 @@ export default function Login() {
   const auth = useAuth();
   const { refreshProfile } = auth;
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const isCallbackPage = pathname === "/auth/callback";
   const [params] = useSearchParams();
   const returnTo = safeReturnPath(params.get("next"));
   const [callback] = useState(() => ({
@@ -222,6 +225,12 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+      <Seo
+        title={isCallbackPage ? "Verify your sign-in" : "Sign in"}
+        description="Sign in with your college email to access your GCET campus account."
+        path={isCallbackPage ? "/auth/callback" : "/login"}
+        noIndex
+      />
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <Link to="/" className="inline-flex items-center gap-2 font-semibold">
           <GraduationCap className="h-6 w-6" aria-hidden="true" /> GCET Campus

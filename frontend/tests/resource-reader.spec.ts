@@ -103,8 +103,16 @@ test("keyboard activation of search clear and close does not navigate to the sel
   page,
 }) => {
   await page.goto("/");
-  await page.keyboard.press("Control+k");
+  // The lazy homepage can still be loading after the document's load event.
+  const trigger = page.getByRole("button", {
+    name: "Search resources",
+    exact: true,
+  });
+  await expect(trigger).toBeVisible();
+  await trigger.press("Control+k");
   const input = page.getByRole("combobox", { name: "Search query" });
+  await expect(input).toBeVisible();
+  await expect(input).toBeFocused();
   await input.fill("BAS101");
   await expect(page.getByRole("option").first()).toBeVisible();
   await page.getByRole("button", { name: "Clear search", exact: true }).focus();
