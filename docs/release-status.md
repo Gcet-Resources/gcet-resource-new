@@ -10,7 +10,7 @@ The Supabase-backed application is publicly available at **https://gcet-campus.v
 - Student course/year/semester preferences, resource saves, notices, bookmarks/read tracking, club discovery/follows, and scoped staff/council/club publishing.
 - Administrator user, membership, role, approval and content management, guarded account operations, and audit records.
 - Supabase RLS, private resource storage and signed reads, seven versioned migrations, an insert-only catalog import and guarded account Edge Function.
-- Vercel hosting, SPA deep links, retired Express API responses, security headers, updated PDF reading/search/navigation, error states, and mobile/light/dark accessibility fixes.
+- Vercel hosting, SPA deep links, retired Express API responses, security headers, updated PDF reading/search/navigation, error states, and mobile/light/dark accessibility fixes. A missing page bundle after deployment triggers one guarded reload; repeated failures, offline mode and unavailable storage retain manual retry.
 
 ## Verified deployment evidence
 
@@ -20,7 +20,9 @@ The Supabase-backed application is publicly available at **https://gcet-campus.v
 - Browser review confirmed the live homepage, college sign-in form, first-year subject/resource catalog, and the anonymous administration gate.
 - Live Supabase contains seven applied migrations, 153 subjects, 892 resources (217 published and 675 draft), and 114 quarantined orphan groups. Three legacy notices and two expired exam events are drafts; anonymous callers cannot read them.
 
-Local checks passed for typecheck, lint, build, 20 unit tests, eight auth-policy tests, 57 database/import checks, eight deployment-bundle checks, 10 Edge Function checks, and the route, interaction, PDF, mocked-auth and mocked-campus browser suites. Focused light/dark accessibility checks found no violations. The first GitHub run exposed a search-test readiness race; the correction and subsequent CI result are reviewable in PR #43. CI and local auth fixtures do not send real email or SMS.
+Local checks passed for typecheck, lint, build, 20 unit tests, eight auth-policy tests, 57 database/import checks, eight deployment-bundle checks, 10 Edge Function checks, and the route, interaction, PDF, mocked-auth and mocked-campus browser suites. Focused light/dark accessibility checks found no violations. The general browser suite contains 38 tests, including five regressions using real failed page-bundle requests to verify recovery and prevent reload loops.
+
+Both [push CI](https://github.com/Gcet-Resources/gcet-resource-new/actions/runs/34884174078) and [PR CI](https://github.com/Gcet-Resources/gcet-resource-new/actions/runs/34884179093) passed for the account metadata correction at `365c9e4`. That deployment also passed live title, canonical and noindex checks. Current checks, including the deployment-recovery addition, are available on PR #43. CI and local auth fixtures do not send real email or SMS.
 
 ## Required before student rollout
 
