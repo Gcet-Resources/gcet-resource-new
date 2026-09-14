@@ -1,0 +1,32 @@
+[
+  {
+    "version": "202609140001",
+    "name": "campus",
+    "sha256": "2fe55699f428e72cc38a1aefb4ef4d678dcd564ea6d8ce39a17e77870d28ee93"
+  },
+  {
+    "version": "202609140002",
+    "name": "storage",
+    "sha256": "7583a4a1a9e12b27671cf7aa7712adf739ed763e5bdaaeab3cd86ed9ae35d245"
+  },
+  {
+    "version": "202609140003",
+    "name": "account_actions",
+    "sha256": "7fb4733b738bfcb79e06a1feb57542d33c062e0ad3e5f6c3d1a057d7d0d43ba2"
+  },
+  {
+    "version": "202609140004",
+    "name": "admin_queries",
+    "sha256": "280d06c9ee118cf96b8a0b3e947c67463f5ec7e8c14bfa7c151fd387db4bfd81"
+  },
+  {
+    "version": "202609140005",
+    "name": "bootstrap_and_audits",
+    "sha256": "a5fffd3026089e4d061a76b7759460cab14481ae90a3c16d7785c4ef7a930be9"
+  },
+  {
+    "version": "202609140006",
+    "name": "enrolled_mfa",
+    "sha256": "75ee1fe1f5a96b6ea3e1dbc53534b53656210b6f003bef6942a6b292bc3f89b7"
+  }
+]

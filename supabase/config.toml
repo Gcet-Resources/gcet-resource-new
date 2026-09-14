@@ -1,0 +1,60 @@
+project_id = "gcet-resources"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+enabled = true
+site_url = "http://localhost:8080"
+additional_redirect_urls = ["http://localhost:8080/auth/callback", "http://localhost:8080/account"]
+jwt_expiry = 3600
+enable_signup = true
+enable_anonymous_sign_ins = false
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+secure_password_change = true
+max_frequency = "1m0s"
+otp_length = 6
+otp_expiry = 1800
+
+[auth.email.template.magic_link]
+subject = "Your GCET Resources sign-in code"
+content_path = "./supabase/templates/otp.html"
+
+[auth.hook.before_user_created]
+enabled = true
+uri = "pg-functions://postgres/public/before_user_created"
+
+[auth.mfa]
+max_enrolled_factors = 10
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[functions.admin-accounts]
+verify_jwt = false
+
+[auth.email.template.confirmation]
+subject = "Verify your GCET Resources college email"
+content_path = "./supabase/templates/otp.html"
+
+[auth.email.template.invite]
+subject = "Your GCET Resources invitation"
+content_path = "./supabase/templates/invite.html"

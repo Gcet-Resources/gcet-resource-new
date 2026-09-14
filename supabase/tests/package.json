@@ -1,0 +1,12 @@
+{
+  "name": "gcet-database-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node all.mjs",
+    "test:edge": "node edge-handler.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
