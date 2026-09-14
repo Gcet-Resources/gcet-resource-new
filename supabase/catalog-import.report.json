@@ -1,0 +1,586 @@
+{
+  "sourceSubjects": 153,
+  "sourceGroups": 963,
+  "sourceChapters": 1006,
+  "sourceNonemptyUrls": 218,
+  "subjects": 153,
+  "resources": 892,
+  "published": 217,
+  "drafts": 675,
+  "quarantinedGroups": 114,
+  "quarantinedChapters": 114,
+  "duplicateChapterIds": 2,
+  "coursesAssigned": 0,
+  "quarantine": [
+    {
+      "sourceKey": "2nd/BEC401/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC401/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC401/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC401/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC401/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC401/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC402/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEC403/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE402/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BEE403/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME401/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME402/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BME403/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE401/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE402/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE403/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE404/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE405/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE408/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE411/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE412/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE413/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "2nd/BOE414/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/pdf-notes/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/aktu-pyq/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/cae/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/handwritten/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/quantum/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    },
+    {
+      "sourceKey": "3rd/BEC503/question-bank/0",
+      "reason": "unknown_subject",
+      "chapterCount": 1
+    }
+  ]
+}

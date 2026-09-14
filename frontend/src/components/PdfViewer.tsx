@@ -1,21 +1,26 @@
-import { useState, useEffect, useRef } from "react";
-import type {
-  PDFDocumentProxy,
-  PDFPageProxy,
-} from "pdfjs-dist";
+import { useEffect, useRef, useState } from "react";
+import type { PDFDocumentProxy, RenderTask } from "pdfjs-dist";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ZoomIn,
+  ZoomOut,
+  ExternalLink,
+  RotateCw,
+} from "lucide-react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X, Maximize, Minimize, Download, ExternalLink } from "lucide-react";
-import { SubjectResource } from "./SubjectCard";
-import { ReportBrokenLink } from "./ReportBrokenLink";
-import { trackPdfOpen } from "@/lib/analytics";
-
-interface PdfViewerProps {
+import type { SubjectResource } from "./SubjectCard";
+import { safeSource, sourceKind, drivePreview } from "@/lib/resource-source";
+import { requireSupabase } from "@/lib/supabase";
+import { ResourceReport } from "@/components/ResourceReport";
+interface Props {
   subject: SubjectResource | null;
   isOpen: boolean;
   onClose: () => void;
@@ -23,343 +28,283 @@ interface PdfViewerProps {
   year?: string;
   resourceType?: string;
 }
-
-const PdfViewer = ({
+export default function PdfViewer({
   subject,
   isOpen,
   onClose,
   subjectId,
   year,
   resourceType,
-}: PdfViewerProps) => {
-  const [isFullScreen, setIsFullScreen] = useState(false);
-  const trackedRef = useRef<string | null>(null);
-
-  useEffect(() => {
-    if (isOpen) {
-      setIsFullScreen(true);
-      if (subject && trackedRef.current !== subject.id) {
-        trackedRef.current = subject.id;
-        trackPdfOpen(subject.title, subjectId || "", year || "");
-      }
-    } else {
-      setIsFullScreen(false);
-    }
-  }, [isOpen, subject, subjectId, year]);
-
-  const getEmbedUrl = (url: string) => {
-    if (!url) return "";
-
-    if (url.includes("drive.google.com") && url.includes("/file/d/")) {
-      return url.replace(/\/view.*/, "/preview");
-    }
-
-    if (url.includes("drive.google.com") && url.includes("/folders/")) {
-      const match = url.match(/\/folders\/([a-zA-Z0-9_-]+)/);
-      if (match?.[1]) {
-        return `https://drive.google.com/embeddedfolderview?id=${match[1]}#list`;
-      }
-    }
-
-    if (url.endsWith(".pdf")) {
-      return `https://docs.google.com/gview?url=${encodeURIComponent(
-        url
-      )}&embedded=true`;
-    }
-
-    return url;
-  };
-
-  const getDownloadUrl = (url: string) => {
-    if (url.includes("drive.google.com") && url.includes("/file/d/")) {
-      const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
-      if (match?.[1]) {
-        return `https://drive.google.com/uc?export=download&id=${match[1]}`;
-      }
-    }
-    return url;
-  };
-
-  const embedUrl = subject?.fileUrl ? getEmbedUrl(subject.fileUrl) : "";
-  const isPdfUrl = subject?.fileUrl?.toLowerCase().endsWith(".pdf");
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+}: Props) {
+  const canvas = useRef<HTMLCanvasElement>(null);
+  const doc = useRef<PDFDocumentProxy | null>(null);
+  const [url, setUrl] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
+  const [pages, setPages] = useState(0);
+  const [zoom, setZoom] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const loadingTaskRef = useRef<any>(null);
-  const pdfRef = useRef<PDFDocumentProxy | null>(null);
-  const pageCacheRef = useRef<Map<number, ImageBitmap | string>>(new Map());
-
+  const [error, setError] = useState("");
+  const [revision, setRevision] = useState(0);
+  const kind = url ? sourceKind(url) : "external";
+  const isPdf =
+    kind === "pdf" ||
+    Boolean(subject?.storagePath) ||
+    (kind === "external" && subject?.provider === "pdf");
   useEffect(() => {
-    let cancelled = false;
-    async function renderFirstPage() {
-      if (!isOpen || !isPdfUrl || !subject?.fileUrl) return;
-      setError(null);
-      setLoading(true);
-      try {
-        // @ts-expect-error - pdfjs-dist legacy build has no type declarations
-        const pdfjs = await import("pdfjs-dist/legacy/build/pdf");
-        // configure worker
-        try {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
-          pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-            "pdfjs-dist/legacy/build/pdf.worker.min.js",
-            import.meta.url
-          ).toString();
-        } catch (e) {
-          // ignore worker config errors, PDF.js may fallback
-        }
-
-        const loadingTask = pdfjs.getDocument({
-          url: subject.fileUrl,
-          disableStream: false,
-        });
-        loadingTaskRef.current = loadingTask;
-        const pdf: PDFDocumentProxy = await loadingTask.promise;
-        pdfRef.current = pdf;
-        if (cancelled) {
-          pdf.cleanup?.();
-          return;
-        }
-        const page: PDFPageProxy = await pdf.getPage(1);
-        const viewport = page.getViewport({ scale: 1 });
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-        const context = canvas.getContext("2d");
-        // size canvas appropriately for crisp rendering
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        canvas.width = Math.floor(viewport.width * dpr);
-        canvas.height = Math.floor(viewport.height * dpr);
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        if (context) {
-          context.setTransform(dpr, 0, 0, dpr, 0, 0);
-        }
-        const renderTask = page.render({ canvas, viewport });
-        await renderTask.promise;
-        // keep PDF loaded for potential further pages; we only render first page eagerly
-      } catch (err: unknown) {
-        console.error("PDF render error:", err);
-        setError(String(err instanceof Error ? err.message : err));
-      } finally {
-        if (!cancelled) setLoading(false);
+    let active = true;
+    setUrl(null);
+    setError("");
+    setPage(1);
+    setPages(0);
+    setZoom(1);
+    if (!isOpen || !subject) return;
+    setLoading(true);
+    async function resolve() {
+      if (subject?.storagePath) {
+        const { data, error } = await requireSupabase()
+          .storage.from("resources")
+          .createSignedUrl(subject.storagePath, 300);
+        if (error) throw error;
+        return data.signedUrl;
       }
+      return safeSource(subject?.fileUrl);
     }
-
-    // Start sequential background prefetch: page 2 then 3, then remaining pages (low priority)
-    (function schedulePrefetch() {
-      const pdfDoc = pdfRef.current;
-      if (!pdfDoc || pdfDoc.numPages <= 1) return;
-
-      const prefetch = async () => {
-        const maxPrefetch = Math.min(pdfDoc.numPages, 6); // limit prefetch depth
-        for (let i = 2; i <= maxPrefetch; i++) {
-          try {
-            // yield to idle time to avoid blocking the UI
-            await new Promise((res) => setTimeout(res, 250));
-            const p = await pdfDoc.getPage(i);
-            const vp = p.getViewport({ scale: 1 });
-            // offscreen canvas if available
-            let offCanvas: HTMLCanvasElement | OffscreenCanvas | null = null;
-            if (typeof OffscreenCanvas !== "undefined") {
-              offCanvas = new OffscreenCanvas(
-                Math.floor(vp.width),
-                Math.floor(vp.height)
-              );
-            } else {
-              offCanvas = document.createElement("canvas");
-              offCanvas.width = Math.floor(vp.width);
-              offCanvas.height = Math.floor(vp.height);
-            }
-            const offCtx = offCanvas?.getContext
-              ? offCanvas.getContext("2d")
-              : null;
-            const rt = p.render({ canvas: offCanvas instanceof HTMLCanvasElement ? offCanvas : null, viewport: vp });
-            await rt.promise;
-            // try to cache image bitmap for faster display later
-            try {
-              if (
-                typeof createImageBitmap !== "undefined" &&
-                offCanvas instanceof HTMLCanvasElement
-              ) {
-                const blob = await new Promise<Blob | null>((resolve) =>
-                  offCanvas.toBlob((b) => resolve(b))
-                );
-                if (blob) {
-                  const bitmap = await createImageBitmap(blob);
-                  pageCacheRef.current.set(i, bitmap);
-                }
-              }
-            } catch (e) {
-              // ignore per-page cache errors
-            }
-          } catch (e) {
-            // stop prefetching on errors
-            break;
-          }
+    resolve()
+      .then((value) => {
+        if (active) {
+          if (!value) setError("This document has no supported source.");
+          setUrl(value);
+          setLoading(false);
         }
-      };
-
-      if (typeof requestIdleCallback !== "undefined") {
-        requestIdleCallback(() => prefetch(), {
-          timeout: 2000,
-        });
-      } else {
-        setTimeout(() => prefetch(), 500);
-      }
-    })();
-    renderFirstPage();
-
+      })
+      .catch(() => {
+        if (active) {
+          setError(
+            "This document is unavailable or your access has expired. Sign in or try again.",
+          );
+          setLoading(false);
+        }
+      });
     return () => {
-      cancelled = true;
-      try {
-        loadingTaskRef.current?.destroy?.();
-      } catch (e) {
-        // ignore
-      }
+      active = false;
     };
-  }, [isOpen, isPdfUrl, subject?.fileUrl]);
-
+  }, [isOpen, subject, revision]);
+  useEffect(() => {
+    let active = true;
+    let destroy: (() => void) | undefined;
+    doc.current = null;
+    if (!isOpen || !url || !isPdf) return;
+    setLoading(true);
+    setError("");
+    import("pdfjs-dist")
+      .then((pdf) => {
+        if (!active) return;
+        pdf.GlobalWorkerOptions.workerSrc = new URL(
+          "pdfjs-dist/build/pdf.worker.min.mjs",
+          import.meta.url,
+        ).toString();
+        const task = pdf.getDocument({ url });
+        destroy = () => {
+          void task.destroy();
+        };
+        return task.promise;
+      })
+      .then((document) => {
+        if (active && document) {
+          doc.current = document;
+          setPages(document.numPages);
+          setLoading(false);
+        }
+      })
+      .catch(() => {
+        if (active) {
+          setError(
+            "The embedded reader could not load this PDF. Open the original document or retry.",
+          );
+          setLoading(false);
+        }
+      });
+    return () => {
+      active = false;
+      doc.current = null;
+      destroy?.();
+    };
+  }, [url, isPdf, isOpen]);
+  useEffect(() => {
+    let active = true;
+    let render: RenderTask | undefined;
+    const document = doc.current;
+    if (!document || !canvas.current || !pages) return;
+    setLoading(true);
+    document
+      .getPage(page)
+      .then((pdfPage) => {
+        if (!active || !canvas.current) return;
+        const viewport = pdfPage.getViewport({ scale: zoom * 1.35 });
+        const target = canvas.current;
+        const context = target.getContext("2d");
+        if (!context) throw new Error("Canvas is not available");
+        target.width = viewport.width;
+        target.height = viewport.height;
+        render = pdfPage.render({
+          canvas: target,
+          canvasContext: context,
+          viewport,
+        });
+        return render.promise;
+      })
+      .then(() => {
+        if (active) setLoading(false);
+      })
+      .catch((e: unknown) => {
+        if (
+          active &&
+          !(e instanceof Error && e.name === "RenderingCancelledException")
+        ) {
+          setError(
+            "This page could not be rendered. Try another page or open the original.",
+          );
+          setLoading(false);
+        }
+      });
+    return () => {
+      active = false;
+      render?.cancel();
+    };
+  }, [page, pages, zoom, url]);
+  const preview = url ? drivePreview(url) : null;
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent
-        className={`${
-          isFullScreen
-            ? "max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh]"
-            : "max-w-4xl w-[90vw] max-h-[90vh]"
-        } flex flex-col p-1 gap-0 bg-white dark:bg-gray-900 [&>button:last-child]:hidden`}
-      >
-        <DialogHeader className="flex flex-row items-center justify-between p-3 border-b border-gray-100 dark:border-gray-800">
-          <DialogTitle className="text-base md:text-lg font-medium pr-8 truncate flex-1 text-left text-gray-900 dark:text-white">
-            {subject?.title}
-          </DialogTitle>
-          <div className="flex items-center gap-1 shrink-0">
-            {subject?.fileUrl && (
-              <>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="hidden sm:flex h-8 text-xs"
-                  onClick={() =>
-                    window.open(
-                      subject.fileUrl,
-                      "_blank",
-                      "noopener,noreferrer"
-                    )
-                  }
-                >
-                  <ExternalLink className="w-3 h-3 mr-1" />
-                  Open
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="hidden md:flex h-8 text-xs"
-                  onClick={() =>
-                    window.open(
-                      getDownloadUrl(subject.fileUrl!),
-                      "_blank",
-                      "noopener,noreferrer"
-                    )
-                  }
-                >
-                  <Download className="w-3 h-3 mr-1" />
-                  Download
-                </Button>
-              </>
-            )}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-8 w-8"
-              onClick={() => setIsFullScreen(!isFullScreen)}
-            >
-              {isFullScreen ? (
-                <Minimize className="h-4 w-4" />
-              ) : (
-                <Maximize className="h-4 w-4" />
-              )}
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-8 w-8 hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-900/20"
-              onClick={onClose}
-            >
-              <X className="h-4 w-4" />
-            </Button>
-          </div>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose();
+      }}
+    >
+      <DialogContent className="flex h-[90dvh] max-w-6xl flex-col p-4 sm:p-6">
+        <DialogHeader className="pr-8">
+          <DialogTitle>{subject?.title || "Document"}</DialogTitle>
+          <DialogDescription>
+            Read the document here, or open the original for downloads and an
+            alternative accessible reader.
+          </DialogDescription>
         </DialogHeader>
-
-        <div className="flex-1 w-full bg-gray-100 dark:bg-gray-950 relative overflow-hidden rounded-b-lg">
-          {embedUrl ? (
-            // If it's a direct PDF url (not Google Drive), use a PDF.js-powered canvas
-            isPdfUrl && !embedUrl.includes("docs.google.com") ? (
-              <div className="w-full h-full flex items-center justify-center p-2">
-                <div className="w-full h-full relative">
-                  <canvas
-                    ref={canvasRef}
-                    className="w-full h-full block"
-                    aria-label={subject?.title || "PDF canvas"}
-                  />
-                  {loading && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-700" />
-                    </div>
-                  )}
-                  {error && (
-                    <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-red-600">
-                      Failed to load document — defaulting to browser viewer.
-                    </div>
-                  )}
-                </div>
-              </div>
-            ) : (
-              // Fallback to iframe/embed (Google viewer or generic URL)
-              <iframe
-                src={embedUrl}
-                className="w-full h-full border-0"
-                loading="lazy"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                title={subject?.title || "PDF Viewer"}
-              />
-            )
-          ) : (
-            <div className="flex flex-col items-center justify-center h-full p-6 text-center text-gray-500">
-              <p>No document URL found.</p>
-            </div>
+        <div className="flex flex-wrap items-center gap-2">
+          {isPdf && pages > 0 && (
+            <>
+              <Button
+                size="icon"
+                variant="outline"
+                aria-label="Previous page"
+                disabled={page <= 1}
+                onClick={() => setPage((p) => p - 1)}
+              >
+                <ChevronLeft />
+              </Button>
+              <span aria-live="polite" className="min-w-24 text-center text-sm">
+                Page {page} of {pages}
+              </span>
+              <Button
+                size="icon"
+                variant="outline"
+                aria-label="Next page"
+                disabled={page >= pages}
+                onClick={() => setPage((p) => p + 1)}
+              >
+                <ChevronRight />
+              </Button>
+              <Button
+                size="icon"
+                variant="outline"
+                aria-label="Zoom out"
+                disabled={zoom <= 0.5}
+                onClick={() => setZoom((z) => Math.max(0.5, z - 0.25))}
+              >
+                <ZoomOut />
+              </Button>
+              <Button
+                size="icon"
+                variant="outline"
+                aria-label="Zoom in"
+                disabled={zoom >= 2.5}
+                onClick={() => setZoom((z) => Math.min(2.5, z + 0.25))}
+              >
+                <ZoomIn />
+              </Button>
+            </>
           )}
-        </div>
-
-        {subject?.fileUrl && (
-          <div className="p-2 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-wrap items-center justify-between gap-2">
-            <ReportBrokenLink
+          {url && (
+            <Button variant="outline" asChild>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2" size={16} />
+                Open original / download
+              </a>
+            </Button>
+          )}
+          {subject && (
+            <ResourceReport
+              resourceId={subject.id}
               title={subject.title}
-              url={subject.fileUrl}
               subjectId={subjectId}
               year={year}
               resourceType={resourceType}
-              className="text-xs h-8"
             />
-            <div className="flex gap-2 sm:hidden">
-              <Button
-                size="sm"
-                variant="outline"
-                className="text-xs"
-                onClick={() =>
-                  window.open(subject.fileUrl, "_blank", "noopener,noreferrer")
-                }
-              >
-                Open in browser
-              </Button>
-            </div>
-          </div>
+          )}
+          <Button variant="ghost" onClick={() => setRevision((n) => n + 1)}>
+            <RotateCw className="mr-2" size={16} />
+            Retry
+          </Button>
+        </div>
+        {loading && (
+          <p role="status" className="text-sm text-slate-500">
+            Loading document…
+          </p>
         )}
+        {error && (
+          <p
+            role="alert"
+            className="rounded-xl bg-amber-50 p-3 text-sm text-amber-900"
+          >
+            {error}
+          </p>
+        )}
+        <div className="min-h-0 flex-1 overflow-auto rounded-xl bg-slate-100 p-2 dark:bg-slate-950">
+          {url && isPdf ? (
+            <canvas
+              ref={canvas}
+              className="mx-auto max-w-none bg-white"
+              aria-label={`Document page ${page}. Use Open original for a text-accessible reader.`}
+            />
+          ) : preview ? (
+            <iframe
+              title={`${subject?.title} preview`}
+              src={preview}
+              className="h-full w-full border-0"
+              onLoad={() => setLoading(false)}
+              allow="fullscreen"
+            />
+          ) : url ? (
+            <div className="flex h-full flex-col items-center justify-center gap-4 p-6 text-center">
+              <h2 className="text-xl font-semibold">
+                {kind === "drive-folder"
+                  ? "Open the resource folder"
+                  : "Continue to the resource"}
+              </h2>
+              <p className="max-w-md text-slate-500">
+                This source opens on its original website. If it requires
+                access, use the source owner's sharing instructions.
+              </p>
+              <a
+                className="rounded-xl bg-teal-700 px-5 py-3 text-white"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open resource <ExternalLink className="ml-2 inline" size={16} />
+              </a>
+            </div>
+          ) : null}
+        </div>
       </DialogContent>
     </Dialog>
   );
-};
-
-export default PdfViewer;
+}

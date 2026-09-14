@@ -4,10 +4,17 @@ import { useNavigate } from "react-router-dom";
 import { getYearLabel } from "@/lib/subjects";
 
 const FavoritesList = () => {
-  const { favorites, removeFavorite } = useFavorites();
+  const {
+    favorites,
+    removeFavorite,
+    error,
+    busy,
+    guestCount,
+    importGuestFavorites,
+  } = useFavorites();
   const navigate = useNavigate();
 
-  if (favorites.length === 0) return null;
+  if (favorites.length === 0 && !error && !guestCount) return null;
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
@@ -20,6 +27,20 @@ const FavoritesList = () => {
         </div>
       </div>
 
+      {error && (
+        <p role="alert" className="mb-3 text-sm text-red-600">
+          {error}
+        </p>
+      )}
+      {guestCount > 0 && (
+        <button
+          disabled={busy}
+          onClick={() => void importGuestFavorites()}
+          className="mb-3 text-sm text-teal-700 underline"
+        >
+          Import {guestCount} saved subjects from this browser
+        </button>
+      )}
       <div className="space-y-2">
         {favorites.map((subject) => (
           <div
@@ -43,7 +64,8 @@ const FavoritesList = () => {
               <ChevronRight className="w-4 h-4 text-gray-400" />
             </button>
             <button
-              onClick={() => removeFavorite(subject.id, subject.year)}
+              disabled={busy}
+              onClick={() => void removeFavorite(subject.id, subject.year)}
               className="p-2 text-gray-400 hover:text-red-500 transition-colors"
               aria-label={`Remove ${subject.title} from favorites`}
             >

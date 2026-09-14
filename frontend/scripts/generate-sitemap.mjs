@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
-const siteUrl = process.env.VITE_SITE_URL || "https://gcetresources.com";
+const siteUrl = process.env.VITE_SITE_URL || "https://gcet-campus.vercel.app";
 
 const subjects = JSON.parse(
   readFileSync(join(root, "src/data/subjects.json"), "utf8")
@@ -42,12 +42,14 @@ if (allMappings.length === 0) {
   });
 }
 
+function validSource(value) { try { return typeof value === "string" && new URL(value).protocol === "https:"; } catch { return false; } }
+const validGroups = allMappings.filter(e => subjects[e.year]?.some(s => s.id === e.subjectId));
 const availability = {};
-allMappings.forEach((e) => {
+validGroups.forEach((e) => {
   const key = `${e.year}/${e.subjectId}`;
   if (!availability[key]) availability[key] = {};
   availability[key][e.resourceType] =
-    Array.isArray(e.chapters) && e.chapters.length > 0;
+    Array.isArray(e.chapters) && e.chapters.some(c => validSource(c.fileUrl));
 });
 writeFileSync(
   join(mappingsDir, "availability.json"),
@@ -55,9 +57,9 @@ writeFileSync(
 );
 
 const searchIndex = [];
-allMappings.forEach((e) => {
+validGroups.forEach((e) => {
   e.chapters?.forEach((c) => {
-    if (c.title) {
+    if (c.title && validSource(c.fileUrl)) {
       searchIndex.push({
         year: e.year,
         subjectId: e.subjectId,
@@ -86,7 +88,8 @@ const staticRoutes = [
   "/coding-resources/dsa",
   "/coding-resources/projects",
   "/essentials",
-  "/notice-board",
+  "/notices",
+  "/clubs",
 ];
 
 const urls = [...staticRoutes];

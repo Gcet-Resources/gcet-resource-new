@@ -1,0 +1,75 @@
+{
+  "site": "https://gcet-campus.vercel.app",
+  "checkedAt": "2026-09-14T18:54:40.012Z",
+  "checks": [
+    {
+      "name": "Vercel deep link /",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /resources/1st/BAS101",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /notices",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /clubs",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /login",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /account",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /admin",
+      "passed": true
+    },
+    {
+      "name": "Vercel deep link /auth/callback",
+      "passed": true
+    },
+    {
+      "name": "Retired Express API returns 410 JSON",
+      "passed": true
+    },
+    {
+      "name": "Public catalog contains only published resources",
+      "passed": true
+    },
+    {
+      "name": "Anonymous access denied: profiles",
+      "passed": true
+    },
+    {
+      "name": "Anonymous access denied: memberships",
+      "passed": true
+    },
+    {
+      "name": "Anonymous access denied: role_assignments",
+      "passed": true
+    },
+    {
+      "name": "Anonymous access denied: audit_events",
+      "passed": true
+    },
+    {
+      "name": "Anonymous administrator RPC denied",
+      "passed": true
+    },
+    {
+      "name": "Account function denies unauthenticated requests",
+      "passed": true
+    },
+    {
+      "name": "Account function denies unapproved origins",
+      "passed": true
+    }
+  ],
+  "scope": "Read-only hosting and public/unauthenticated API boundaries; no OTP/SMS delivery or real member sessions tested."
+}

@@ -7,6 +7,8 @@ import {
   ReactNode,
 } from "react";
 
+import { storageGet, storageSet } from "@/lib/safe-storage";
+
 type Theme = "light" | "dark";
 
 interface ThemeContextType {
@@ -31,8 +33,8 @@ interface ThemeProviderProps {
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<Theme>(() => {
     // Check localStorage first
-    const stored = localStorage.getItem("theme") as Theme | null;
-    if (stored) return stored;
+    const stored = storageGet("theme") as Theme | null;
+    if (stored === "light" || stored === "dark") return stored;
 
     // Then check system preference
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -50,7 +52,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
       root.classList.remove("dark");
     }
 
-    localStorage.setItem("theme", theme);
+    storageSet("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {

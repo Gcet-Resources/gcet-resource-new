@@ -3,6 +3,7 @@ import { Search, X, ArrowRight } from "lucide-react";
 import { useSearch, SearchResult } from "@/hooks/useSearch";
 import { useNavigate } from "react-router-dom";
 import { getYearLabel } from "@/lib/subjects";
+import { useCatalog } from "@/context/CatalogProvider";
 import { trackSearch } from "@/lib/analytics";
 
 interface GlobalSearchProps {
@@ -17,12 +18,15 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const results = useSearch(query);
+  const { loading, error } = useCatalog();
 
   useEffect(() => {
     if (isOpen) {
+      const previous = document.activeElement as HTMLElement | null;
       inputRef.current?.focus();
       setQuery("");
       setSelectedIndex(0);
+      return () => previous?.focus();
     }
   }, [isOpen]);
 
@@ -50,13 +54,14 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
 
       if (e.key === "Escape") {
         onClose();
-      } else if (e.key === "ArrowDown") {
+      } else if (e.key === "ArrowDown" && e.target === inputRef.current) {
         e.preventDefault();
-        setSelectedIndex((prev) => Math.min(prev + 1, results.length - 1));
-      } else if (e.key === "ArrowUp") {
+        setSelectedIndex((prev) => Math.max(0, Math.min(prev + 1, results.length - 1)));
+      } else if (e.key === "ArrowUp" && e.target === inputRef.current) {
         e.preventDefault();
         setSelectedIndex((prev) => Math.max(prev - 1, 0));
-      } else if (e.key === "Enter" && results[selectedIndex]) {
+      } else if (e.key === "Enter" && e.target === inputRef.current && results[selectedIndex]) {
+        e.preventDefault();
         handleSelect(results[selectedIndex]);
       } else if (e.key === "Tab" && modalRef.current) {
         const focusable = modalRef.current.querySelectorAll<HTMLElement>(
@@ -78,6 +83,10 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, results, selectedIndex, onClose, handleSelect]);
+
+  useEffect(() => {
+    if (isOpen && results[selectedIndex]) document.getElementById(`search-result-${selectedIndex}`)?.scrollIntoView({ block: "nearest" });
+  }, [isOpen, results, selectedIndex]);
 
   if (!isOpen) return null;
 
@@ -107,6 +116,11 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
             placeholder="Search subjects, PYQs, chapters (e.g. BCS301, 2024 odd)"
             className="flex-1 bg-transparent text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 outline-none text-lg"
             aria-label="Search query"
+            role="combobox"
+            aria-expanded={isOpen}
+            aria-controls="resource-search-results"
+            aria-autocomplete="list"
+            aria-activedescendant={results[selectedIndex] ? `search-result-${selectedIndex}` : undefined}
           />
           {query && (
             <button
@@ -117,29 +131,31 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
               <X className="w-4 h-4 text-gray-400" />
             </button>
           )}
-          <div className="ml-3 px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs text-gray-500 dark:text-gray-400">
-            ESC
-          </div>
+          <button aria-label="Close search" onClick={onClose} className="ml-3 rounded p-2 hover:bg-muted"><X size={18}/></button>
         </div>
 
         <div className="max-h-[60vh] overflow-y-auto">
-          {query && results.length === 0 && (
+          {loading && <p role="status" className="p-6">Loading resources…</p>}
+          {error && <p role="alert" className="p-6">Search is unavailable. Please retry later.</p>}
+          {query && !loading && !error && results.length === 0 && (
             <div className="px-4 py-8 text-center text-gray-500 dark:text-gray-400">
               No results for &quot;{query}&quot;
             </div>
           )}
 
-          {results.length > 0 && (
-            <ul className="py-2" role="listbox">
+          {
+            <ul id="resource-search-results" aria-label="Search results" className="py-2" role="listbox">
               {results.map((result, index) => (
                 <li
                   key={`${result.year}-${result.id}-${result.title}-${index}`}
                 >
                   <button
+                    id={`search-result-${index}`}
                     role="option"
                     aria-selected={index === selectedIndex}
                     onClick={() => handleSelect(result)}
                     onMouseEnter={() => setSelectedIndex(index)}
+                    onFocus={() => setSelectedIndex(index)}
                     className={`w-full px-4 py-3 flex items-center gap-4 transition-colors ${
                       index === selectedIndex
                         ? "bg-primary/10 dark:bg-teal-500/20"
@@ -167,7 +183,7 @@ export const GlobalSearch = ({ isOpen, onClose }: GlobalSearchProps) => {
                 </li>
               ))}
             </ul>
-          )}
+          }
 
           {!query && (
             <div className="px-4 py-8 text-center text-gray-500 dark:text-gray-400">

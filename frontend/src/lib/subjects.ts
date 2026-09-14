@@ -54,7 +54,7 @@ export function getSubjectName(
 
   if (year) {
     const match = getSubjectsForYear(year).find((s) => s.id === subjectId);
-    if (match) return match.title;
+    return match?.title || "Unknown Subject";
   }
 
   for (const y of YEAR_KEYS) {

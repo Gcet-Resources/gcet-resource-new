@@ -1,78 +1,65 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Interactive flows", () => {
-  test("Open search, find BAS101 and navigate", async ({ page }) => {
-    await page.goto("/");
-    const searchBtn = page.locator('button:has-text("Search...")').first();
-    await searchBtn.click().catch(() => {});
-    // fallback: use keyboard shortcut Cmd/Ctrl+K
-    await page.keyboard.press("Control+K").catch(() => {});
-    await page.waitForSelector('input[aria-label="Search query"]', {
-      timeout: 5000,
-    });
-    await page.fill('input[aria-label="Search query"]', "BAS101");
-    const option = page.locator("role=option").first();
-    // the search UI is client rendered; wait briefly for results to appear but don't fail the test if none
-    await page.waitForTimeout(500);
-    if (await option.count()) {
-      await option.click();
-      await page.waitForLoadState("networkidle");
-      await expect(page).toHaveURL(/\/resources\/1st/);
-    } else {
-      // at least verify the modal and input are present
-      await expect(
-        page.locator('input[aria-label="Search query"]')
-      ).toBeVisible();
-    }
+test("keyboard search selects an actual subject and restores focus on close", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const trigger = page.getByRole("button", {
+    name: "Search resources",
+    exact: true,
   });
+  await trigger.click();
+  const search = page.getByRole("combobox", { name: "Search query" });
+  await search.fill("BAS101");
+  await expect(page.getByRole("option").first()).toContainText("BAS101");
+  await search.press("Enter");
+  await expect(page).toHaveURL(/\/resources\/1st\/BAS101$/);
+  await trigger.click();
+  await page.getByRole("button", { name: "Close search" }).click();
+  await expect(trigger).toBeFocused();
+});
 
-  test("Toggle dark mode", async ({ page }) => {
-    await page.goto("/");
-    const toggle = page.locator('button[aria-label^="Switch to"]').first();
-    await expect(toggle).toBeVisible();
-    await toggle.click();
-    const isDark = await page.evaluate(() =>
-      document.documentElement.classList.contains("dark")
-    );
-    expect(isDark).toBeTruthy();
+test("theme choice persists across reloads", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Switch to dark mode" }).click();
+  await expect(page.locator("html")).toHaveClass(/dark/);
+  await page.reload();
+  await expect(page.locator("html")).toHaveClass(/dark/);
+});
+
+test("guest saves and removes a subject across reloads", async ({ page }) => {
+  await page.goto("/resources/1st/BAS101");
+  await page.getByRole("button", { name: "Save subject", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Saved", exact: true }),
+  ).toBeVisible();
+  await page.reload();
+  await page.getByRole("button", { name: "Saved", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Save subject", exact: true }),
+  ).toBeVisible();
+});
+
+test("malformed local storage cannot crash a resource page", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("gcet-favorites", "{bad json");
+    localStorage.setItem("gcet-recently-viewed:guest", '[null,2,{"id":true}]');
   });
+  await page.goto("/resources/1st/BAS101");
+  await expect(page.locator("main h1")).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Save subject", exact: true }),
+  ).toBeVisible();
+});
 
-  test("Save subject (favorites) and open a resource", async ({ page }) => {
-    await page.goto("/resources/1st/BAS101");
-    await page.waitForSelector("main#main-content");
-
-    const saveBtn = page.locator('button:has-text("Save subject")').first();
-    if (await saveBtn.count()) {
-      await saveBtn.click();
-      await expect(
-        page.locator('button:has-text("Saved")').first()
-      ).toHaveCount(1);
-    }
-
-    // Click resource card: click 'All Notes' which exists for BAS101
-    const card = page.locator('h3:has-text("All Notes")').first();
-    if (await card.count()) {
-      await card.click({ timeout: 10000 });
-      await page.waitForLoadState("networkidle");
-      await expect(page.url()).toMatch(
-        /\/pdf-notes|\/aktu-pyq|\/cae|\/handwritten|\/question-bank/
-      );
-    } else {
-      // fallback: ensure subject page rendered
-      await expect(page.locator("h1")).toBeVisible();
-    }
-  });
-
-  test("Navigate via header to YouTube Resources and open academic", async ({
-    page,
-  }) => {
-    await page.goto("/");
-    await page.click("text=YouTube Resources");
-    await page.waitForLoadState("networkidle");
-    await expect(page).toHaveURL(/youtube-resources/);
-    // Click the Academic Resources card
-    await page.click("text=Academic Resources");
-    await page.waitForLoadState("networkidle");
-    await expect(page).toHaveURL(/youtube-resources\/academic/);
-  });
+test("subject filter shows a useful empty state", async ({ page }) => {
+  await page.goto("/resources/1st");
+  await page
+    .getByLabel("Filter subjects")
+    .fill("NO SUBJECT EXISTS WITH THIS NAME");
+  await expect(
+    page.getByText("No matching subjects.", { exact: false }),
+  ).toBeVisible();
 });

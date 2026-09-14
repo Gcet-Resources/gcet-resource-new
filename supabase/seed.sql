@@ -1,0 +1,3 @@
+-- Do not seed fabricated courses, users, clubs, roles or published events.
+-- Run `node scripts/import-catalog.mjs --output supabase/catalog-import.sql`
+-- and review its report before applying the generated catalog import.

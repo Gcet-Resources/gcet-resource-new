@@ -1,4 +1,5 @@
-import { RESOURCE_TYPES, getResourceAvailability } from "@/lib/subjects";
+import { RESOURCE_TYPES } from "@/lib/subjects";
+import { useCatalog } from "@/context/CatalogProvider";
 import { cn } from "@/lib/utils";
 
 export function ResourceBadges({
@@ -10,8 +11,12 @@ export function ResourceBadges({
   subjectId: string;
   className?: string;
 }) {
-  const availability = getResourceAvailability(year, subjectId);
-  const available = RESOURCE_TYPES.filter((rt) => availability[rt.id]);
+  const { resources } = useCatalog();
+  const available = RESOURCE_TYPES.filter((rt) =>
+    resources.some(
+      (r) => r.year === year && r.subjectId === subjectId && r.type === rt.id,
+    ),
+  );
 
   if (available.length === 0) {
     return (

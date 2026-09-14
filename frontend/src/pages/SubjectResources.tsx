@@ -1,202 +1,156 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
-import {
-  BookText,
-  FileText,
-  PenTool,
-  Book,
-  HelpCircle,
-  Grid,
-} from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { FileText, ArrowUpRight, Star } from "lucide-react";
 import { useRecentlyViewed } from "@/hooks/useRecentlyViewed";
 import { useFavorites } from "@/hooks/useFavorites";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Seo } from "@/components/Seo";
 import { ShareButton } from "@/components/ShareButton";
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
-import {
-  getSubjectName,
-  getYearLabel,
-  getResourceAvailability,
-  RESOURCE_TYPES,
-} from "@/lib/subjects";
-import { SITE_URL, SITE_NAME } from "@/lib/site";
-
-const resourceMeta = {
-  "pdf-notes": {
-    icon: BookText,
-    color: "bg-blue-100",
-    textColor: "text-blue-600",
-    gradient: "from-blue-50 to-blue-100",
-  },
-  "aktu-pyq": {
-    icon: FileText,
-    color: "bg-orange-100",
-    textColor: "text-orange-600",
-    gradient: "from-orange-50 to-orange-100",
-  },
-  cae: {
-    icon: Grid,
-    color: "bg-purple-100",
-    textColor: "text-purple-600",
-    gradient: "from-purple-50 to-purple-100",
-  },
-  handwritten: {
-    icon: PenTool,
-    color: "bg-rose-100",
-    textColor: "text-rose-600",
-    gradient: "from-rose-50 to-rose-100",
-  },
-  quantum: {
-    icon: Book,
-    color: "bg-green-100",
-    textColor: "text-green-600",
-    gradient: "from-green-50 to-green-100",
-  },
-  "question-bank": {
-    icon: HelpCircle,
-    color: "bg-teal-100",
-    textColor: "text-teal-600",
-    gradient: "from-teal-50 to-teal-100",
-  },
-} as const;
-
-const SubjectResources = () => {
-  const { year, subjectId } = useParams();
-  const navigate = useNavigate();
+import { getYearLabel, RESOURCE_TYPES } from "@/lib/subjects";
+import { useCatalog } from "@/context/CatalogProvider";
+import { CatalogStatus } from "@/components/CatalogStatus";
+import NotFound from "./NotFound";
+export default function SubjectResources() {
+  const { year = "", subjectId = "" } = useParams();
+  const { subjects, resources, loading, error } = useCatalog();
+  const subject = subjects.find((s) => s.year === year && s.id === subjectId);
   const { addRecentSubject } = useRecentlyViewed();
-  const { isFavorite, toggleFavorite } = useFavorites();
-
-  const subjectName = getSubjectName(subjectId, year);
-  const availability =
-    year && subjectId ? getResourceAvailability(year, subjectId) : null;
-
+  const {
+    isFavorite,
+    toggleFavorite,
+    error: saveError,
+    busy,
+    needsVerification,
+  } = useFavorites();
   useEffect(() => {
-    if (year && subjectId && subjectName !== "Unknown Subject") {
-      addRecentSubject({ id: subjectId, title: subjectName, year });
-    }
-  }, [year, subjectId, subjectName, addRecentSubject]);
-
-  const pagePath = `/resources/${year}/${subjectId}`;
-  const favorited = year && subjectId ? isFavorite(subjectId, year) : false;
-
+    if (subject)
+      addRecentSubject({
+        id: subject.id,
+        title: subject.title,
+        year: subject.year,
+      });
+  }, [subject, addRecentSubject]);
+  if (!loading && !error && !subject) return <NotFound />;
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
-      <Seo
-        title={`${subjectName} (${subjectId}) — ${getYearLabel(year || "")}`}
-        description={`Free ${subjectName} notes, AKTU PYQs, CAE papers and question banks for ${getYearLabel(
-          year || ""
-        )} B.Tech students at GCET.`}
-        path={pagePath}
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Course",
-          name: subjectName,
-          courseCode: subjectId,
-          url: `${SITE_URL}${pagePath}`,
-          provider: { "@type": "Organization", name: SITE_NAME },
-        }}
-      />
+    <>
       <Navigation />
-      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
+      <Seo
+        title={subject?.title || "Subject resources"}
+        path={`/resources/${year}/${subjectId}`}
+      />
+      <main
+        id="main-content"
+        className="mx-auto min-h-screen max-w-6xl px-4 pb-20 pt-28"
+      >
         <Breadcrumbs
           items={[
             { label: "Resources", href: "/year-selection" },
-            { label: getYearLabel(year || ""), href: `/resources/${year}` },
-            { label: subjectName },
+            { label: getYearLabel(year), href: `/resources/${year}` },
+            { label: subject?.title || subjectId },
           ]}
         />
-
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-display font-bold mb-2 text-gray-900 dark:text-white">
-            {subjectName}
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300">
-            {getYearLabel(year || "")} · {subjectId} — Select a resource type
-          </p>
-          <div className="mt-4 flex justify-center gap-2">
-            {year && subjectId && (
-              <>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() =>
-                    toggleFavorite({
-                      id: subjectId,
-                      title: subjectName,
-                      year,
-                    })
-                  }
-                >
-                  <Star
-                    className={`w-4 h-4 mr-1.5 ${
-                      favorited ? "fill-yellow-400 text-yellow-400" : ""
-                    }`}
-                  />
-                  {favorited ? "Saved" : "Save subject"}
-                </Button>
+        <CatalogStatus />
+        {subject && (
+          <>
+            <div className="my-10">
+              <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
+                {getYearLabel(year)} · {subjectId}
+              </p>
+              <h1 className="mt-3 text-4xl font-bold">{subject.title}</h1>
+              <p className="mt-3 text-slate-500">{subject.description}</p>
+              <div className="mt-6 flex gap-3">
+                {needsVerification ? (
+                  <Button variant="outline" asChild>
+                    <Link to="/account#security">Verify to save</Link>
+                  </Button>
+                ) : (
+                  <Button
+                    variant="outline"
+                    aria-pressed={isFavorite(subjectId, year)}
+                    disabled={busy}
+                    onClick={() =>
+                      void toggleFavorite({
+                        id: subjectId,
+                        title: subject.title,
+                        year,
+                      })
+                    }
+                  >
+                    <Star
+                      size={16}
+                      className={
+                        isFavorite(subjectId, year)
+                          ? "mr-2 fill-amber-400 text-amber-500"
+                          : "mr-2"
+                      }
+                    />
+                    {isFavorite(subjectId, year) ? "Saved" : "Save subject"}
+                  </Button>
+                )}
                 <ShareButton
                   year={year}
                   subjectId={subjectId}
-                  subjectTitle={subjectName}
+                  subjectTitle={subject.title}
                 />
-              </>
-            )}
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {RESOURCE_TYPES.map((resource, index) => {
-            const meta = resourceMeta[resource.id];
-            const available = availability?.[resource.id] ?? false;
-
-            return (
-              <Card
-                key={resource.id}
-                className={`overflow-hidden rounded-lg border-0 shadow-md transition-all duration-300 group animate-fade-up bg-gradient-to-br dark:from-gray-800 dark:to-gray-800 ${
-                  available
-                    ? "hover:shadow-xl cursor-pointer hover:scale-105"
-                    : "opacity-60 cursor-not-allowed"
-                }`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() =>
-                  available &&
-                  navigate(`/resources/${year}/${subjectId}/${resource.id}`)
-                }
-              >
-                <CardContent
-                  className={`p-0 h-full ${meta.gradient} dark:from-gray-800 dark:to-gray-800`}
-                >
-                  <div className="p-6 flex flex-col items-center text-center h-full">
-                    <div
-                      className={`w-16 h-16 rounded-full ${meta.color} ${meta.textColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-md`}
-                    >
-                      <meta.icon size={28} strokeWidth={2.5} />
+              </div>
+              {saveError && (
+                <p role="alert" className="mt-3 text-red-600">
+                  {saveError}
+                </p>
+              )}
+            </div>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {RESOURCE_TYPES.map((type) => {
+                const count = resources.filter(
+                  (r) =>
+                    r.year === year &&
+                    r.subjectId === subjectId &&
+                    r.type === type.id,
+                ).length;
+                const content = (
+                  <>
+                    <div className="flex justify-between">
+                      <FileText
+                        className={count ? "text-teal-600" : "text-slate-400"}
+                      />
+                      {count > 0 && <ArrowUpRight size={20} />}
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                      {resource.label}
-                    </h3>
+                    <h2 className="mt-6 text-xl font-semibold">{type.label}</h2>
+                    <p className="mt-2 text-sm text-slate-500">
+                      {count
+                        ? `${count} published ${count === 1 ? "resource" : "resources"}`
+                        : "Content is being prepared"}
+                    </p>
                     <span
-                      className={`inline-block px-3 py-1 rounded-full text-xs mt-4 ${
-                        available
-                          ? `${meta.textColor} bg-white dark:bg-gray-700 bg-opacity-60`
-                          : "text-gray-500 bg-gray-100 dark:bg-gray-700"
-                      }`}
+                      className={`mt-5 inline-block rounded-full px-3 py-1 text-xs ${count ? "bg-teal-50 text-teal-800 dark:bg-teal-950 dark:text-teal-200" : "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300"}`}
                     >
-                      {available ? "Available" : "Coming soon"}
+                      {count ? "Available" : "Coming soon"}
                     </span>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
+                  </>
+                );
+                return count ? (
+                  <Link
+                    key={type.id}
+                    to={`/resources/${year}/${subjectId}/${type.id}`}
+                    className="rounded-2xl border bg-card p-6 transition hover:border-teal-500 hover:shadow-md"
+                  >
+                    {content}
+                  </Link>
+                ) : (
+                  <section
+                    key={type.id}
+                    className="rounded-2xl border border-dashed p-6"
+                  >
+                    {content}
+                  </section>
+                );
+              })}
+            </div>
+          </>
+        )}
       </main>
-    </div>
+    </>
   );
-};
-
-export default SubjectResources;
+}

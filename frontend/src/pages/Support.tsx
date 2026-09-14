@@ -32,15 +32,24 @@ const Support = () => {
   const shareUrl = window.location.href;
   const upiId = "9897087612@ybl"; // Replace with actual UPI ID if different from QR
 
-  const copyUpiId = () => {
-    navigator.clipboard.writeText(upiId);
+  const copyUpiId = async () => {
+    try {
+      await navigator.clipboard.writeText(upiId);
+    } catch {
+      toast({
+        title: "Copy failed",
+        description: "Select and copy the UPI ID instead.",
+        variant: "destructive",
+      });
+      return;
+    }
     toast({
       title: "UPI ID Copied!",
       description: "You can now paste it in your payment app.",
     });
   };
 
-  const handleShare = (platform: string) => {
+  const handleShare = async (platform: string) => {
     let url = "";
     const text =
       "Check out GCET Resources - The best place for study materials! 🚀";
@@ -48,35 +57,44 @@ const Support = () => {
     switch (platform) {
       case "whatsapp":
         url = `https://wa.me/?text=${encodeURIComponent(
-          text + " " + shareUrl
+          text + " " + shareUrl,
         )}`;
         break;
       case "twitter":
         url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-          shareUrl
+          shareUrl,
         )}&text=${encodeURIComponent(text)}`;
         break;
       case "linkedin":
         url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-          shareUrl
+          shareUrl,
         )}`;
         break;
       case "copy":
-        navigator.clipboard.writeText(shareUrl);
+        try {
+          await navigator.clipboard.writeText(shareUrl);
+        } catch {
+          toast({
+            title: "Copy failed",
+            description: "Copy the page address from your browser.",
+            variant: "destructive",
+          });
+          return;
+        }
         toast({
           title: "Link Copied!",
           description: "Share it with your friends!",
         });
         return;
     }
-    if (url) window.open(url, "_blank");
+    if (url) window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950">
       <Navigation />
 
-      <main className="container mx-auto px-4 pt-32 pb-20">
+      <main id="main-content" className="container mx-auto px-4 pt-32 pb-20">
         {/* Hero Section */}
         <div className="text-center max-w-2xl mx-auto mb-12 animate-fade-in-up">
           <div className="inline-flex items-center justify-center p-3 mb-6 bg-primary/10 dark:bg-teal-500/10 rounded-full ring-1 ring-primary/20 dark:ring-teal-500/20">
@@ -122,7 +140,7 @@ const Support = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                  <p className="text-xs text-center text-gray-500 dark:text-gray-500 italic">
+                  <p className="text-xs text-center text-gray-500 dark:text-gray-400 italic">
                     "Every contribution, big or small, helps us build a better
                     learning platform."
                   </p>
@@ -182,6 +200,7 @@ const Support = () => {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8 ml-auto"
+                          aria-label="Copy UPI ID"
                           onClick={copyUpiId}
                         >
                           <Copy className="w-4 h-4" />
@@ -209,6 +228,8 @@ const Support = () => {
                         {[1, 3, 5].map((amount) => (
                           <button
                             key={amount}
+                            aria-pressed={coffeeCount === amount}
+                            aria-label={`Support with ${amount} ${amount === 1 ? "coffee" : "coffees"}`}
                             onClick={() => setCoffeeCount(amount)}
                             className={`flex flex-col items-center justify-center w-20 h-24 rounded-xl border-2 transition-all duration-200 ${
                               coffeeCount === amount
@@ -237,12 +258,12 @@ const Support = () => {
                       </div>
 
                       <Button
-                        className="w-full bg-primary dark:bg-teal-600 hover:bg-primary/90 dark:hover:bg-teal-500 text-white h-12 text-lg shadow-lg shadow-primary/20"
+                        className="w-full bg-primary dark:bg-teal-700 hover:bg-primary/90 dark:hover:bg-teal-800 text-white h-12 text-lg shadow-lg shadow-primary/20"
                         onClick={() => setActiveTab("upi")}
                       >
                         Proceed to Pay
                       </Button>
-                      <p className="text-xs text-center text-gray-400">
+                      <p className="text-xs text-center text-gray-600 dark:text-gray-400">
                         (Redirects to QR code for payment)
                       </p>
                     </div>
@@ -291,6 +312,7 @@ const Support = () => {
                 variant="ghost"
                 size="icon"
                 className="rounded-full h-11 w-11 border border-transparent hover:border-gray-200 dark:hover:border-gray-700"
+                aria-label="Copy page link"
                 onClick={() => handleShare("copy")}
               >
                 <Copy className="w-4 h-4 text-gray-500" />

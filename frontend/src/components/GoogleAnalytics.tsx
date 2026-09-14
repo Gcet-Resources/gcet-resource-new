@@ -1,33 +1,29 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
-
-const GoogleAnalytics = () => {
-  const location = useLocation();
-  const GA_ID = import.meta.env.VITE_GA_ID as string | undefined;
-
+const privateRoute = /^\/(login|auth|account|admin|publish|dashboard)(\/|$)/;
+export default function GoogleAnalytics() {
+  const { pathname } = useLocation();
+  const ready = useRef(false);
+  const id = import.meta.env.VITE_GA_ID;
   useEffect(() => {
-    if (!GA_ID) return;
+    if (!id || privateRoute.test(pathname)) return;
     try {
-      ReactGA.initialize(GA_ID);
-    } catch (e) {
-      // ignore init errors
-    }
-  }, [GA_ID]);
-
-  useEffect(() => {
-    if (!GA_ID) return;
-    try {
+      if (!ready.current) {
+        ReactGA.initialize(id, {
+          gaOptions: { send_page_view: false },
+          gtagOptions: { send_page_view: false },
+        });
+        ready.current = true;
+      }
       ReactGA.send({
         hitType: "pageview",
-        page: location.pathname + location.search,
+        page: pathname,
+        page_location: `${window.location.origin}${pathname}`,
       });
-    } catch (e) {
-      // ignore send errors
+    } catch {
+      /* Analytics failure must not interrupt campus. */
     }
-  }, [location, GA_ID]);
-
+  }, [id, pathname]);
   return null;
-};
-
-export default GoogleAnalytics;
+}
